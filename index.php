@@ -156,7 +156,8 @@
         <div class="eventContent">
             
         </div>
-       
+    
+        
     </div>
     <div class="bg4">
         <div class="titleTrustContent">
@@ -164,16 +165,17 @@
         </div>
        
     </div>
+    
     <div class="bg5">
         
-        <h1 class="titleSecNoservice titleSecMember">Notre equipe</h1>
+        <h1 class="titleSecNoservice titleSecMember">Nos membres</h1>
        
         <div class="memberContact">
             <div class="card">
                 <div class="content">
                     <div class="img"><img src="views/images/princy.jpg" alt="Photo de couverture CTO"></div>
                     <div class="cardContent">
-                        <h3>Sanders RANDRIANARISON<br><span>Directeur Technique</span></h3>
+                        <h3>Sanders RANDRIA<br><span>Directeur Technique</span></h3>
                     </div>
                 </div>
                 <ul class="sci">
@@ -231,11 +233,9 @@
             </div>
                 <div class="card">
                     <div class="content">
-                    <a href="https://mahafeno-git-main-ztsirionantsoa.vercel.app/">
-                        <div class="img"><img src="views/images/doughlas2.jpg" alt="Photo de couverture Developpeur"></div>
+                        <div class="img"><img src="views/images/doughlas.jpg" alt="Photo de couverture Developpeur"></div>
                         <div class="cardContent">
-                        <h3>Doughlas TSIRIONANTSOA<br><span>Responsable Informatique</span></h3>
-                    </a>
+                        <h3>Feno DOUGHLAS<br><span>Responsable Informatique</span></h3>
                     </div>
                 </div>
                 <ul class="sci">
@@ -254,38 +254,81 @@
         </div>
 
     </div>
+    
+    <footer class="foot"></footer>
 
 
+    <!-- *******back to top button****** -->
+    <div class="backToTop" id="backToTop">
+        <img src="views/images/up.png" alt="">
+    </div>
 
-    <footer class="copyright-footer">
-    <div class="footer-bottom">
-                <p>&copy; 2023 OrigamiTech. Tous droits réservés.</p>
-            </div>
-</footer>
-<style>
-    .footer {
-            background-color: #333;
-            padding: 20px 0;
-            color: #fff;
-            text-align: center;
-        }
+    <style>
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        /* Styles pour le bouton Back to Top */
+.backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:2px solid #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
+.backToTop img {
+    width: 30px;
+    height: 30px;
+    fill: #FFFFFF;
+}
 
-        
+.backToTop.active {
+    opacity: 1;
+}
 
-        .footer-bottom {
-            font-size: 25px;
-        }
     </style>
 
+    <script>
+        // Fonction pour afficher ou masquer le bouton Back to Top
+function toggleBackToTop() {
+    const backToTopButton = document.getElementById('backToTop');
+    if (window.scrollY > 100) {
+        backToTopButton.classList.add('active');
+    } else {
+        backToTopButton.classList.remove('active');
+    }
+}
+
+// Ajoutez des écouteurs d'événements pour les événements de scroll et de chargement de la fenêtre
+window.addEventListener('scroll', toggleBackToTop);
+window.addEventListener('load', toggleBackToTop);
+
+// Fonction pour faire défiler vers le haut lorsque le bouton Back to Top est cliqué
+document.getElementById('backToTop').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+    </script>
+
+
+    <script src="views/js/btnNavigation.js"></script>   
+    <script src="views/js/slideHome.js"></script>
+    <script src="views/js/positionLine.js"></script>
+    <script src="views/js/backToTop.js"></script>
+    <!-- <script src="noServiceCard"></script> -->
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <!-- partial -->
+      <script  src="views/js/animNoservice.js"></script>
+  
+</body>
+</html>

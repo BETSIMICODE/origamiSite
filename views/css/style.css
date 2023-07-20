@@ -584,6 +584,8 @@ body{
     background-color: #000000;
     margin-top: 0;
 }
+
+
 .bg5{
     width: 100vw;
     height: auto;
@@ -871,4 +873,5 @@ body{
         width: 6%;
         margin-left: 3%;
     }
+   
 }
