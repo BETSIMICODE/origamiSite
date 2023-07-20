@@ -11,8 +11,8 @@
     <title>OrigamiTech</title>
 </head>
 <body>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">   
+     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <div class="bg1">
         <div class="container">
@@ -156,7 +156,8 @@
         <div class="eventContent">
             
         </div>
-       
+    
+        
     </div>
     <div class="bg4">
         <div class="titleTrustContent">
@@ -164,9 +165,10 @@
         </div>
        
     </div>
+    
     <div class="bg5">
         
-        <h1 class="titleSecNoservice titleSecMember">Notre équipe</h1>
+        <h1 class="titleSecNoservice titleSecMember">Nos membres</h1>
        
         <div class="memberContact">
             <div class="card">
@@ -256,9 +258,72 @@
     <footer class="foot"></footer>
 
 
+    <!-- *******back to top button****** -->
+    <div class="backToTop" id="backToTop">
+        <img src="views/images/up.png" alt="">
+    </div>
+
+    <style>
+
+        /* Styles pour le bouton Back to Top */
+.backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:2px solid #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.backToTop img {
+    width: 30px;
+    height: 30px;
+    fill: #FFFFFF;
+}
+
+.backToTop.active {
+    opacity: 1;
+}
+
+    </style>
+
+    <script>
+        // Fonction pour afficher ou masquer le bouton Back to Top
+function toggleBackToTop() {
+    const backToTopButton = document.getElementById('backToTop');
+    if (window.scrollY > 100) {
+        backToTopButton.classList.add('active');
+    } else {
+        backToTopButton.classList.remove('active');
+    }
+}
+
+// Ajoutez des écouteurs d'événements pour les événements de scroll et de chargement de la fenêtre
+window.addEventListener('scroll', toggleBackToTop);
+window.addEventListener('load', toggleBackToTop);
+
+// Fonction pour faire défiler vers le haut lorsque le bouton Back to Top est cliqué
+document.getElementById('backToTop').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+    </script>
+
+
     <script src="views/js/btnNavigation.js"></script>   
     <script src="views/js/slideHome.js"></script>
     <script src="views/js/positionLine.js"></script>
+    <script src="views/js/backToTop.js"></script>
     <!-- <script src="noServiceCard"></script> -->
     <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
