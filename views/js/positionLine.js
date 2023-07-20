@@ -1,5 +1,8 @@
-window.addEventListener('load', function() {
-    //At each load
+// window.addEventListener('scroll', function() {
+//     let aaaa=document.querySelector(".test");
+//     aaaa.style.display="block";
+// });
+//At each load
     //get title of service and the line
     var titleService = document.querySelector('.titleService');
     var lineWhite = document.querySelector('.lineWhite');
@@ -16,4 +19,4 @@ window.addEventListener('load', function() {
     var titleServiceRect = titleService.getBoundingClientRect();
     var lineWhiteLeft = titleServiceRect.left;
     lineWhite.style.left = lineWhiteLeft + 'px';
-});
+
