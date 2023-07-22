@@ -103,6 +103,53 @@
     
         </div>
     </div>
+    <div class="bgTextContent">
+        <h1 class="titleSecNoservice">
+            Qui sommes nous?
+        </h1>
+        <p class="paraCenter">
+            Entreprise de transformation digitale, située à Fianarantsoa Isaha.
+            Nous offrons tout service qui représente votre image, que ce soit à travers l'internet ou présentielle ainsi que des outils de représentation graphiques.
+            Tout ça avec un prix abordable et raisonnable, et une flexibilité de payement.
+
+        </p>
+    </div>
+    <div class="shoesContainer">
+        <div class="shoesGlass">
+            <div class="leftShoes">
+                <img class="shoesNike" src="views/images/nike1.png" alt="Air nike">
+            </div>
+            <div class="rightShoes">
+                <h3>
+                    NIKE
+                </h3>
+                <h2>
+                    AIR FORCE 1
+                </h2>
+                <div class="zoneText">
+                    <h4 class="revelationTitle">
+                        Non, nous ne vendons pas des basket!
+                    </h4>
+                    <p class="textShoes">
+                        Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="btnShoesContent">
+                    <h4 class="shoesPrice">
+                        50000 Ar
+                    </h4>
+                    <div class="btnShoes">
+                        Plus
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
     <div class="bg2">
         <h1 class="titleSecNoservice">
             Nos services
@@ -413,97 +460,22 @@
         <img src="views/images/up.png" alt="">
     </div>
 
-    <style>
-
-        /* Styles pour le bouton Back to Top */
-.backToTop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border:2px solid #007BFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 40;
-}
-
-.backToTop img {
-    width: 30px;
-    height: 30px;
-    fill: #FFFFFF;
-}
-
-.backToTop.active {
-    opacity: 1;
-}
-
-    </style>
-
-    <script>
-        // Fonction pour afficher ou masquer le bouton Back to Top
-function toggleBackToTop() {
-    const backToTopButton = document.getElementById('backToTop');
-    if (window.scrollY > 100) {
-        backToTopButton.classList.add('active');
-    } else {
-        backToTopButton.classList.remove('active');
-    }
-}
-
-// Ajoutez des écouteurs d'événements pour les événements de scroll et de chargement de la fenêtre
-window.addEventListener('scroll', toggleBackToTop);
-window.addEventListener('load', toggleBackToTop);
-
-// Fonction pour faire défiler vers le haut lorsque le bouton Back to Top est cliqué
-document.getElementById('backToTop').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-    </script>
-     <script>
-        // Fonction pour afficher ou masquer le bouton Back to Top
-function toggleBackToTop() {
-    const backToTopButton = document.getElementById('backToTop');
-    if (window.scrollY > 100) {
-        backToTopButton.classList.add('active');
-    } else {
-        backToTopButton.classList.remove('active');
-    }
-}
-
-// Ajoutez des écouteurs d'événements pour les événements de scroll et de chargement de la fenêtre
-window.addEventListener('scroll', toggleBackToTop);
-window.addEventListener('load', toggleBackToTop);
-
-// Fonction pour faire défiler vers le haut lorsque le bouton Back to Top est cliqué
-document.getElementById('backToTop').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-    </script>
+    
+    <script  src="views/js/animNoservice.js"></script>
+    <script src="views/js/backToTop.js"></script>
+    <script src="views/js/sizeImgSlide.js"></script>
+    
 
 
+    
     <script src="views/js/btnNavigation.js"></script>   
     <script src="views/js/slideHome.js"></script>
-    <script src="views/js/positionLine.js"></script>
+    
     <script src="views/js/backToTop.js"></script>
     <!-- <script src="noServiceCard"></script> -->
+    <!-- partial -->
+    <script src="views/js/positionLine.js"></script>
     <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-    <!-- partial -->
-      <script  src="views/js/animNoservice.js"></script>
-  
 </body>
 </html>
