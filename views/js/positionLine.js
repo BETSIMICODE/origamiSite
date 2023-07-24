@@ -17,8 +17,8 @@ function setLineWhite() {
   lineWhite.style.left = titleServiceRect.left + 'px';
 }
 // Listener for initial page load
-document.addEventListener("DOMContentLoaded", setLineWhite);
+// document.addEventListener("DOMContentLoaded", setLineWhite);
 // Listener for window resize
-window.addEventListener("resize", setLineWhite);
+// window.addEventListener("resize", setLineWhite);
 
 setLineWhite();
