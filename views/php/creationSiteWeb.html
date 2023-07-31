@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background-color: #242634;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 99vw;
+      height: 90%;
+      margin: 3% 0 0 0;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #000913;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      
+    }
+
+    .normal
+    {
+        height: 445px;
+        width:510px;
+        flex-basis: 55%;
+        margin: 0 3%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    .responsive
+    {
+        height: 450px;
+        width: 125px ;
+        flex-basis: 18%;
+        margin: 0 3%;
+        
+    }
+
+
+    /* responsive */
+    @media screen and (max-width:1200px){
+        .normal
+    {
+        height: 345px;
+        width:510px;
+    }
+    .responsive
+    {
+        height: 350px;
+        width: 125px ; 
+    }
+    }
+    @media screen and (max-width:980px){
+        .normal
+    {
+        height: 255px;
+        width:310px;
+    }
+    .responsive
+    {
+        height: 260px;
+        width: 100px ; 
+    }
+    }
+    @media screen and (max-width:500px){
+        .swiper {
+    
+      height: 50%;
+      margin-top: 25%;
+     
+    }
+        
+        .normal
+    {
+        height: 125px;
+        width:100px;
+        margin: 0 1%;
+    }
+    .responsive
+    {
+        height: 130px;
+        width: 80px ; 
+    }
+    .swiper-button-next,.swiper-button-prev{
+       
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../images/CSW/01.png" class="normal">
+        <img src="../images/CSW/1.png" class="responsive">
+      </div>
+      <div class="swiper-slide">
+        <img src="../images/CSW/10.png" class="normal">
+        <img src="../images/CSW/2.png" class="responsive">
+      </div>
+      <div class="swiper-slide">
+        <img src="../images/CSW/20.png" class="normal">
+        <img src="../images/CSW/3.png" class="responsive">
+      </div>
+      <div class="swiper-slide">
+        <img src="../images/CSW/30.png" class="normal">
+        <img src="../images/CSW/4.png" class="responsive">
+      </div>
+      <div class="swiper-slide">
+        <img src="../images/CSW/40.png" class="normal">
+        <img src="../images/CSW/5.png" class="responsive">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+    
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      loop: true, 
+    });
+  </script>
+</body>
+
+</html>

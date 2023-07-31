@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<style>
+    body{
+        display: flex;
+        background-color:#ffffff;
+        background-image: linear-gradient((to right, transparent 50%, #3e8f6c 50%, #000000a6));
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .bg8
+    {
+        width: 90vw;
+        height: 88vh;
+        background-color:#ffffffc2;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        margin-top:3% ;
+        box-shadow: rgba(240, 240, 240, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    }
+    .content
+    {
+        display: flex;
+    }
+
+    .table
+    {
+        width: 100%;
+    }
+    
+    .table1 {
+        flex-basis: 40%;
+        background-color: #ffffff; /* Couleur pour la colonne 1 */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    
+        .table2 {
+            flex-basis: 60%;
+            background-color: #70bfe0;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+        }
+        
+        .table2 img {
+            max-width: 100%;
+            height: auto; 
+        }
+    
+    .table h1 {
+        font-size: 60px;
+        padding-top: -5px;
+        color: #129fdb;
+    }
+    .table h2 {
+        font-size: 30px;
+        color: #40484e;
+    }
+    
+    .table p {
+        font-size: 16px;
+        color: #3d4445;
+    }  
+
+    .table3 {
+        flex-basis: 80%;
+        background-color: #ffffff; /* Couleur pour la colonne 1 */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    
+    .table4 {
+        flex-basis: 20%;
+        background-color: #15b6de;
+        align-items: center;
+    }
+
+    button {
+        background: linear-gradient(135deg, #ffffff, #2576b8);
+        color: #ffffff;
+        border: 2px solid #1395e6;
+        top: 30px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 30px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #ffffff, #205bc1);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      button:hover {
+        background: linear-gradient(135deg, #a6b4cb, #ffffff);
+        color: #157ed3;
+      }
+      
+      button:hover::before {
+        opacity: 1;
+      }
+      
+        
+    .form {
+        width: 40%;
+        margin-left: 15%; 
+        text-align: center;
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .form h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .form h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #007bff;
+    }
+    
+    .form p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none; /* Supprime la bordure */
+        border-bottom: 1px solid #ccc; /* Ajoute un soulignement */
+      }
+      
+      .form button {
+        background: linear-gradient(135deg, #ffffff, #007bff);
+        color: #ffffff;
+        border: 1px solid #007bff; /* Ajoute une bordure au bouton */
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 0px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        width: 100%; /* Ajuste la longueur du bouton pour qu'il s'adapte à la largeur du formulaire */
+      }
+      
+      .form button:hover {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+      }
+      .grid {
+        position: absolute;
+        width: 40%;
+        margin-top: 19vh;
+        margin-left: 51.2%;
+        margin-right: 50%;
+        height: 50vh;
+        background-color: #136738;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }   
+        .grid h2 {
+            margin-left: 20px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .grid ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .grid li {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .grid img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .grid li:nth-child(1) img {
+            background-image: url('url_de_l_icone_email');
+            background-position: 0 0;
+        }
+        
+        .grid li:nth-child(2) img {
+            background-image: url('url_de_l_icone_numero_telephone');
+            background-position: 0 0;
+        }
+        
+        .grid li:nth-child(3) img {
+            background-image: url('url_de_l_icone_adresse');
+            background-position: 0 0;
+        }
+        
+        .grid li:nth-child(4) img {
+            background-image: url('url_de_l_icone_information');
+            background-position: 0 0;
+        }
+
+        .sci {
+            display: flex;
+            justify-content: center;
+            margin-top: 500px;
+        }
+
+        .iconMember{
+            width: 30px;
+            height: 30px;
+            -o-transition: ease-in-out 0.5s;
+            -webkit-transition: ease-in-out 0.5s;
+            -moz-transition: ease-in-out 0.5s;
+            -ms-transition: ease-in-out 0.5s;
+            transition: ease-in-out 0.5s;
+        
+        }
+        .iconMember:hover{
+            background-color: rgb(49, 232, 180);
+            box-shadow: 0px 0px 50px rgb(49, 232, 180);
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+        }
+
+/* ... (styles précédents) ... */
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .table1,
+    .table2,
+    .table3 {
+      flex-basis: 100%;
+    }
+
+    .table4{
+        flex-basis: 30%;
+    }
+  
+    .table2 img {
+      max-width: 100%;
+    }
+  
+    .bg8 {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .grid {
+      position: relative;
+      width: 90%;
+      margin-top: 5vh;
+      margin-left: 5%;
+      margin-right: 5%;
+      height: auto;
+      box-shadow: none;
+      background-color: transparent;
+    }
+  
+    .grid h2 {
+      margin-left: 0;
+    }
+  
+    .grid ul {
+      margin-left: 0;
+    }
+  
+    .table2 {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .table1 h1 {
+      font-size: 40px;
+    }
+  
+    .form {
+      width: 90%;
+      margin-left: 5%;
+    }
+  }
+  
+
+</style>
+<body>
+    <div class="bg8">
+        <div class="content">
+            <div class="table table1">
+                <h1>Contact Us</h1>
+                <h2>loading page ...</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae magna nec tortor elementum aliquet. Curabitur dictum justo vel tellus aliquam, vel suscipit odio vehicula. Donec a metus vel neque ullamcorper commodo non ut libero.</p>
+            
+                <button type="button" class="button">Read More</button>
+            </div>
+            <div class="table table2">
+                <img src="../images/contactUs.png"  alt="">
+            </div>
+        </div>
+    </div>
+    <div class="bg8">
+        <div class="content">
+            <div class="table table3">
+                <div class="form">
+                    <h1>Contact Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae magna nec tortor elementum aliquet. Curabitur dictum justo vel tellus aliquam, vel suscipit odio vehicula. Donec a metus vel neque ullamcorper commodo non ut libero.</p>
+                    <input type="text" placeholder="NAME">
+                    <input type="text" placeholder="EMAIL">
+                    <input type="text" placeholder="MESSAGE">
+                    <button type="button" class="button">SEND</button>
+                </div>
+                
+            </div>
+            <div class="table table4">
+                <div class="sci">
+                   
+                        <a href="#"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
+                        <a href="#"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt=""></a>
+                </div>        
+                
+            </div>
+        </div>
+        <div class="grid">
+            <h2>Info</h2>
+            <ul>
+                <li> <img src="../images/phone.png" alt="">Email</li>
+                <li><img src="../images/phone.png" alt="">Numero Telephone</li>
+                <li><img src="../images/phone.png" alt="">Adresse</li>
+                <li><img src="../images/phone.png" alt="">information</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

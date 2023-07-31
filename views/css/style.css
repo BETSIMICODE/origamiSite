@@ -1,3 +1,31 @@
+.bul{
+   
+    background-color: rgb(255, 95, 14);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    position: absolute;
+}
+.bul1{
+    width: 7px;
+    height: 7px;
+    top: 15%;
+    right: 10%;
+}
+.bul2{
+    width: 12px;
+    height: 12px;
+    top: 20%;
+    right: 10%;
+}
+.bul3{
+    width: 5px;
+    height: 5px;
+    top: 19%;
+    right: 9%;
+}
 body{
     display: flex;
     /* background-image: url("../images/bg.jpg"); */
@@ -50,6 +78,7 @@ body{
 } */
 
 /* Glass container */
+
 .container{
     width: 80%;
     height: 90%;
@@ -65,68 +94,6 @@ body{
     z-index: 30;
 }
 
-/* Navigation */
-.navContent{
-    display: flex;
-    width: 100%;
-    height: 20%;
-    /* background: rgb(255, 0, 0); */
-    align-items: center;
-    justify-content: left;
-}
-.logo{
-    width:25%;
-    height: auto;
-}
-.nav{
-    display: flex;
-    justify-content: left;
-    width: 50%;
-    height: auto;
-    background: rgba(237, 51, 51, 0);
-    align-self: center;
-}
-.btnNav{
-    color: rgba(255, 255, 255, 0.898);
-    text-decoration: none;
-    font-size: 13px;
-    font-family: sans-serif;
-    margin-left: 5%;
-    /* margin-right: auto; */
-}
-
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Animation pour le survol des boutton!!!!!!!!!!!!!!!!!!!!!!!!*/
-.nav a::after{
-    content: "";
-    display: block;
-    height: 2px;
-    margin: 0 auto;
-    background-color: rgb(8, 156, 255);
-    width: 0%;
-    transition: width 0.2s ease-in-out;
-    -webkit-transition: width 0.2s ease-in-out;
-    -moz-transition: width 0.2s ease-in-out;
-    -ms-transition: width 0.2s ease-in-out;
-    -o-transition: width 0.2s ease-in-out;
-}
-.nav a:hover::after{
-    width: 100%;
-    
-}
-.nav a:hover{
-    color: rgb(101, 193, 255);
-    text-shadow: 2px 2px 20px rgb(8, 156, 255);
-}
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!fin de l'animation pour le survol des bouttons!!!!!!!!!!!!!!!!*/
-
-.btnNavMobile{
-    display: none;
-    width: 9%;
-    height: auto;
-}
-.btnExitNavMobile{
-    display: none;
-}
 .middleContent{
     display: flex;
     width: 100%;
@@ -455,7 +422,7 @@ body{
     justify-content: center;
 }
 .rightShoes h3{
-    color: rgb(255, 157, 0);
+    color: #f95e28;
     font-family: sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -520,7 +487,7 @@ body{
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
-    background-image: linear-gradient(to right,rgba(255, 189, 83, 0.913), rgb(255, 157, 0), rgb(255, 115, 1));
+    background-image: linear-gradient(to right,#ec9858, #e8602e, #e8602e);
     box-shadow: 0px 0px 30px 10px #00000092;
     transition: ease-in-out 0.5s;
     -webkit-transition: ease-in-out 0.5s;
@@ -1214,42 +1181,6 @@ body .shoesContainer .bubbles1 .bubble2{
     -o-border-radius: 20%;
 }
 
-/* button back to top */
-.backToTop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border:2px solid #007BFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 40;
-    transition: ease-in-out 0.7s;
-    -webkit-transition: ease-in-out 0.5s;
-    -moz-transition: ease-in-out 0.7s;
-    -ms-transition: ease-in-out 0.7s;
-    -o-transition: ease-in-out 0.7s;
-}
-
-.backToTop img {
-    width: 30px;
-    height: 30px;
-    fill: #FFFFFF;
-}
-
-.backToTop.active {
-    opacity: 1;
-}
-.backToTop:hover{
-    box-shadow: 0px 0px 50px rgb(8, 156, 255);
-    background-color: rgb(8, 156, 255);
-}
 
 
 /* bulbe config !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -1293,255 +1224,11 @@ body .shoesContainer .bubbles1 .bubble2{
 
 
 
-/* footer!!!!!!!!!!!!!!!!!!! */
-
-.footer-distributed{
-	background: rgb(19, 19, 32);
-    background-image: linear-gradient(#032345, #021021, #000810);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100vw;
-    height: auto;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 20px;
-    margin-top: 7%;
-    margin-bottom: -1%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.footerUp{
-    width: 100%;
-    height: 90%;
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-
-}
-.footerDown{
-    width: 100%;
-    height: 10%;
-    /* background-color: rgb(0, 255, 98); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 36%;
-    display: flex;
-    flex-direction: column;
-    /* background-color: red; */
-
-}
-.footer-distributed .footer-right{
-    width: 32%;
-
-}
-.footer-distributed .footer-center{
-    width: 32%;
-}
-/* The company logo */
-.logo1{
-    width: 30vw;
-    height: auto;
-    /* background-color: blue; */
-}
-
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
-}
-
-
-.footer-distributed .footer-company-name{
-	color:  rgb(196, 196, 196);
-	font-size: 14px;
-	font-weight: normal;
-    align-self: center;
-	
-}
-
-/* Footer Center */
-
-
-
-.ftc{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-}
-.ftcPara{
-   margin-left: 50px;
-}
-.ftcMidl{
-    margin-top: 1%;
-}
-.footer-distributed .footer-center p{
-	
-	color: #ffffff;
-    font-weight:400;
-	vertical-align: middle;
-	margin:0;
-    margin-left: 5%;
-    
-}
-
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-	color:  lightseagreen;
-	text-decoration: none;;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight:300;
-  font-size: 20px;
-  left: 0;
-  color: #fff;
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-
-
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-    display: flex;
-	margin-top: 25px;
-    
-}
-
-
-.contactIconeFoot.round{
-    margin-left: -1%;
-    
-}
-.contactIconeFoot{
-    width:30px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
 @media (max-width: 880px) {
     .titleTrust{
         font-size: 25px;
     }
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footerUp{
-        flex-direction: column;
-        justify-content: center;
-        /* background-color: brown; */
-        width: 100%;
-    }
-    .footer-center{
-        width: 100%;
-        /* background-color: aqua; */
-    }
-    .footer-left{
-        width: 100%;
-        /* background-color: aqua; */
-    }
-    .footer-right{
-        width: 100%;
-        /* background-color: aqua; */
-        margin-top: 3%;
-    }
-    .footer-company-about{
-        display: none;
-    }
-    .ftc{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-        /* background-color: red; */
-    
-    }
-    .ftcPara{
-        /* background-color: blue; */
-        flex-shrink: 0;
-        width: auto;
-        flex-wrap: nowrap;
-        width: 200%;
-        text-align: center;
-        margin-left: 0px;
-
-    }
-    .ftcPara a{
-        /* background-color: red; */
-        text-align: center;
-    }
-    .ftcFirst{
-        margin-top: 0;
-    }
-    
-	.footer-icons{
-        display: flex;
-        margin-top: 40px;
-        justify-content: space-evenly;
-        /* background-color: green; */
-        
-        
-    }
-    .ftcParaChild1{
-        width: 40vw;
-        text-align: center;
-    }
-    .contactIconeFoot{
-        width: 40px !important;
-    }
-    .logo1{
-        width: 50vw;
-        height: auto;
-        /* background-color: blue; */
-        align-self: center;
-    }
-    .titleService{
-       
-        font-size: 17px;
-    }
+	
 }
 
 
@@ -1556,6 +1243,7 @@ body .shoesContainer .bubbles1 .bubble2{
 
 /* For mobile */
 @media screen and (max-width:1000px) {
+    
     /* Design for mobile */
     .titleTrust{
         font-size: 27px;
@@ -1569,82 +1257,12 @@ body .shoesContainer .bubbles1 .bubble2{
         /* height: 90%; */
         max-height: auto;
     }
-    .logo{
-        width:40%;
-        height: auto;
-    }
-    .btnNavMobile{
-        display: block;
-        /*background-color: rgb(255, 143, 7);
-        */margin-right: 5%;
-        margin-left: auto;
-        cursor: pointer;
-        transition: ease-in-out 0.5s;
-        -webkit-transition: ease-in-out 0.5s;
-        -moz-transition: ease-in-out 0.5s;
-        -ms-transition: ease-in-out 0.5s;
-        -o-transition: ease-in-out 0.5s;
-}
-    .nav{
-        display: none;
-        transition: ease-in-out 0.5s;
-        position: absolute;
-        top:20%;
-        right: 10%;
-        width: 40%;
-        height: 60%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: rgba(15, 15, 15, 0.866);
-        margin-left: 30%;
-        margin-right: auto;
-        /* display: none; */
-        z-index: 50;
-
-    }
-    .navContent{
-        background-color: rgba(137, 43, 226, 0);
     
-    }
-    .btnNav{
-        /* display: none; */
-        background-color: rgba(255, 0, 0, 0);
-        width: 100%;
-        height: 10%;
-        text-align: center;
-        
-    }
-
-    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Animation pour le survol des boutton!!!!!!!!!!!!!!!!!!!!!!!!*/
-    .nav a::after{
-        content: "";
-        display: block;
-        height: 2px;
-        margin: 0 auto;
-        background-color: #fff;
-        width: 0%;
-    }
-    .nav a:hover::after{
-        width: 50%;
-    }
-    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!fin de l'animation pour le survol des bouttons!!!!!!!!!!!!!!!!*/
-    .btnExitNavMobile{
-        display: block;
-        width: 20%;
-        align-self: flex-end;
-        position: absolute;
-        top: 0;
-        cursor: pointer;
-        transition: ease-in-out 0.5s;
-    }
+    
     .notPrint{
         display: none;
     }
-    .activeNav{
-        display:flex;
-        transition: ease-in-out 0.5s;
-    }
+    
     .middleContent{
         flex-direction: column;
         align-items: center;

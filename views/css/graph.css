@@ -1,0 +1,395 @@
+body{
+  display: flex;
+  /* background-image: url("../images/bg.jpg"); */
+  /* background-color:#010101; */
+  background-color: #f5f8fb;
+  /* background-color: #ff0000; */
+
+  background-image: linear-gradient((to right, transparent 50%, #0a110e 50%, #000000a6));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  /* width: 100vw; */
+}
+
+.emptyGraph{
+  width: 100vw;
+  height: 100px;
+}
+.eg1{
+  height: 50px;
+}
+.eg2{
+  height: 5vw;
+}
+.graphContentUp{
+  width: 100vw;
+  height: auto;
+  background-color:#000913;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.presentationGraphContent{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.leftGraph{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: blue; */
+}
+.rightGraph{
+  display: flex;
+  width: 45%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(81, 255, 0); */
+}
+.designImageGraph{
+  width: 70%;
+  height: auto;
+}
+.titleGraph{
+  align-self: flex-start;
+  color: #fff;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+
+}
+.swiper-wrapper{
+  z-index: 40;
+}
+.textGraph{
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.textDesign{
+  /* background-color: red; */
+  color: white;
+  text-align: end;
+  font-family: fantasy;
+  margin-right: 7%;
+  height: 10%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  
+}
+  .bg-service-visuel
+  {
+    width: 85vw;
+    height: auto;
+    background: linear-gradient(135deg, #000913 0%, #000913 10%, #000913 100%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-top: 1%;
+  }
+  .imgSlideGraph{
+    /* z-index: 40; */
+  }
+  .titleDesignDown{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    color: #fff;
+    font-size: 35px;
+    font-family: sans-serif;
+    /* background-color: red; */
+    margin-top: -2%;
+    width: 86%;
+    z-index: 99;
+    text-shadow: 0 0 30px;
+  }
+  .textDesignDown{
+    /* background-color: red; */
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    width: 100%;
+    height: auto;
+  }
+  .textInsideDesign{
+    color: #fff;
+    width: 50%;
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+  .btnContentDesign{
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnDesignGraph{
+    background-color: #161c3495;
+    background-image: linear-gradient((to right, #0f111a98 50%, #0f111a 50%, #090b10));
+    color: #fff;
+    width: 20vw;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 32px 32px #090b10;
+    font-family: sans-serif;
+    transition: ease-in-out 0.7s;
+    -webkit-transition: ease-in-out 0.7s;
+    -moz-transition: ease-in-out 0.7s;
+    -ms-transition: ease-in-out 0.7s;
+    -o-transition: ease-in-out 0.7s;
+}
+  .btnDesignGraph:hover{
+    background-color: #200202d6;    
+  }
+  .btnStart2{
+    /* background-color: rgba(255, 255, 255, 0); */
+    background-image: linear-gradient(to right, transparent 50%, rgb(0, 125, 228) 50%, rgb(0, 183, 255));
+    background-size:200%;
+    transition: all 0.4s ease-in-out;
+    /* color: #fff; */
+    color: rgb(0, 13, 42);
+    width: 35%;
+    height: 10%;
+    border: solid 1px #fff;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    margin-top: 10%;
+    box-shadow: 3px 3px 23px 3px rgba(2, 2, 2, 0.847);
+    align-self: flex-start;
+    font-size: 16px;
+    border: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.btnStart2:hover{
+    color: #fff;
+    background-position:100%;
+    border: rgb(0, 125, 228);
+    box-shadow: 3px 3px 23px 3px rgb(0, 125, 228);
+
+}
+  /* le swiper slide */
+  .swiper{
+    width: 60%;
+  }
+  .swiper-container {
+    /* width: 100%; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 420px;
+    margin: 0 1%;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    filter: blur(2px);
+    z-index: 40;
+  }
+  .swiper-slide-active{
+      filter: blur(0px);
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  /* description en bas du slider */
+
+  .swiper::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5%; /* Hauteur de la zone floue, 5% dans cet exemple */
+    backdrop-filter: blur(1%); /* Flou de 1% pour la zone spécifiée */
+}
+.textContentGrf{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: yellow; */
+}
+.leftGrf{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.classTitleSectionGrf{
+  font-family: sans-serif;
+  color: #010101;
+  font-size: 3vw;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: right;
+  /* background-color: red; */
+  width: 100%;
+}
+.cTSGrf{
+  text-align: left;
+  /* background-color: red; */
+  width: 100%;
+}
+
+.paraGrf{
+  font-family: sans-serif;
+  color: #010101;
+  font-size: 1.5vw;
+  text-align: justify;
+
+}
+.imgGrf{
+  width: 90%;
+}
+.rightGrf{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tCgrf{
+  margin-top: 1%;
+}
+.logoContentGrf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  /* background-color: red; */
+  margin-top: 3%;
+}
+.logoBigContent{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  
+}
+.logoContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.imgLogoGrf{
+  width: 70px;
+  height: 50px;
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+}
+
+  @media screen and (max-width:1200px) {
+    .swiper{
+    width: 60%;
+    padding-top: 5%;
+  }
+    .swiper-slide {
+   
+    width: 250px;
+    height: 280px;
+    margin: 0;
+  }
+    .swiper-slide img{
+      width: 200px;
+      height: 280px;
+    }
+
+
+
+}
+@media screen and (max-width:850px) and (min-width:500px) {
+  .bg-service-visuel
+  {
+      width: 85vw;
+      height: 93vh;
+    
+
+     
+  } 
+  .swiper{
+    width: 85%;
+    padding-top: 20%;
+    
+  }
+    .swiper-slide {
+   
+    width: 250px;
+    height: 280px;
+    margin: 0;
+  }
+    .swiper-slide img{
+      width: 200px;
+      height: 280px;
+    }
+
+   
+}
+@media screen and (max-width:509px) {
+  .bg-service-visuel
+  {
+      width: 85vw;
+      height: 90vh;
+    
+      padding-top:5%;
+     
+     
+  }
+  .swiper{
+    width: 98%;
+    padding-top: 15%;
+  }
+  .swiper-wrapper
+  {
+    margin-top: 5%;
+  }
+    .swiper-slide {
+   
+    width: 200px;
+    height: 280px;
+    margin: 0;
+  }
+    .swiper-slide img{
+      width: 200px;
+      height: 280px;
+    }
+
+   
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiperLogo@10/swiperLogo-bundle.min.css" />
+  
+    <!-- Demo styles -->
+</head>
+<body>
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 70%;
+      }
+  
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .swiperLogo {
+        width: 100%;
+        height: 50%;
+        margin-top: 15%;
+      }
+  
+      .swiperLogo-slide {
+        width: 50%;
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiperLogo-slide img {
+        display: block;
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+      }
+
+      @media screen and (max-width:800px) {
+        .swiperLogo-slide {
+      font-size: 18px;
+      display: flex;
+      flex-direction: column-reverse;
+      
+    }
+    .swiperLogo{
+       height: 100%;
+       width: 100%;
+    }
+    .swiperLogo-slide
+    {
+        width: 100%;
+       height: 30%;
+    }
+    .swiperLogo-slide img {
+   
+      width: 100%;
+      height: 40%;
+      left: 0;
+    }
+    .swiperLogo-pagination
+    {
+        display: none;
+    }
+    .event-descri{
+        width: 70%;
+        padding-left: 4% ;
+        text-align: left;
+    }
+   }
+    </style>
+    <!-- Swiper -->
+  <div class="swiperLogo mySwiperLogo">
+    <div class="swiperLogo-wrapper">
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo1.jpg" alt="">
+      </div>
+      
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo2.jpg" alt="">
+      </div>
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo3.png" alt="">
+      </div>
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo4.jpg" alt="">
+      </div>
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo5.png" alt="">
+      </div>
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo6.png" alt="">
+      </div>
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo7.png" alt="">
+      </div>
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo8.jpg" alt="">
+      </div>
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo9.png" alt="">
+      </div>
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo10.jpg" alt="">
+      </div>
+      <div class="swiperLogo-slide">
+        <img src="./logo/logo11.png" alt="">
+      </div>
+    
+  </div>
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+      var swiperLogo = new Swiper(".mySwiperLogo", {
+    
+    slidesPerView: 5,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction:false,
+    },
+    loop: true,
+    freemode:true,
+    speed:3000
+  });
+   </script>
+</body>
+</html>

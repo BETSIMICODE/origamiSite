@@ -1,13 +1,12 @@
-//This file manages the click of the button that is used to display the menu on mobile as well as to close the latter
-// get class btn
-const btnExitNavMobile=document.querySelector(".btnExitNavMobile");
-const btnNavMobile=document.querySelector(".btnNavMobile");
-const nav=document.querySelector(".nav");
-btnNavMobile.addEventListener('click',()=>{
-    btnNavMobile.classList.add("notPrint");
-    nav.classList.add("activeNav");
+let btnExitNavMobile33=document.querySelector(".btnExitNavMobile");
+let btnNavMobile33=document.querySelector(".btnNavMobile");
+let nav33=document.querySelector(".nav");
+btnNavMobile33.addEventListener('click',()=>{
+    // alert("cliquer");
+    btnNavMobile33.classList.add("notPrint");
+    nav33.classList.add("activeNav");
 })
-btnExitNavMobile.addEventListener('click',()=>{
-    nav.classList.remove("activeNav");
-    btnNavMobile.classList.remove("notPrint");
+btnExitNavMobile33.addEventListener('click',()=>{
+    nav33.classList.remove("activeNav");
+    btnNavMobile33.classList.remove("notPrint");
 })
