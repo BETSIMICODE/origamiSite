@@ -40,13 +40,17 @@ body{
 
 .bgCmFrame{
     width: 100vw;
-    height: 100vh;
+    height: 102vh;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: rgb(198, 212, 233); */
     background-color: rgba(0, 0, 0, 0.998);
-    /* margin-top:5%; */
+    margin-top: -1%;
+    background-image: url("../images/user.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .frameContent
 {
@@ -54,13 +58,18 @@ body{
     width: 90%;
     height: auto;
     max-height: 85vh;
-    background-color:#191c1b;
-    color: white;
+    background-color:#191c1bab;
+    /*background-color:rgba(151, 8, 63, 0.624);
+    */color: white;
     display: flex;
     flex-direction: row;
-    
-    box-shadow: rgba(0, 0, 0, 0.601) 0px 33px 36px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    
+    box-shadow: rgba(42, 41, 41, 0.289) 0px 33px 36px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    backdrop-filter: blur(5px) sepia(20%) saturate(120%); 
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 /*****Grand image**** */
 .logoCmOrigamiContent{
@@ -241,10 +250,12 @@ body{
 }
 .grid2 .navContent{
     justify-content: flex-end;
-    /* background-color: rgb(0, 191, 255); */
+    /* background-color: rgb(144, 0, 255); */
     width: 90%;
-    height: 10%;
-    margin-top: -5%;
+    height: 4%;
+    height: auto;
+    margin-top: 0%;
+
 }
 
 .grid2 .nav{
@@ -253,7 +264,7 @@ body{
     width: 50%;
     height: auto;
     /* background: rgb(92, 114, 0); */
-    align-self: center;
+    align-self: flex-start;
 }
 
 /* Styles pour les écrans de petite taille (mobiles) */
