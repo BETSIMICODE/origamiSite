@@ -17,22 +17,9 @@
                 // Navigation
                 require_once "navContent.php";
                 require_once "navBarForAll.php";
-                navBarForAll($page,true,true);
+                navBarForAll($page);
         ?>
-<div class="bgCmUp">
-    <div class="textContentCm">
-        <h1 class="titleCm">
-            Notre community management
-        </h1>
-        <p class="textCm">
-            Optimisation de l'engagement et de la fidélisation des utilisateurs par le biais de l'analyse sémantique, de l'ARN, de la segmentation avancée et de l'analyse des KPI.
-        </p>
-        <button class="btnStart1">Plus d'info</button>
-    </div>
-    <div class="gifCmContent">
-        <img class="gifCm" src="../images/cm.png" alt="">
-    </div>
-</div>
+
 
 <div class="bgCmFrame">
     
@@ -40,6 +27,9 @@
             <!-- icon à coté de l'image  -->
            
             <!-- grand image  -->
+            <div class="logoCmOrigamiContent">
+                <img src="../images/a1.gif" alt="" class="logoCmOrigami">
+            </div>
             <div class="grid1">
                 <div class="image-container">
                     <img src="../images/almadie.jpg" class="G-img"  width="260" height="426px">
@@ -56,6 +46,46 @@
             </div>
             <!-- description de la personne -->
             <div class="grid2">
+            <?php 
+                callNavContent(true,$page); 
+                switch ($page) {
+                    case "home":
+                        $btnClic="btnHome";
+                        break;
+                    case "service":
+                        $btnClic="btnService, .btnServiceForDown";
+                        break;
+                    case "evenement":
+                        $btnClic="btnEvent";
+                        break;
+                    case "contact":
+                        $btnClic="btnContact";
+                        break;
+                    
+                    default:
+                        $btnClic="btnHome";
+                        break;
+                }
+            
+                echo "
+                <style>
+                .".$btnClic."{
+                    color: #31e8b4;
+                }
+                .btnService:hover{
+                    color: #31e8b4;
+                    text-shadow: 2px 2px 20px color: #31e8b4;
+                }
+                .nav a::after{
+                    background-color: #31e8b4;
+                }
+                .nav a:hover{
+                    color: #31e8b4;
+                    text-shadow: 2px 2px 20px #31e8b4;
+                }
+                </style>
+                ";
+                ?> 
                 <div class="boite1">
                     <h1>Représenter votre image</h1>
                     <span>A travers nos contenus</span>
@@ -68,16 +98,24 @@
                     <div class="service-container">
                         <div class="serviceClass">
                             <div class="service">
-                                <img src="../images/auth.png" alt="" class="imgCmApr">
-                                <h2 class="scTitle">Authenticité et personnalité</h2>
+                                <img src="../images/reunir.png" alt="" class="imgCmApr">
+                                <h2 class="scTitle">Réunir les clients</h2>
                                 <p>Favoriser l'engagement communautaire par la création de contenu original et diversifié, renforçant ainsi les liens avec la communauté.</p>
                 
                             </div>
                         </div>
                         <div class="serviceClass">
                             <div class="service">
-                            <img src="../images/partage.png" alt="" class="imgCmApr">
-                                <h2 class="scTitle">Ecoute et réactivité</h2>
+                            <img src="../images/fidel.png" alt="" class="imgCmApr">
+                                <h2 class="scTitle">Fidéliser les clients</h2>
+                                <p>Développer une connaissance approfondie des besoins, préoccupations et aspirations de la communauté pour une meilleure compréhension.</p>
+                
+                            </div>
+                        </div>
+                        <div class="serviceClass">
+                            <div class="service">
+                            <img src="../images/convertir.png" alt="" class="imgCmApr">
+                                <h2 class="scTitle">Convertir en clients</h2>
                                 <p>Développer une connaissance approfondie des besoins, préoccupations et aspirations de la communauté pour une meilleure compréhension.</p>
                 
                             </div>
@@ -174,13 +212,14 @@
         require_once "backToTop.php";
         // footer
         require_once "footer.php";
-    ?>
-    <script src="../js/serviceBtn1.js"></script>
+    ?>    
+    <script src="../js/navBarForAll.js"></script>
+    <script src="../js/serviceBtn.js"></script>
     <script src="../js/btnNavigationForDown.js"></script>
     <script src="../js/btnNavigation.js"></script>   
     <script src="../js/backToTop.js"></script>
-    <script src="../js/dropDownMenuDown.js"></script>
     <script src="../js/dropDownMenuUp.js"></script>
+    <script src="../js/dropDownMenuDown.js"></script>
     <style>
        
     

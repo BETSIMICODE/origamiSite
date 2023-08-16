@@ -14,7 +14,7 @@
         .navBarForAll{
             display: ".$disp.";
             width:100vw;
-            height:100px;
+            height:60px;
             justify-content: center;
             align-items: center;
             background-color: #000913;

@@ -41,10 +41,10 @@
 <div class="emptyGraph eg2">
 </div>
 <div class="textContentGrf">
-            <div class="rightGrf">
-                <!-- <img src="../images/cm.gif" alt="reseaux sociaux gif" class="imgGrf"> -->
+            <!-- <div class="rightGrf">
+                <img src="../images/cm.gif" alt="reseaux sociaux gif" class="imgGrf">
 
-            </div>
+            </div> -->
             <div class="leftGrf">
                 <h2 class="classTitleSectionGrf">
                   Conception affiche
@@ -122,43 +122,69 @@
             
             
     </div>
-    <div class="logoContentGrf">
-      <div class="logoBigContent">
-        <div class="logoContent">
-          <img src="../images/logo/logo1.jpg" class="imgLogoGrf" alt="">
-        </div>
-        <div class="logoContent">
-          <img src="../images/logo/logo2.jpg" class="imgLogoGrf" alt="">
-        </div>
-        <div class="logoContent">
-          <img src="../images/logo/logo3.png" class="imgLogoGrf" alt="">
-        </div>
-        <div class="logoContent">
-          <img src="../images/logo/logo4.jpg" class="imgLogoGrf" alt="">
-        </div>
-        <div class="logoContent">
-          <img src="../images/logo/logo5.png" class="imgLogoGrf" alt="">
-        </div>
-        <div class="logoContent">
-          <img src="../images/logo/logo6.png" class="imgLogoGrf" alt="">
-        </div>
-        <div class="logoContent">
-          <img src="../images/logo/logo7.png" class="imgLogoGrf" alt="">
-        </div>
-        <div class="logoContent">
-          <img src="../images/logo/logo8.jpg" class="imgLogoGrf" alt="">
-        </div>
-        <div class="logoContent">
-          <img src="../images/logo/logo9.png" class="imgLogoGrf" alt="">
-        </div>
-        <div class="logoContent">
-          <img src="../images/logo/logo10.jpg" class="imgLogoGrf" alt="">
-        </div>
-        <div class="logoContent">
-          <img src="../images/logo/logo11.png" class="imgLogoGrf" alt="">
-        </div>
-      </div>
-    </div>    
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container">
+  <section class="customer-logos slider">
+    <div class="slide">
+      <img src="../images/logo/logo1.jpg" class="imgLogoGrf" alt=""></div>
+    <div class="slide">
+    <img src="../images/logo/logo2.jpg" class="imgLogoGrf" alt="">
+    </div>
+    <div class="slide">
+    <img src="../images/logo/logo3.png" class="imgLogoGrf" alt="">    </div>
+    <div class="slide">
+    <img src="../images/logo/logo4.jpg" class="imgLogoGrf" alt="">    </div>
+    <div class="slide">
+    <img src="../images/logo/logo5.png" class="imgLogoGrf" alt="">    </div>
+    <div class="slide">
+    <img src="../images/logo/logo6.png" class="imgLogoGrf" alt="">    </div>
+    <div class="slide">
+      <img src="../images/logo/logo7.png" class="imgLogoGrf" alt="">    
+    </div>
+    <div class="slide">
+      <img src="../images/logo/logo8.jpg" class="imgLogoGrf" alt="">    
+    </div>
+    <div class="slide">
+      <img src="../images/logo/logo9.png" class="imgLogoGrf" alt="">    
+    </div>
+    <div class="slide">
+      <img src="../images/logo/logo10.jpg" class="imgLogoGrf" alt="">    
+    </div>
+    <div class="slide">
+      <img src="../images/logo/logo11.png" class="imgLogoGrf" alt="">    
+    </div>
+
+  </section>
+  <script>
+$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    infinite: true,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 3
+      }
+    }]
+  });
+});
+  </script>
+</div>  
     <?php 
             // button back to top
             require_once "backToTop.php";
@@ -166,7 +192,8 @@
             require_once "footer.php";
     ?>
     
-<!-- Swiper JS -->
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->

@@ -161,11 +161,12 @@
                 </div>
                 
                 <h3>
-                    Le pouvoir du design
-                </h3>
-                <h2>
+                    Pouvoir du design <br> 
+                    <span>
                     Art de la communication
-                </h2>
+                </span>
+                </h3>
+                
                 <div class="zoneText">
                     <h4 class="revelationTitle">
                         Non, ce n'est pas une vente de chaussure!
@@ -240,7 +241,6 @@
         <div class="titleTrustContent">
             <h1 class="titleTrust">Cliquez sur "voir plus" pour savoir davantage nos services</h1>
         </div>
-       
     </div>
     <div class="bg2">
         <div class="wrapper">

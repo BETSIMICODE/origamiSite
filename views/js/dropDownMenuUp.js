@@ -11,7 +11,7 @@
 
       // Placez le menu déroulant en bas de .btnService
       menuDerService.style.top = btnServiceRect.bottom + 'px';
-  
+    alert("coucou!");
   
   });
   menuDerService.addEventListener('mouseenter', () => {

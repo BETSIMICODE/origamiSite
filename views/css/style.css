@@ -12,19 +12,19 @@
     width: 7px;
     height: 7px;
     top: 15%;
-    right: 10%;
+    right: 7%;
 }
 .bul2{
     width: 12px;
     height: 12px;
     top: 20%;
-    right: 10%;
+    right: 7%;
 }
 .bul3{
     width: 5px;
     height: 5px;
     top: 19%;
-    right: 9%;
+    right: 6%;
 }
 body{
     display: flex;
@@ -47,12 +47,12 @@ body{
 .bg1{
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     margin-top: -1%;
     justify-content: center;
     align-items: center;
     /* background-image: url("../images/FIANARANTSOA2.jpg"); */
-    background-image: url("../images/bg1.jpeg");
+    background-image: url("../images/FIANARANTSOA1.jpg");
 
     /* background-image: linear-gradient(to right, transparent 50%, rgb(0, 125, 228) 50%, rgb(0, 183, 255),url("../images/FIANARANTSOA1.jpg")); */
     
@@ -359,6 +359,7 @@ body{
     align-items: center;
     width: 100vw;
     height: 50vw;
+    max-height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -401,41 +402,42 @@ body{
     -o-transform: translateY(-10px);
 }
 .leftShoes{
-    width: 45%;
+    width: 40%;
     flex-wrap: nowrap;
     /* background-color: red; */
 }
 .shoesNike{
-    width: 80%;
+    width: 67%;
     height: auto;
     position: absolute;
-    top: -40%;
-    left: -20%;
+    top: -30%;
+    left: -14%;
     z-index: 24;
     
 }
 .rightShoes{
-    width: 45%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     /* background-color: green; */
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .rightShoes h3{
     color: #f95e28;
+    /* color: #286ef9; */
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     /* background-color: #007BFF; */
     margin-bottom: 0px;
 }
-.rightShoes h2{
+.rightShoes h3 span{
     color: rgb(248, 242, 233);
     font-family: sans-serif;
     font-size: 35px;
     font-weight: bold;
     /* background-color: #007BFF; */
-    padding-left: 10%;
+    padding-left: 4%;
     margin-top: 0px;
 }
 .rightShoes .revelationTitle{
@@ -476,8 +478,8 @@ body{
     color: white;
     font-family: sans-serif;
     font-size: 15px;
-    width: 30%;
-    height: 35%;
+    width: 25%;
+    height: 45%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -568,6 +570,7 @@ body .shoesContainer .bubbles1 .bubble2{
     background-repeat: no-repeat;
     width: 100vw;
     height: 40vw;
+    max-height: 63vh;
     align-items: center;
     box-shadow: rgb(0, 0, 0) 0px 0px 20px 3px;
     -webkit-transition: ease-in-out 0.5s;
@@ -581,7 +584,8 @@ body .shoesContainer .bubbles1 .bubble2{
 }
   .flot:hover{
     box-shadow: rgb(16, 223, 16) 0px 0px 20px 3px;
-    
+    /* box-shadow: rgb(26, 16, 223) 0px 0px 20px 3px; */
+
 
   }
 
@@ -613,6 +617,7 @@ body .shoesContainer .bubbles1 .bubble2{
     border: 5px solid  rgb(16, 223, 16);
     width: 22vw;
     height: 30vw;
+    max-height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -645,20 +650,20 @@ body .shoesContainer .bubbles1 .bubble2{
     align-items: center;
   }
 .contentBoiteText.cbt1{
-    margin-bottom: -10%;
+    margin-bottom: -8%;
     /* top:278vh; */
 }
 .contentBoiteText.cbt2{
     /* top:385%; */
     align-self: flex-start;
     text-align: center;
-    margin-top: -6%;
+    margin-top: -3%;
     /* background-color: #007BFF; */
     display: flex;
 
 }
 .numberBoite{
-    font-size: 20vw;
+    font-size: 10vw;
     /* position: absolute; */
   
     align-self: center;
@@ -716,6 +721,24 @@ body .shoesContainer .bubbles1 .bubble2{
 
   /* ***************************responsive******************** */
   @media screen and (max-width:825px){
+    .bul1{
+        width: 5px;
+        height: 5px;
+        top: 14%;
+        right: 5%;
+    }
+    .bul2{
+        width: 10px;
+        height: 10px;
+        top: 19%;
+        right: 5%;
+    }
+    .bul3{
+        width: 3px;
+        height: 3px;
+        top: 18%;
+        right: 4%;
+    }
    
     .flot{
         flex-direction: column;
@@ -1311,13 +1334,13 @@ body .shoesContainer .bubbles1 .bubble2{
     font-weight: bold;
     margin-bottom: 0px;
 }
-.rightShoes h2{
+.rightShoes h3 span{
     font-size: 20px;
     padding-left: 10%;
     margin-top: 0px;
 }
 .rightShoes .revelationTitle{
-    font-size: 15px;
+    font-size: 13px;
     /* background-color: #007BFF; */
     margin-bottom: 0px;
 }
@@ -1353,8 +1376,77 @@ body .shoesContainer .bubbles1 .bubble2{
 .bg7{
     margin-top: 20vw;
 }
+@media screen and (max-width:750px) {
+    .bul1{
+        width: 5px;
+        height: 5px;
+        top: 12%;
+        right: 3%;
+    }
+    .bul2{
+        width: 10px;
+        height: 10px;
+        top: 17%;
+        right: 3%;
+    }
+    .bul3{
+        width: 3px;
+        height: 3px;
+        top: 16%;
+        right: 2%;
+    }}
+    @media screen and (max-width:700px) {
+        
+        .rightShoes h3{
+  
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        .rightShoes h3 span{
+            font-size: 17px;
+            padding-left: 10%;
+            margin-top: 0px;
+        }
+        .rightShoes .revelationTitle{
+            font-size: 13px;
+            /* background-color: #007BFF; */
+            margin-bottom: 0px;
+        }
+        .rightShoes .textShoes{
+            font-size: 8px;
+        
+        }
+        .btnShoesContent .shoesPrice{
+            font-size: 10px;
+        }
+        .btnShoesContent .btnShoes{
+            font-size: 8px;
+        }
+    
+    
+    }
+    
 
 @media screen and (max-width:640px) {
+    .bul1{
+        width: 5px;
+        height: 5px;
+        top: 12%;
+        right: 3%;
+    }
+    .bul2{
+        width: 10px;
+        height: 10px;
+        top: 17%;
+        right: 3%;
+    }
+    .bul3{
+        width: 3px;
+        height: 3px;
+        top: 16%;
+        right: 2%;
+    }
 .paraCenter{
     font-size: 13px;
 }
@@ -1375,7 +1467,7 @@ body .shoesContainer .bubbles1 .bubble2{
     font-weight: bold;
     margin-bottom: 0px;
 }
-.rightShoes h2{
+.rightShoes h3 span{
     font-size: 17px;
     padding-left: 10%;
     margin-top: 0px;
@@ -1397,8 +1489,92 @@ body .shoesContainer .bubbles1 .bubble2{
 }
 
 }
+@media screen and (max-width:610px) {
+    .bul1{
+        width: 4px;
+        height: 4px;
+        top: 12%;
+        right: 5%;
+    }
+    .bul2{
+        width: 9px;
+        height: 9px;
+        top: 17%;
+        right: 5%;
+    }
+    .bul3{
+        width: 2px;
+        height: 2px;
+        top: 16%;
+        right: 4%;
+    }
 
+
+
+.paraCenter{
+    font-size: 12px;
+}
+.titleTrust{
+    font-size: 20px;
+}
+.btnStart{
+    font-size: 13px;
+}
+    /* shoes style */
+.titleService{
+    
+    font-size: 15px;
+}
+.rightShoes h3{
+
+font-size: 13px;
+font-weight: bold;
+margin-bottom: 0px;
+}
+.rightShoes h3 span{
+font-size: 15px;
+padding-left: 10%;
+margin-top: 0px;
+}
+.rightShoes .revelationTitle{
+font-size: 11px;
+/* background-color: #007BFF; */
+margin-bottom: 0px;
+}
+.rightShoes .textShoes{
+font-size: 7px;
+
+}
+.btnShoesContent .shoesPrice{
+font-size: 8px;
+}
+.btnShoesContent .btnShoes{
+font-size: 6px;
+}
+
+}
 @media screen and (max-width:550px) {
+    .bul1{
+        width: 4px;
+        height: 4px;
+        top: 12%;
+        right: 5%;
+    }
+    .bul2{
+        width: 9px;
+        height: 9px;
+        top: 17%;
+        right: 5%;
+    }
+    .bul3{
+        width: 2px;
+        height: 2px;
+        top: 16%;
+        right: 4%;
+    }
+
+
+
 .paraCenter{
     font-size: 12px;
 }
@@ -1419,7 +1595,7 @@ font-size: 10px;
 font-weight: bold;
 margin-bottom: 0px;
 }
-.rightShoes h2{
+.rightShoes h3 span{
 font-size: 12px;
 padding-left: 10%;
 margin-top: 0px;
@@ -1471,7 +1647,7 @@ font-size: 8px;
 font-weight: bold;
 margin-bottom: 0px;
 }
-.rightShoes h2{
+.rightShoes h3 span{
 font-size: 10px;
 padding-left: 10%;
 margin-top: 0px;
@@ -1483,6 +1659,61 @@ margin-bottom: 0px;
 }
 .rightShoes .textShoes{
 font-size: 4px;
+
+}
+.btnShoesContent .shoesPrice{
+font-size: 6px;
+}
+.btnShoesContent .btnShoes{
+font-size: 4px;
+}
+.shoesGlass{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+}
+@media screen and (max-width:370px) {
+    .bul1{
+        width: 3px;
+        height: 3px;
+        top: 12%;
+        right: 5%;
+    }
+    .bul2{
+        width: 6px;
+        height: 6px;
+        top: 17%;
+        right: 5%;
+    }
+    .bul3{
+        width: 1px;
+        height: 1px;
+        top: 16%;
+        right: 4%;
+    }
+
+.rightShoes h3{
+
+font-size: 5px;
+font-weight: bold;
+margin-bottom: 0px;
+}
+.rightShoes h3 span{
+font-size: 7px;
+padding-left: 10%;
+margin-top: 0px;
+}
+.rightShoes .revelationTitle{
+font-size: 4px;
+/* background-color: #007BFF; */
+margin-bottom: 0px;
+}
+.rightShoes .textShoes{
+font-size: 3px;
 
 }
 .btnShoesContent .shoesPrice{

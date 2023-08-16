@@ -9,6 +9,7 @@ function callNavContent($forHomeUp,$page){
         $classBtnExitNavMobile="btnExitNavMobile";
         $classBtnService="btnService";
         $classMenuDerService="menuDerService";
+        $classMenuDerService1="";
         $classNav="nav";
 
     }else{    
@@ -17,6 +18,7 @@ function callNavContent($forHomeUp,$page){
         $classBtnService="btnServiceForDown";
         $classMenuDerService="menuDerServiceForDown";
         $classNav="navForDown";
+        $classMenuDerService1="menuDerServiceForDown1";
     }
     switch ($page) {
         case "home":
@@ -71,15 +73,18 @@ function callNavContent($forHomeUp,$page){
                     </a>
                 </div>
                 <div class="menuDerService '.$classMenuDerService.'">
-                    <a class="btnNav mds" href="'.$linkPage.'cm.php">
-                        <span class="drawnMds">-</span> Community Manager
-                    </a>
-                    <a class="btnNav mds" href= "'.$linkPage.'graph.php"">
-                        <span class="drawnMds">-</span> Désign Graphique
-                    </a>
-                    <a class="btnNav mds" href= "'.$linkPage.'dev.php">
-                        <span class="drawnMds">-</span> Développement Informatique
-                    </a>
+                    <div class="menuDerService1 '.$classMenuDerService1.'">
+                        <a class="btnNav mds" href="'.$linkPage.'cm.php">
+                            <span class="drawnMds">-</span> Community Manager
+                        </a>
+                        <a class="btnNav mds" href= "'.$linkPage.'graph.php"">
+                            <span class="drawnMds">-</span> Désign Graphique
+                        </a>
+                        <a class="btnNav mds" href= "'.$linkPage.'dev.php">
+                            <span class="drawnMds">-</span> Développement Informatique
+                        </a>
+                    </div>
+                    
 
                 </div>
                 <img class="'.$classBtnNavMobile.'" src="'.$srcImg.'menu.png" alt="Bouton menu pour mobile">
@@ -98,7 +103,7 @@ function callNavContent($forHomeUp,$page){
                 justify-content: left;
             }
             .logo{
-                width:25%;
+                width: 13%;
                 height: auto;
             }
             .nav{
@@ -120,7 +125,7 @@ function callNavContent($forHomeUp,$page){
             .btnNav{
                 color: rgba(255, 255, 255, 0.898);
                 text-decoration: none;
-                font-size: 13px;
+                font-size: 11px;
                 font-family: sans-serif;
                 margin-left: 5%;
                 /* margin-right: auto; */
@@ -131,13 +136,21 @@ function callNavContent($forHomeUp,$page){
                 flex-direction: column;
                 position: absolute;
                 top: 22%;
-                left: 35%;
-                width: 20%;
-                height: 15%;
+                left: 25%;
+                width: 15%;
+                height: 27%;
+                z-index: 30;
+            }
+            .menuDerService1{
+                display:flex;
+                flex-direction: column;
+                position: absolute;
+                margin-top: 5%;
+                width: 100%;
+                height: 70%;
+                border-radius: 10px;
                 background-color: #1384fe;
-                /* background-image: linear-gradient(rgb(8, 156, 255), #0458b2, #09409e); */
-                background-image: linear-gradient(rgba(8, 156, 255, 0.189), #0458b2, #09409e);
-            
+                background-color: #00000064;
                 justify-content: space-evenly;
                 transition: ease-in-out 0.5s;
                 -webkit-transition: ease-in-out 0.5s;
@@ -145,19 +158,17 @@ function callNavContent($forHomeUp,$page){
                 -ms-transition: ease-in-out 0.5s;
                 -o-transition: ease-in-out 0.5s;
                 z-index: 30;
+                -webkit-backdrop-filter: blur(10px); /* Safari */
+                backdrop-filter: blur(10px);
             }
             .menuDerServiceForDown{
                 display: none;
                 flex-direction: column;
                 position: absolute;
                 top: 59%;
-                left: 30%;
+                left: 18%;
                 width: 20%;
-                height: 100%;
-                background-color: #1384fe;
-                /* background-image: linear-gradient(rgb(8, 156, 255), #0458b2, #09409e); */
-                background-image: linear-gradient(rgba(8, 156, 255, 0.189), #0458b2, #09409e);
-            
+                height: 300%;
                 justify-content: space-evenly;
                 transition: ease-in-out 0.5s;
                 -webkit-transition: ease-in-out 0.5s;
@@ -166,6 +177,11 @@ function callNavContent($forHomeUp,$page){
                 -o-transition: ease-in-out 0.5s;
                 z-index: 30;
 
+            }
+            .menuDerServiceForDown1{
+                width: 70%;
+                height: 85%;
+                margin-top: 0%;
             }
             .drawnMds {
                 display:none;
@@ -234,12 +250,12 @@ function callNavContent($forHomeUp,$page){
             
             .btnNavMobile{
                 display: none;
-                width: 9%;
+                width: 6%;
                 height: auto;
             }
             .btnNavMobileForDown{
                 display: none;
-                width: 9%;
+                width: 6%;
                 height: auto;
             }
             .btnExitNavMobile{
@@ -264,6 +280,10 @@ function callNavContent($forHomeUp,$page){
             }
             
             @media screen and (max-width:1000px) {
+                
+                .navBarForAll .logo{
+                    width:30%;
+                }
                 .navForDown a::after{
                     display: none;
         
