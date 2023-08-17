@@ -38,8 +38,8 @@
     }
     .bg8
     {
-        width: 90vw;
-        height: 88vh;
+        width: 90%;
+        height: 80vh;
         background-color:#ffffffc2;
         color: white;
         display: flex;
@@ -58,29 +58,6 @@
         width: 100%;
     }
     
-    .table1 {
-        flex-basis: 40%;
-        background-color: #ffffff; /* Couleur pour la colonne 1 */
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    
-    
-    .table2 {
-            flex-basis: 60%;
-            background-color: #ffffff;
-            display: flex; 
-            justify-content: center;
-            align-items: center; 
-    }
-        
-    .table2 img {
-            max-width: 100%;
-            height: 500px; 
-            width: 500px;
-
-    }
-    
     .table h1 {
         font-size: 60px;
         padding-top: -5px;
@@ -97,16 +74,28 @@
     }  
 
     .table3 {
-        flex-basis: 60%;
+        flex-basis: 47%;
         background-color: #ffffff; /* Couleur pour la colonne 1 */
         padding: 20px;
         box-sizing: border-box;
     }
     
     .table4 {
+        padding-left: 40px;
         flex-basis: 40%;
         background-color: #ffffff;
         align-items: center;
+    }
+
+    .basContent
+    {
+        flex-basis: 15%;
+        align-content: center;
+        padding-top: 37%;
+        background-color: rgba(11, 255, 27, 0);
+        height: 10%;
+        display:flex;
+        justify-content: center;
     }
 
     button {
@@ -226,42 +215,61 @@
         }
 
         @media screen and (max-width: 768px) {
-    
             .content {
-                flex-direction: column; /* Stack the content vertically on small screens */
-                align-items: center; /* Center the content horizontally on small screens */
+                flex-direction: column;
+                align-items: center;
             }
             
             .form {
                 width: 90%;
                 margin: 0 auto; 
-                padding: 20px 0; /* Add padding to the top and bottom */
+                padding: 20px 0;
+            }
+            
+            .bg8 {
+                margin-top: 10px;
+                padding: 20px;
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                align-items: center;
             }
 
-            .table2 img{
-                flex-basis: 20%;
+            .table3 {
+                flex-direction: column;
+                align-items: center;
             }
-            .bg8{
-                margin-top:200px;
-                background-color: #ffffff; /* Couleur pour la colonne 1 */
-                padding: 20px;
-            }
-    
+
             .table4 {
-                flex-basis: 20%;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
             }
+
             .imageContact {
-                display: flex; /* New wrapping element */
-                justify-content: center; /* Center horizontally */
-                align-items: center; /* Center vertically */
+                padding-top: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-            .imageContact img {
-                max-width: 100%; /* Ensure the image fits the container */
-                height: auto; /* Maintain the aspect ratio */
+
+            .basContent {
+                padding-top: 15px;
+                align-items: center;
+            }
+
+            .map {
+                margin: 1px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .bgCmUp {
+                flex-direction: column;
+                align-items: center;
             }
         }
+
     
         @media screen and (max-width: 480px) {
            
@@ -282,6 +290,7 @@
         width:100vw;
         height:80vh;
         background-color: #000913;
+        flex-direction: column;
         }
         .textContentCm{
         display:flex;
@@ -340,15 +349,80 @@
             /* background-color: green; */
         }
         .gifCm{
-            width:58%;
+            width:68%;
             height:60%;
             height:auto;
             /* background-color: blue; */
             
         }
+        .map{
+            left: 0px;
+        }
+        .contact{
+            text-align: center;
+            color:#129fdb;
+            font-size: 30px;
+        }
 
-        
-  
+        .contactC{
+            width: 100%;
+            background-color: rgba(11, 255, 27, 0);
+            height: 10%;
+            display: flex;
+            justify-content: flex-start;
+            
+
+        }
+        .contactI{
+            width: 30%;
+            height: auto;
+            margin-left: 3%;
+            cursor: pointer;
+        }
+        .contactI:hover{
+            background-color: rgba(0, 125, 228, 0.475);
+            border-radius: 50%;
+            box-shadow: 3px 3px 23px 3px rgb(0, 125, 228);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            transform: translateY(-2%);
+            -webkit-transform: translateY(-2%);
+            -moz-transform: translateY(-2%);
+            -ms-transform: translateY(-2%);
+            -o-transform: translateY(-2%);
+        }
+        .contactI.square:hover{
+            border-radius: 20%;
+            -webkit-border-radius: 20%;
+            -moz-border-radius: 20%;
+            -ms-border-radius: 20%;
+            -o-border-radius: 20%;
+        }
+
+        .animate-charcter
+        {
+        text-transform: uppercase;
+        background-image: linear-gradient(-225deg, #0B54CB,#00aacc, #00cc66,#BCF925, #ffffff);
+        background-size: auto auto;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+            font-size: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+        }
 
 </style>
 <body>
@@ -358,17 +432,20 @@
                         require_once "navBarForAll.php";
                         navBarForAll($page,true,true);
                 ?>
+    
     <div class="bgCmUp">
-        <div class="textContentCm">
-            <h1 class="titleCm">Contact Us</h1>
-                <p class="textCm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae magna nec tortor elementum aliquet. Curabitur dictum justo vel tellus aliquam, vel suscipit odio vehicula. Donec a metus vel neque ullamcorper commodo non ut libero.</p>
-            
-                <button type="button" class="btnStart1">Read More</button>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464.1776614757051!2d47.088640509774436!3d-21.451980166477185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21e7bff69bbf8373%3A0xf3631d1eec10c67e!2sBloc%20Scacco%20ISAHA!5e0!3m2!1sfr!2smg!4v1692258682142!5m2!1sfr!2smg" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="gifCmContent">
-                <img class="gifCm" src="../images/contact2.jpg"  alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                <h3 class="animate-charcter">RETROUVEZ-NOUS ICI</h3>
+                </div>
             </div>
+        </div>
     </div>
+    
     <div class="bg8">
         <div class="content">
             <div class="table table3">
@@ -383,24 +460,35 @@
                 
                 
             </div>
+            <div class="basContent">
+                <img class="contactI round" src="../images/fb2.png" width="40vh" height="40vh" alt="icone facebook">
+                <img class="contactI square" src="../images/insta2.png"  width="400px" height="400px" alt="icon instagram">
+                <img class="contactI square" src="../images/linkedin2.png" width="400px" height="400px" alt="icone gmail">
+                
+            </div>
             <div class="table table4">
                 <div class="imageContact">
                     <img src="../images/Contact1.png" width="400px" height="400px" alt="">
                 </div>          
             </div>
+            
         </div>
+        
     </div>
-    <?php 
-        // button back to top
-        require_once "backToTop.php";
-        // footer
-        require_once "footer.php";
-    ?>
+           
+    
     <script src="../js/serviceBtn1.js"></script>
     <script src="../js/btnNavigationForDown.js"></script>
     <script src="../js/btnNavigation.js"></script>   
     <script src="../js/backToTop.js"></script>
     <script src="../js/dropDownMenuDown.js"></script>
     <script src="../js/dropDownMenuUp.js"></script>
-</body>
+
+    <?php 
+        // button back to top
+        require_once "backToTop.php";
+        // footer
+        require_once "footer.php";
+    ?>
+
 </html>
