@@ -11,8 +11,7 @@
 
       // Placez le menu déroulant en bas de .btnService
       menuDerService.style.top = btnServiceRect.bottom + 'px';
-    alert("coucou!");
-  
+      menuDerService.style.left = btnServiceRect.left + 'px';
   });
   menuDerService.addEventListener('mouseenter', () => {
       menuDerService.style.display = 'flex'; // Affichez le menu déroulant au survol

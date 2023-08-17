@@ -250,12 +250,12 @@ body{
 }
 .grid2 .navContent{
     justify-content: flex-end;
-    /* background-color: rgb(144, 0, 255); */
+    background-color: rgb(216, 13, 77);
     width: 90%;
     height: 4%;
     height: auto;
     margin-top: 0%;
-
+    
 }
 
 .grid2 .nav{
@@ -266,6 +266,7 @@ body{
     /* background: rgb(92, 114, 0); */
     align-self: flex-start;
 }
+
 
 /* Styles pour les écrans de petite taille (mobiles) */
 @media (max-width: 767px) {

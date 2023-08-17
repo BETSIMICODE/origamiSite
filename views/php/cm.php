@@ -16,8 +16,6 @@
         <?php 
                 // Navigation
                 require_once "navContent.php";
-                require_once "navBarForAll.php";
-                navBarForAll($page);
         ?>
 
 
@@ -202,6 +200,11 @@
     <div class="devisContent">
 
     </div>
+    <?php 
+                // Navigation
+                require_once "navBarForAll.php";
+                navBarForAll($page);
+    ?>
 
 
 

@@ -1,11 +1,11 @@
 // Récupérer tous les boutons et les contenus du menu déroulant
-let btnService11 = document.querySelector('.btnServiceForDown');
-let btnMenuDerContents00 = document.querySelectorAll('.btnMenuDerContent');
+let btnService111 = document.querySelector('.btnServiceForDown');
+let btnMenuDerContents000 = document.querySelectorAll('.btnMenuDerContent');
 let images = document.querySelectorAll('.arrowDownImg');
 // Fonction pour basculer la classe .activeNav pour tous les éléments
 function toggleActiveNav() {
     // alert("cliquer");
-    btnMenuDerContents00.forEach((content) => {
+    btnMenuDerContents000.forEach((content) => {
         content.classList.toggle('activeNav');
     });
     // alert("rotation1");
@@ -16,4 +16,4 @@ function toggleActiveNav() {
 }
 
 // Ajouter un écouteur d'événement pour le clic sur chaque bouton
-btnService11.addEventListener('click', toggleActiveNav);
+btnService111.addEventListener('click', toggleActiveNav);
