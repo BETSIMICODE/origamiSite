@@ -46,33 +46,7 @@ body{
         font-family: sans-serif;
         
     }
-    .swiper {
-        width: 99%;
-        height: auto;
-        /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
-
-}
-  
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #0009130c;
-        display: flex;
-        display: flex;
-        flex-direction: row;
-        height: 10px;
-        justify-content: center;
-        align-items: center;
-        
-      }
-  
-      .normal
-      {
-          height: auto;
-          width: 50vw;
-          align-self: center;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-      }
+    
       .responsive
       {
           height: auto;
@@ -126,6 +100,19 @@ body{
         font-weight: bold;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+    
     @media screen and (max-width:800px) {
         .serviceInfoContent{
             flex-direction: column;
@@ -146,7 +133,22 @@ body{
             text-align: justify;
             font-size: 17px;
         }
+        .titleDev{
+            font-size: 25px;
+            
+            
+            
+        }
+
         
+    }
+    @media screen and (max-width:800px) {
+        
+        .titleDev{
+            font-size: 20px;
+            
+            
+        }
 
         
     }

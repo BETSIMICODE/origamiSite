@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <title>Développement informatique</title>
     </head>
     <body>
@@ -132,7 +133,7 @@
 <style>
    
     .swiper {
-      width: 70vw;
+      width: 100vw;
       height: 100%;
     
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -160,14 +161,13 @@
     /* ******slide telephone****** */
     .swiper2 {
       width: 15%;
-      height: 70%;
-      border: 5px solid rgb(38, 36, 36);
+      height: auto;
+      border: 5px solid rgba(0, 0, 0, 0.921);
       border-radius:40px;
       background-color: rgb(0, 0, 0);
-      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-      position: absolute;
+      box-shadow: rgba(255, 255, 255, 0.927) 0px 0px 38px, rgba(203, 203, 203, 0.858) 0px 0px 12px;      position: absolute;
       left: 80%;
-      bottom: 15%;
+      top: 150px;
     }
     .wrapper2{
      margin-top: 10%;
@@ -199,82 +199,27 @@
       z-index: 30;
     }
     /* ****responsive**** */
-
-    @media screen and (max-width:1300px) {
+    @media screen and (max-width:1000px) {
       .swiper2 {
-      width: 15%;
-      height: 55%;
-     
-    }
-    .normal
-    {
-      
-        height: 90vh;
-        width: 100vw ;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        /* object-fit: cover; */
+      border-radius:20px;
     }
       
     }
-    @media screen and (max-width:1020px) {
-      .swiper {
-          height: 40vh;
-          width: 99vw ;
+    @media screen and (max-width:850px) {
+        
+        .swiper2{
+            left: 72%;
+            
+            
+        }
 
-    }
-    .swiper2 {
-      width: 15%;
-      height: 25vh;
-      left: 40%;
-      bottom: 15%;
-      border-radius: 20px;
-      border: 3px solid rgb(38, 36, 36) ;
-      left: 70%;
-      bottom: 60%;
-      }
-    .normal
-    {
-      
-      height: 40vh;
-          width: 99vw ;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        /* object-fit: cover; */
-    }
-      
-    }
-    @media screen and (max-width:760px) {
-      
-        .swiper {
-          height: 30vh;
-          width: 100vw ;
-
-    }
-      .swiper2 {
-      width: 15%;
-      height: 18vh;
-      left: 40%;
-      bottom: 15%;
-      border-radius: 20px;
-      border: 3px solid rgb(38, 36, 36) ;
-      left: 70%;
-      bottom: 70%;
-      }
-    
-    .normal
-    {
-      
-        height: 30vh;
-        width: 100vw ;
-       
+        
     }
     
-      
-    }
-
-
     
     
   </style>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
     
@@ -285,9 +230,10 @@
       autoplay: {
         delay: 2000,
         disableOnInteraction: false,
+   
       },
-      loop: true, 
       allowTouchMove: false,
+      loop: true, 
     });
   </script>
    <script>
@@ -295,18 +241,18 @@
       autoplay: {
         delay: 2000,
         disableOnInteraction: false,
+  
       },
-      loop: true,
       allowTouchMove: false, });
+      loop: true,
   </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="../js/swiperDev.js"></script>
-    <script src="../js/serviceBtn.js"></script>
+    <script src="../js/serviceBtn1.js"></script>
     <script src="../js/btnNavigationForDown.js"></script>
-    <script src="../js/btnNavigation.js"></script>   
     <script src="../js/backToTop.js"></script>
     <script src="../js/dropDownMenuDown.js"></script>
-    <script src="../js/dropDownMenuUp.js"></script>
     
   
   </body>

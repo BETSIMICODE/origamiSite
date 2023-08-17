@@ -72,7 +72,7 @@ function callNavContent($forHomeUp,$page){
                         Contact
                     </a>
                 </div>
-                <div class="'.$classMenuDerService.'">
+                <div class="menuDerService '.$classMenuDerService.'">
                     <div class="menuDerService1 '.$classMenuDerService1.'">
                         <a class="btnNav mds" href="'.$linkPage.'cm.php">
                             <span class="drawnMds">-</span> Community Manager

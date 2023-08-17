@@ -28,7 +28,7 @@
             <p class="textGraph">
               OrigamiTech fait tout travail en visuel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, id.
             </p>
-            <button class="btnStart2">Plus d'info</button>
+            <div class="btn"><a href="#">Read More</a></div>
           </div>
           <div class="rightGraph">
             <img src="../images/design2.gif" alt="" class="designImageGraph">
@@ -85,9 +85,8 @@
               <div class="swiper-slide">
                 <img class="imgSlideGraph" src="../images/Camera Roll/8.jpg" />
               </div>
-             
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
         <h1 class="titleDesignDown">
           Design Graphique
@@ -200,12 +199,10 @@ $(document).ready(function(){
 
       <script src="../js/swiperGraph.js"></script>
 
-        <script src="../js/serviceBtn.js"></script>
+        <script src="../js/serviceBtn1.js"></script>
         <script src="../js/btnNavigationForDown.js"></script>
-        <script src="../js/btnNavigation.js"></script>   
         <script src="../js/backToTop.js"></script>
         <script src="../js/dropDownMenuDown.js"></script>
-        <script src="../js/dropDownMenuUp.js"></script>
     <script>
       
     </script>
