@@ -68,7 +68,7 @@ function callNavContent($forHomeUp,$page){
                     <a class="btnNav btnEvent"  href="">
                         Evènement
                     </a>
-                    <a class="btnNav btnContact"  href="">
+                    <a class="btnNav btnContact"  href="'.$linkPage.'contact.php">
                         Contact
                     </a>
                 </div>
