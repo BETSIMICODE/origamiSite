@@ -47,7 +47,7 @@ body{
     /* background-color: rgb(198, 212, 233); */
     background-color: rgba(0, 0, 0, 0.998);
     margin-top: -1%;
-    background-image: url("../images/user.jpg");
+    /* background-image: url("../images/user.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -80,11 +80,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border:solid 3px rgba(43, 192, 150, 0.083);
+    /* border:solid 3px rgba(43, 192, 150, 0.083); */
+}
+@-webkit-keyframes SlowFloat {
+    0% { transform: translateY(-4px); -webkit-transform: translateY(-4px); -moz-transform: translateY(-4px); -ms-transform: translateY(-4px); -o-transform: translateY(-4px); }
+    100% { transform: translateY(4px); -webkit-transform: translateY(4px); -moz-transform: translateY(4px); -ms-transform: translateY(4px); -o-transform: translateY(4px); }
 }
 .logoCmOrigami{
     width: 80%;
     height: 80%;
+    animation: SlowFloat 1s infinite  alternate;
+    -webkit-animation: SlowFloat 1s infinite  alternate;
 }
 .grid1 {
     position: relative; /* Ajout d'une position relative pour le conteneur principal */
@@ -250,7 +256,7 @@ body{
 }
 .grid2 .navContent{
     justify-content: flex-end;
-    background-color: rgb(216, 13, 77);
+    /* background-color: rgb(216, 13, 77); */
     width: 90%;
     height: 4%;
     height: auto;
