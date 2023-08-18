@@ -72,7 +72,7 @@ function callNavContent($forHomeUp,$page){
                         Contact
                     </a>
                 </div>
-                <div class="menuDerService '.$classMenuDerService.'">
+                <div id="mdrService001" class="menuDerService '.$classMenuDerService.'">
                     <div class="menuDerService1 '.$classMenuDerService1.'">
                         <a class="btnNav mds" href="'.$linkPage.'cm.php">
                             <span class="drawnMds">-</span> Community Manager
@@ -145,12 +145,11 @@ function callNavContent($forHomeUp,$page){
             .menuDerService1{
                 display:flex;
                 flex-direction: column;
-                position: absolute;
+                position: relative;
                 margin-top: 5%;
                 width: 100%;
                 height: 70%;
                 border-radius: 10px;
-                background-color: #1384fe;
                 background-color: #00000064;
                 justify-content: space-evenly;
                 transition: ease-in-out 0.5s;

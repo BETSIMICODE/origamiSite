@@ -26,7 +26,7 @@
            
             <!-- grand image  -->
             <div class="logoCmOrigamiContent">
-                <img src="../images/a1.gif" alt="" class="logoCmOrigami">
+                <img src="../images/a1.png" alt="" class="logoCmOrigami">
             </div>
             <div class="grid1">
                 <div class="image-container">
@@ -209,7 +209,7 @@
 
 
 
-
+    
     <?php 
         // button back to top
         require_once "backToTop.php";
@@ -221,12 +221,44 @@
     <script src="../js/btnNavigationForDown.js"></script>
     <script src="../js/btnNavigation.js"></script>   
     <script src="../js/backToTop.js"></script>
-    <script src="../js/dropDownMenuUp.js"></script>
     <script src="../js/dropDownMenuDown.js"></script>
-    <style>
-       
+    <script>
+        // Sélectionnez l'élément .btnService et .menuDerService
+        let btnService = document.querySelector('.btnService');
+        let menuDerService = document.querySelector('.menuDerService');
+
+        // Ajoutez un écouteur d'événement au survol de .btnService
+        btnService.addEventListener('mouseenter', () => {
+            menuDerService.style.display = 'flex'; // Affichez le menu déroulant au survol
+            // Obtenez les coordonnées de .btnService
+            let btnServiceRect = btnService.getBoundingClientRect();
+
+            // Calculez la position top et left du menu déroulant
+            let topPosition = (btnServiceRect.bottom - 0.08 * window.innerHeight) + 'px';
+            let leftPosition = (btnServiceRect.left - 0.05 * window.innerWidth) + 'px';
+
+            // Appliquez les positions calculées
+            menuDerService.style.top = topPosition;
+            menuDerService.style.left = leftPosition;
+        });
+        menuDerService.addEventListener('mouseenter', () => {
+            menuDerService.style.display = 'flex'; // Affichez le menu déroulant au survol
+        });
+
+        // Ajoutez un écouteur d'événement pour détecter lorsque le curseur entre dans des conteneurs différents de .btnService ou .menuDerService
+        document.addEventListener('mouseover', (event) => {
+            if (!btnService.contains(event.target) && !menuDerService.contains(event.target)) {
+                // Cachez le menu déroulant lorsque le curseur entre dans des conteneurs différents de .btnService ou .menuDerService
+                menuDerService.style.display = 'none';
+            }
+        });
+
+        // Ajoutez un écouteur d'événement lorsque le curseur quitte le menu déroulant
+        menuDerService.addEventListener('mouseleave', () => {
+            menuDerService.style.display = 'none';
+        });
+    </script>
     
-    </style>
     
     </body>
 </html>

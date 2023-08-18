@@ -150,7 +150,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 32px 32px #090b10;
+    box-shadow: 0 0 32px 1px #0078c218;
     font-family: sans-serif;
     transition: ease-in-out 0.7s;
     -webkit-transition: ease-in-out 0.7s;
@@ -159,7 +159,8 @@ body{
     -o-transition: ease-in-out 0.7s;
 }
   .btnDesignGraph:hover{
-    background-color: #2bd2ff;    
+    background-color: #2bd2ff;   
+    box-shadow: #2bd1ffcc 0px 0px 34px 9px; 
   }
 
   /* le swiper slide */
@@ -483,8 +484,13 @@ body{
   box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
     0 0 60px #2bd2ff;
 }
+a{
+  text-decoration: none!important;
+}
 
-
+ .menuDerService1 a:hover{
+  color: white!important;
+}
 
 @media screen and (max-width:850px){
   .bg-service-visuel
