@@ -198,7 +198,7 @@
     </div>
 
     <div class="devisContent">
-
+        
     </div>
     <?php 
                 // Navigation

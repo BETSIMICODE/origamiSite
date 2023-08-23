@@ -1,6 +1,6 @@
 <?php
 
-function callNavContent($forHomeUp,$page){
+function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arrowImg="arrowDown.png"){
     $srcImg="../images/";
     $linkPage="";
     $linkPageToHome="../../index.php";
@@ -30,8 +30,8 @@ function callNavContent($forHomeUp,$page){
         case "service":
             $btnClic="btnService, .btnServiceForDown";
             break;
-        case "evenement":
-            $btnClic="btnEvent";
+        case "entreprise":
+            $btnClic="btnEntreprise";
             break;
         case "contact":
             $btnClic="btnContact";
@@ -47,14 +47,17 @@ function callNavContent($forHomeUp,$page){
 <nav class="navContent">
                 <img class="logo" src="'.$srcImg.'logo.png" alt="Logo OrigamiTech">
                 <div class="'.$classNav.'">
-                    <img src="'.$srcImg.'x.png" alt="Bouton quitter liste de navigation" class="'.$classBtnExitNavMobile.'">
+                    <img src="'.$srcImg.$imgX.'" alt="Bouton quitter liste de navigation" class="'.$classBtnExitNavMobile.'">
                     <a class="btnNav btnHome" href="'.$linkPageToHome.'">
                         Accueil
                     </a>
                     <div class="btnNav '.$classBtnService.'">
-                        Services <img class="arrowDownImg" src="'.$srcImg.'arrowDown.png">
+                        Services <img class="arrowDownImg" src="'.$srcImg.$arrowImg.'">
                     </div>
                     <ul class="btnMenuDerContent">
+                        <li class="btnMenuDC">
+                            <a href= "'.$linkPage.'crm.php" class="btnNavDer">CRM</a>
+                        </li>
                         <li class="btnMenuDC">
                             <a href= "'.$linkPage.'cm.php" class="btnNavDer">Community Manager</a>
                         </li>
@@ -65,8 +68,8 @@ function callNavContent($forHomeUp,$page){
                             <a href= "'.$linkPage.'dev.php" class="btnNavDer">Développement informatique</a>
                         </li>
                     </ul>
-                    <a class="btnNav btnEvent"  href="">
-                        Evènement
+                    <a class="btnNav btnEntreprise"  href= "'.$linkPage.'entreprise.php">
+                        Entreprise
                     </a>
                     <a class="btnNav btnContact"  href="'.$linkPage.'contact.php">
                         Contact
@@ -74,6 +77,9 @@ function callNavContent($forHomeUp,$page){
                 </div>
                 <div id="mdrService001" class="menuDerService '.$classMenuDerService.'">
                     <div class="menuDerService1 '.$classMenuDerService1.'">
+                        <a class="btnNav mds" href="'.$linkPage.'crm.php">
+                            <span class="drawnMds">-</span> CRM
+                        </a>
                         <a class="btnNav mds" href="'.$linkPage.'cm.php">
                             <span class="drawnMds">-</span> Community Manager
                         </a>
@@ -87,7 +93,7 @@ function callNavContent($forHomeUp,$page){
                     
 
                 </div>
-                <img class="'.$classBtnNavMobile.'" src="'.$srcImg.'menu.png" alt="Bouton menu pour mobile">
+                <img class="'.$classBtnNavMobile.'" src="'.$srcImg.$imgMenu.'" alt="Bouton menu pour mobile">
             </nav>
             <style>
             /* Navigation */

@@ -3,6 +3,8 @@ function setLineWhite() {
   var titleService = document.querySelector('.titleService');
   var lineWhite = document.querySelector('.lineWhite');
 
+   // Set lineWhite display to block
+   lineWhite.style.display = 'block';
   // Get the width of the title and adjust the width of the white line accordingly
   var titleServiceWidth = titleService.offsetWidth;
   lineWhite.style.width = titleServiceWidth + 'px';
