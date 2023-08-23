@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>CRM</title>
   <link rel="stylesheet" href="../css/crm.css">
+  <link rel="stylesheet" href="../css/scrolAnimation.css">
 
 </head>
 <?php 
@@ -98,27 +99,27 @@
 <div class="crmContent">
   <div class="partCrm">
     <div class="partLeftCrm">
-      <h1 class="titlePLC">
+      <h1 class="titlePLC scrolAnim leftAnimation">
         Gestion de l'Information Client 
       </h1>
-      <p class="paraPLC">
+      <p class="paraPLC scrolAnim leftAnimation">
       Centralisation, analyse et intégration des données clients pour faciliter les interactions et optimiser les processus.
       </p>
     </div>
     <div class="partRightCrm">
-      <img src="../images/anal.gif" alt="" class="imgCrm">
+      <img src="../images/anal.gif" alt="" class="imgCrm scrolAnim rightAnimation">
     </div>
   </div>
 
   <div class="partCrm">
     <div class="partRightCrm">
-      <img src="../images/mark.gif" alt="" class="imgCrm">
+      <img src="../images/mark.gif" alt="" class="imgCrm scrolAnim leftAnimation">
     </div>
     <div class="partLeftCrm">
-      <h1 class="titlePLC">
+      <h1 class="titlePLC scrolAnim rightAnimation">
       Gestion des Ventes et du Marketing
       </h1>
-      <p class="paraPLC">
+      <p class="paraPLC scrolAnim rightAnimation">
       Automatisation du marketing, suivi des ventes, gestion des campagnes et service client pour une approche globale de développement commercial.      </p>
     </div> 
   </div>
@@ -126,35 +127,35 @@
   
   <div class="partCrm">
     <div class="partLeftCrm">
-      <h1 class="titlePLC">
+      <h1 class="titlePLC scrolAnim leftAnimation">
       Personnalisation et Amélioration de l'Expérience Client
       </h1>
-      <p class="paraPLC">
+      <p class="paraPLC scrolAnim leftAnimation">
       Offrir une expérience personnalisée à travers la personnalisation des interactions, la gestion des rendez-vous, les analyses et la gestion de projets.      </p>
     </div>
     <div class="partRightCrm">
-      <img src="../images/exp.gif" alt="" class="imgCrm">
+      <img src="../images/exp.gif" alt="" class="imgCrm scrolAnim rightAnimation">
     </div>
   </div>
 
   <div class="partCrm">
     <div class="partRightCrm">
-      <img src="../images/proj.gif" alt="" class="imgCrm">
+      <img src="../images/proj.gif" alt="" class="imgCrm scrolAnim leftAnimation">
     </div>
     <div class="partLeftCrm">
-      <h1 class="titlePLC">
+      <h1 class="titlePLC scrolAnim rightAnimation">
       Gestion des Projets
       </h1>
-      <p class="paraPLC">
+      <p class="paraPLC scrolAnim rightAnimation">
       Assurer une gestion efficace des projets impliquant les clients, en respectant les délais et en maximisant les ressources disponibles.      </p>
     </div> 
   </div>
 </div>
 <div class="devisContent">
-  <p class="textDevisCRM">
+  <p class="textDevisCRM scrolAnim leftAnimation">
   Confiez vos projets à des professionnels, avec un prix abordable
   </p>
-  <button class="glow-on-hover" type="button">FAIRE UN DEVIS</button>
+  <button class="glow-on-hover scrolAnim leftAnimation" type="button">FAIRE UN DEVIS</button>
   
 </div>
 
@@ -167,6 +168,7 @@
   // footer
   require_once "footer.php";
 ?> 
+<script src="../js/scrolAnimation.js"></script>
 <script src="../js/navBarForAll.js"></script>
     <script src="../js/serviceBtn.js"></script>
     <script src="../js/btnNavigationForDown.js"></script>

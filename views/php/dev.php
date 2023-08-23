@@ -17,7 +17,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+      <link rel="stylesheet" href="../css/scrolAnimation.css">
         <title>Développement informatique</title>
     </head>
     <body>
@@ -95,11 +95,11 @@
   </div>
   <div class="textContentDevC">
     <div class="leftDevC">
-      <p class="textDevC">
+      <p class="textDevC scrolAnim leftAnimation">
       OrigamiTech propose des services de développement informatique de qualité à des prix abordables, incluant la création de sites web, d'applications et de logiciels, ainsi que la maintenance de ces derniers.
       </p>
     </div>
-    <div class="rightDevC">
+    <div class="rightDevC scrolAnim rightAnimation">
       <img src="../images/prog.jpg" alt="Image programmation" class="imgDevC">
     </div>
   </div>
@@ -296,7 +296,7 @@
       loop: true,
   </script>
 
-
+<script src="../js/scrolAnimation.js"></script>
   <script  src="../js/animNoservice.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="../js/swiperDev.js"></script>

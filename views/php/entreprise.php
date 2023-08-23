@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="../css/entreprise.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/client.css">
+    <link rel="stylesheet" href="../css/scrolAnimation.css">
+
 
     <title>Entreprise</title>
 </head>
-
 <body>
         <?php 
                 // Navigation
@@ -34,10 +35,10 @@
     </div>
     <div class="contentMemberContact">
         <div class="containerTitleMbr">
-            <h1 class="titleMbr">
+            <h1 class="titleMbr scrolAnim leftAnimation">
                 Notre équipe
             </h1>
-            <p class="descriMbr" id='memberLink'>
+            <p class="descriMbr scrolAnim leftAnimation" id='memberLink'>
                 Découvrez les élites qui vont travailler avec vous.
             </p>
         </div>
@@ -165,10 +166,10 @@
 
     <div class="titleEventContent">
         <div class="containerTitleMbr">
-                <h1 class="titleMbr">
+                <h1 class="titleMbr scrolAnim leftAnimation">
                     Evènement
                 </h1>
-                <p class="descriMbr">
+                <p class="descriMbr scrolAnim leftAnimation">
                 OrigamiTech se positionne en tant qu'organisateur d'événements exceptionnels.
                 On a déjà orchestré avec succès de nombreux événements mémorables.
                 </p>
@@ -206,10 +207,10 @@
 
     <div class="titleEventContent">
         <div class="containerTitleMbr">
-                <h1 class="titleMbr">
+                <h1 class="titleMbr scrolAnim rightAnimation">
                     Nos partenaires
                 </h1>
-                <p class="descriMbr">
+                <p class="descriMbr scrolAnim rightAnimation">
                     OrigamiTech a établi des partenariats solides qui ont offert des opportunités de collaboration exceptionnelles.
                 </p>
         </div>
@@ -277,7 +278,7 @@
             
 
         var aText = [
-            "Monsieur Sander Randrianarison a fondé l'origamiTech avec ses partenaires en 2019. Au début origamiTech n'était une boite de gestion relation client (plus précisement callCenter).",
+            "Monsieur Sanders Randrianarison a fondé l'origamiTech avec ses partenaires en 2019. Au début origamiTech n'était une boite de gestion relation client (plus précisement callCenter).",
             "Au fur à mesure le grand Sanders avait eu l'idée d'agrandir son empir en offrant plusieurs services à ses clients, comme la création de site web,  community management, gestion relation client ainsi que les conceptions graphique."
             
         ];
@@ -298,7 +299,7 @@
                 sContents += '<span class="typed-line">' + textArray[iRow++] + '</span><br />';
             }
 
-            sContents += '<span class="typed-line">' + textArray[iIndex].substring(0, iTextPos) + "</span><span class='typed-cursor'>_</span>";
+            sContents += '<span class="typed-line">' + textArray[iIndex].substring(0, iTextPos) + "</span><span class='typed-cursor'>🖋️</span>";
             destination.innerHTML = sContents;
 
             if (iTextPos++ == iArrLength) {
@@ -340,8 +341,8 @@ var swiper = new Swiper(".mySwiper", {
 
 });
 </script>
-  
-     <script src="../js/navBarForAll.js"></script>
+    <script src="../js/scrolAnimation.js"></script>
+    <script src="../js/navBarForAll.js"></script>
     <script src="../js/serviceBtn.js"></script>
     <script src="../js/serviceBtn1.js"></script>
     <script src="../js/btnNavigationForDown.js"></script>

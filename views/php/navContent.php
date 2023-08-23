@@ -112,6 +112,7 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
             .logo{
                 width: 13%;
                 height: auto;
+                cursor: pointer!important;
             }
             .nav{
                 display: flex;
@@ -329,6 +330,7 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                 .logo{
                     width:40%;
                     height: auto;
+                    
                 } 
                 .btnNavMobile{
                     display: block;
@@ -529,6 +531,15 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                 transform: rotate(180deg);
             }
             </style>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const logo = document.querySelector(".logo");
+                    
+                    logo.addEventListener("click", function() {
+                        location.reload(); 
+                    });
+                });    
+            </script>
 
 ';
 

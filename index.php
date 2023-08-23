@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="views/css/client.css">
+    <link rel="stylesheet" href="views/css/scrolAnimation.css">
 
     <title>OrigamiTech</title>
     
@@ -106,10 +107,10 @@
     ?>
     
     <div class="bgTextContent">
-        <h1 class="titleSecNoservice">
+        <h1 class="titleSecNoservice scrolAnim leftAnimation">
             Qui sommes nous?
         </h1>
-        <p class="paraCenter">
+        <p class="paraCenter scrolAnim leftAnimation">
             Entreprise de transformation digitale, située à Fianarantsoa Isaha.
             Nous offrons tout service qui représente votre image, que ce soit à travers l'internet ou présentielle ainsi que des outils de représentation graphiques.
             Tout ça avec un prix abordable et raisonnable, et une flexibilité de payement.
@@ -251,7 +252,7 @@
         </div>
     </div>
     <div class="titlePartenaireContent">
-        <h1 class="titlePartenaire">
+        <h1 class="titlePartenaire scrolAnim leftAnimation">
             Nos partenaires
         </h1>
     </div>
@@ -310,9 +311,8 @@
     <?php 
     require_once "views/php/backToTop.php";
     require_once "views/php/footer.php"; ?>
- 
-
-    
+ <script src="views/js/scrolAnimation.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
     <script src="views/js/dropDownMenuUp.js"></script>
     <script src="views/js/dropDownMenuDown.js"></script>
     <script src="views/js/sizeImgSlide.js"></script>
