@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="views/css/client.css">
+    <link rel="stylesheet" href="views/css/scrolAnimation.css">
+
     <title>OrigamiTech</title>
     
 </head>
@@ -18,10 +22,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <div class="bg1">
         <div class="container">
+            <div class="navContentC">
             <?php 
                 require_once "views/php/navContent.php";
                 callNavContent(true,$page); ?> 
+                <div class="profilContentMC">
+                <a href="views/php/entreprise.php#memberLink"><img class='profilMemberC' src="views/images/fte.jpg" alt=""></a>
 
+                </div>
+            </div>
             <div class="middleContent">
                 <div class="leftContent">
                     <h1 class="titleOrigami">
@@ -98,10 +107,10 @@
     ?>
     
     <div class="bgTextContent">
-        <h1 class="titleSecNoservice">
+        <h1 class="titleSecNoservice scrolAnim leftAnimation">
             Qui sommes nous?
         </h1>
-        <p class="paraCenter">
+        <p class="paraCenter scrolAnim leftAnimation">
             Entreprise de transformation digitale, située à Fianarantsoa Isaha.
             Nous offrons tout service qui représente votre image, que ce soit à travers l'internet ou présentielle ainsi que des outils de représentation graphiques.
             Tout ça avec un prix abordable et raisonnable, et une flexibilité de payement.
@@ -239,63 +248,71 @@
     </div>
     <div class="bg4">
         <div class="titleTrustContent">
-            <h1 class="titleTrust">Cliquez sur "voir plus" pour savoir davantage nos services</h1>
+            <h1 class="titleTrust">OrigamiTech a établi des partenariats solides qui ont offert des opportunités de collaboration exceptionnelles.</h1>
         </div>
     </div>
-    <div class="bg2">
-        <div class="wrapper">
-            <div class="box">
-                <img src="views/images/web.png" alt="Photo creation site web">
-                <div class="description">
-                    <h2>Création site web</h2>
-                    <div class="btnStart moreService">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Voir plus
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="views/images/evenement.png" alt="Photo couverture médiatique">
-                <div class="description">
-                    <h2>Couverture médiatique</h2>
-                    <div class="btnStart moreService">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Voir plus
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="views/images/creation.png" alt="Photo créateur digitale">
-                <div class="description">
-                    <h2>Créateur digitale</h2>
-                    <div class="btnStart moreService">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Voir plus
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="titlePartenaireContent">
+        <h1 class="titlePartenaire scrolAnim leftAnimation">
+            Nos partenaires
+        </h1>
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var $carousel = $('.customer-logos');
+
+        $carousel.slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false, // Désactive la pause au survol
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+
+        // Ajoute un événement de survol pour mettre en pause le carrousel au survol
+        $carousel.hover(function() {
+            $carousel.slick('slickPause');
+        }, function() {
+            $carousel.slick('slickPlay'); // Reprendre le carrousel après le survol
+        });
+    });
+</script>
+    <div class="bgPartenaireContent">
+        <section class="customer-logos slider">
+            <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+        </section>
+
+    </div>
+
+   
     <!-- *******back to top button****** -->
     
 
     <?php 
     require_once "views/php/backToTop.php";
     require_once "views/php/footer.php"; ?>
- 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-    
-    <script  src="views/js/animNoservice.js"></script>
+ <script src="views/js/scrolAnimation.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
     <script src="views/js/dropDownMenuUp.js"></script>
     <script src="views/js/dropDownMenuDown.js"></script>
     <script src="views/js/sizeImgSlide.js"></script>

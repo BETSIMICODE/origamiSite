@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/scrolAnimation.css">
         <title>Community manager</title>
     </head>
     <body>
@@ -133,29 +134,29 @@
     <div class="textContentCM1">
         
             <div class="leftCM">
-                <h2 class="classTitleSection">
+                <h2 class="classTitleSection scrolAnim leftAnimation">
                     Gérer les réseaux sociaux
                 </h2>
                 
-                <p class="paraCM">
+                <p class="paraCM scrolAnim leftAnimation">
                     En produisant des visuels attrayants, des vidéos captivantes, des infographies informatives, des articles intéressants et des histoires percutantes,on pourra attirer l'attention de l'audience et stimuler l'interaction.
                 </p>
             </div>
-            <div class="rightCM">
+            <div class="rightCM scrolAnim rightAnimation">
                 <img src="../images/cm.gif" alt="reseaux sociaux gif" class="imgCM">
 
             </div>
     </div>
     <div class="textContentCM1">
-            <div class="rightCM">
+            <div class="rightCM scrolAnim leftAnimation">
                 <img src="../images/anime.gif" alt="anime gif" class="imgCM">
             </div>
             <div class="leftCM">
-                <h2 class="classTitleSection">
+                <h2 class="classTitleSection scrolAnim rightAnimation">
                     Animer les communautés en ligne d'une Entreprise    
                 </h2>
                 
-                <p class="paraCM">
+                <p class="paraCM scrolAnim rightAnimation">
                     Répondre de manière proactive.
                     Encourager la participation en organisant des concours, des jeux ou des événements en ligne.
                     Suivre les tendances et les sujets d'actualité.                 
@@ -167,29 +168,29 @@
     <div class="textContentCM1">
         
             <div class="leftCM">
-                <h2 class="classTitleSection">
+                <h2 class="classTitleSection scrolAnim leftAnimation">
                     Partager du contenu pertinent et engageant               
                 </h2>
                 
-                <p class="paraCM">
+                <p class="paraCM scrolAnim leftAnimation">
                 Chaque contenu partagé doit inclure un appel à l'action clair et pertinent. Cela peut être une invitation à commenter, à partager, à aimer.
                 Planification et calendrier éditorial : Avoir un calendrier éditorial bien planifié permet de partager régulièrement du contenu de qualité                </p>
             </div>
-            <div class="rightCM">
+            <div class="rightCM scrolAnim rightAnimation">
                 <img src="../images/planification.gif" alt="planificaiton gif" class="imgCM">
             </div>
     </div>
 
     <div class="textContentCM1">
-            <div class="rightCM">
+            <div class="rightCM scrolAnim leftAnimation">
                 <img src="../images/entreprise.gif" alt="anime gif" class="imgCM">
             </div>
             <div class="leftCM">
-                <h2 class="classTitleSection">
+                <h2 class="classTitleSection scrolAnim rightAnimation">
                 Promouvoir une image positive de l'entreprise    
                 </h2>
                 
-                <p class="paraCM">
+                <p class="paraCM scrolAnim rightAnimation">
                 Encourager les retours positifs
             Partager du contenu qui met en évidence les valeurs, la mission et la vision de l'Entreprise.    
                 </p>
@@ -198,7 +199,7 @@
     </div>
 
     <div class="devisContent">
-
+        
     </div>
     <?php 
                 // Navigation
@@ -216,6 +217,7 @@
         // footer
         require_once "footer.php";
     ?>    
+    <script src="../js/scrolAnimation.js"></script>
     <script src="../js/navBarForAll.js"></script>
     <script src="../js/serviceBtn.js"></script>
     <script src="../js/btnNavigationForDown.js"></script>

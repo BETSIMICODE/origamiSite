@@ -1,509 +1,112 @@
-<?php $page="service"; ?>
+<?php $page="entreprise"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/entreprise.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/client.css">
+    <link rel="stylesheet" href="../css/scrolAnimation.css">
+
+
     <title>Entreprise</title>
 </head>
-<style>
-    .body {
-        display: flex;
-        background-color: #f5f8fb;
-        background-image: linear-gradient((to right, transparent 50%, #0a110e 50%, #000000a6));
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        overflow-x: hidden;
-    }
-    .section {
-        background-color: #000000;
-        margin:-8px;
-        padding: 80px;
-        display: flex;
-    }
-    .s1 {
-        flex-basis: 50%;
-        background-color: #000000;
-        margin-bottom: 20px;
-        color: #ffffff;
-        margin-top: 30px;
-        margin-left: 30px;
-    }
-    .s1 h2 {
-        color: #ffffff;
-        font-size: 30px;
-    }
-    .s1 p {
-        font-size: 18px;
-        color: #ffffff;
-    }
-    .s2 {
-        flex-basis: 50%;
-        background-color: rgb(0, 0, 0);
-        margin-bottom: 40px;
-        margin-left: 40vh;
-    }
-    .s2 img {
-        width: 400px;
-        height: 350px;
-    }
-
-    button {
-        background: linear-gradient(135deg, #000000, #ffffff);
-        color: #ffffff;
-        border: 2px solid #ffffff;
-        top: 30px;
-        padding: 10px 60px;
-        font-size: 16px;
-        border-radius: 30px;
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        transition: background-color 0.3s ease-in-out;
-      }
-      
-      button::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #ffffff, #000000);
-        z-index: -1;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-      }
-      
-      button:hover {
-        background: linear-gradient(135deg, #797676, #000000);
-        color: #ffffff;
-      }
-      
-      button:hover::before {
-        opacity: 1;
-      }
-
-      .ligne {
-        padding: 5px;
-      }
-
-      .section2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 98vw;
-        height: auto;
-        background-color: rgb(255, 255, 255);
-    }
-
-      .sectionH2{
-        color: #ffffff;
-        font-size: 30px;
-        font-family: sans-serif;
-        background-color: rgb(30, 54, 61);
-        width: 30%;
-        height: 4%;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 2%;
-        border-radius: 999px;
-        -webkit-border-radius: 999px;
-        -moz-border-radius: 999px;
-        -ms-border-radius: 999px;
-        -o-border-radius: 999px;
-      }
-
-      .sec2 {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: rgb(255, 255, 255);
-      }
-      .leftsection {
-        padding-top: 20px;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        background-color: #ffffff;
-      }
-      .rightsection {
-        width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .titreSection {
-        font-family: sans-serif;
-        color: #010101;
-        font-size: 3vw;
-        font-weight: bold;
-      }
-      .section2 li{
-        font-family: sans-serif;
-        color: #010101;
-        font-size: 1.5vw;
-      }
-      
-      .imageSection{
-        width: 90%;
-        }
-
-        .bg5{
-            width: 100vw;
-            height: auto;
-            background-color: #000000b0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            
-        }
-        .titleSecNoservice{
-            margin-top: 5%;
-            font-family: serif;
-            color: rgb(249, 249, 249);
-            font-size: 30px;
-        }
-        /* member card home */
-        .memberContact{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 100%;
-            height: 700px;
-            flex-wrap: wrap;
-            flex-shrink: 0;
-            flex-wrap: nowrap;
-            background-color: #0c5dde;
-        }
-        .memberContact .card {
-            position: relative;
-            width: 300px;
-            height: 400px;
-            margin: 1em;
-            background: rgba(0, 0, 0, 0.396);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            backdrop-filter: blur(40px);
-            border: solid 2px transparent;
-            background-clip: padding-box;
-            box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03);
-            cursor: pointer;
-            /* flex-shrink: 0; */
-
-        }
-        .memberContact .card:hover{
-            box-shadow: 0px 0px 50px rgb(8, 156, 255);
-            transform: translateY(-10px);
-            -webkit-transform: translateY(-10px);
-            -moz-transform: translateY(-10px);
-            -ms-transform: translateY(-10px);
-            -o-transform: translateY(-10px);
-        }
-        .memberContact .card .content {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            opacity: 0.5;
-            transition: 0.5s;
-        }
-        .memberContact .card .content .img {
-            position: relative;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 10px solid rgba(0, 0, 0, 0.25);
-        }
-        .memberContact .card .content .img img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .memberContact .card .content .cardContent h3 {
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 500;
-            font-size: 18px;
-            text-align: center;
-            margin: 20px 0 10px;
-            line-height: 1.1em;
-        }
-        .memberContact .card .content .cardContent h3 span {
-            font-size: 12px;
-            font-weight: 300;
-            text-transform: initial;
-        }
-        .memberContact .card .sci {
-            position: absolute;
-            bottom: 50px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: row;
-            width: 70%;
-            /* background-color: aqua; */
-            align-self: center;
-        }
-        .memberContact .card .sci li {
-            display: flex;
-            /* margin: 0 10px; */
-            transform: translateY(40px);
-            opacity: 0;
-            transition: 0.5s;
-            transition-delay: calc(0.1s * var(--i));
-            list-style-type: none;
-            justify-content: center;
-            align-items: center;
-            align-self: center;
-            /* background-color: red; */
-            margin: auto;
-            
-        }
-
-        .memberContact .card .sci li a {
-            font-size: 24px;
-        }
-        .memberContact .card:hover .content {
-            opacity: 1;
-            transform: translateY(-50px);
-            -webkit-transform: translateY(-50px);
-            -moz-transform: translateY(-50px);
-            -ms-transform: translateY(-50px);
-            -o-transform: translateY(-50px);
-        }
-        .memberContact .card:hover .sci li {
-            transform: translateY(0px);
-            opacity: 1;
-            /* background-color: aliceblue; */
-            margin-left: 0;
-            
-        }
-        .iconMember{
-            width: 30px;
-            height: 30px;
-            transition: ease-in-out 0.5s;
-            -webkit-transition: ease-in-out 0.5s;
-            -moz-transition: ease-in-out 0.5s;
-            -ms-transition: ease-in-out 0.5s;
-            -o-transition: ease-in-out 0.5s;
-        }
-        .iconMember:hover{
-            background-color: rgb(8, 156, 255);
-            box-shadow: 0px 0px 50px rgb(8, 156, 255);
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            -ms-border-radius: 100%;
-            -o-border-radius: 100%;
-        }
-        .bgCmUp{
-        display:flex;
-        align-items:center;
-        justify-content:space-evenly;
-        width:100vw;
-        height:80vh;
-        background-color: #000913;
-        }
-        .textContentCm{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        width:45%;
-        height:100%;
-        }
-        .titleCm{
-            color:#ffff;
-            align-self:flex-start;
-            font-size: 30px;
-        }
-        .textCm{
-            color:#fff;
-            font-family:sans-serif;
-            font-size: 17px;
-        }
-        .btnStart1{
-            /* background-color: rgba(255, 255, 255, 0); */
-            color: #fff;
-           
-            background-size:200%;
-            transition: all 0.4s ease-in-out;
-            /* color: #fff; */
-            color: rgb(0, 13, 42);
-            width: 35%;
-            height: 7%;
-            border: solid 1px #fff;
-            border-radius: 999px;
-            -webkit-border-radius: 999px;
-            -moz-border-radius: 999px;
-            -ms-border-radius: 999px;
-            -o-border-radius: 999px;
-            margin-top: 10%;
-            box-shadow: 3px 3px 23px 3px rgba(2, 2, 2, 0.847);
-            align-self: flex-start;
-            font-size: 16px;
-            border: rgb(255, 255, 255);
-            font-weight: bold;
-        }
-        .btnStart1:hover{
-            background-color: linear-gradient(to right, transparent 50%, rgb(0, 125, 228) 50%, rgb(0, 183, 255));
-            background-position:100%;
-            border: rgb(0, 125, 228);
-            box-shadow: 3px 3px 23px 3px rgb(0, 125, 228);
-        }
-        .gifCmContent{
-            width:45%;
-            height:100%;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            /* background-color: green; */
-        }
-        .gifCm{
-            width:58%;
-            height:60%;
-            height:auto;
-            /* background-color: blue; */
-            
-        }
-        
-
-</style>
 <body>
         <?php 
                 // Navigation
                 require_once "navContent.php";
-                require_once "navBarForAll.php";
-                navBarForAll($page,true,true);
         ?>
-    <div class="bgCmUp">
-        <div class="textContentCm">
-            <h1 class="titleCm">
-                Notre Entreprise </h1>
-            <p class="textCm">Optimisation de l'engagement et de la fidélisation des utilisateurs par
-                le biais de l'analyse sémantique, de l'ARN, de la segmentation avancée et de l'analyse des KPI.</p>
-            <button class="btnStart1">Voir Plus</button>
-        </div>
-        <div class="gifCmContent">
-            <img class="gifCm" src="../images/contact2.jpg" alt="">
-        </div>
-    </div>
-    <div class="ligne" ></div>
-    <div class="section2">
-        <div class="sectionH2">Nos Historiques</div>
-            <div class="sec2">
-                <div class="leftsection">
-                    <div class="titreSection">
-                        Historiques
-                    </div>
-                    <ul>
-                        <li>Origami Tech est une entreprise de comminucation qu</li>
-                        <li>Gestion Relation Client</li>
-                        <li>Conception des visuels</li>
-                        <li>Developper des Sites Web</li>
-                    </ul>
-                </div>
-                <div class="rightsection">
-                    <img src="../images/contact.png" class="imageSection" alt="">
-                </div>
+<div id="particles-js" class="containTopEp">
+        <?php 
+            callNavContent(true,$page); 
+        ?>
+        <div class="glassContainEp">
+            <div class="txtContentEp">
+                <h1 class="titleEp">
+                    Un peu d'histoire:
+                </h1>
+                <p class="paraEp" id="typedtext">
+                   
+                </p>
+
             </div>
-            
         </div>
     </div>
-    <div class="ligne" ></div>
-    
-    <div class="section2">
-    <div class="sectionH2">Notre Equipe</div>
-        <div class="bg5">
-        
-            <div class="memberContact">
-                <div class="card">
-                    <div class="content">
-                        <div class="img"><img src="../images/princy.jpg" alt="Photo de couverture CTO"></div>
-                        <div class="cardContent">
-                            <h3>Sanders RANDRIA<br><span>Directeur Technique</span></h3>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i:1">
-                            <a href="#"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
-                        </li>
-                        <li style="--i:2">
-                            <a href="#"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt="Icone Linkedin"></a>
-                        </li>
-                        <li style="--i:3">
-                            <a href="#"><img class="iconMember squareIconMember" src="../images/insta.png" alt="Icon Instagram"></a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="card">
-                    <div class="content">
-                        <div class="img"><img  src="../images/andry.jpg" alt="Photo de couverture RH"></div>
-                        <div class="cardContent">
-                            <h3>Ando RABE<br><span>Directrice Ressource Humaine</span></h3>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i:1">
-                            <a href="#"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
-                        </li>
-                        <li style="--i:2">
-                            <a href="#"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt=""></a>
-                        </li>
-                        <li style="--i:3">
-                            <a href="#"><img class="iconMember squareIconMember" src="../images/insta.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-    
-    
-                <div class="card">
-                    <div class="content">
-                        <div class="img"><img  src="../images/almadie.jpg" alt="Photo de couverture Admin"></div>
-                        <div class="cardContent">
-                            <h3>Almadie ABDOUl<br><span>Responsable administrative</span></h3>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i:1">
-                            <a href="#"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
-                        </li>
-                        <li style="--i:2">
-                            <a href="#"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt=""></a>
-                        </li>
-                        <li style="--i:3">
-                            <a href="#"><img class="iconMember squareIconMember" src="../images/insta.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="contentMemberContact">
+        <div class="containerTitleMbr">
+            <h1 class="titleMbr scrolAnim leftAnimation">
+                Notre équipe
+            </h1>
+            <p class="descriMbr scrolAnim leftAnimation" id='memberLink'>
+                Découvrez les élites qui vont travailler avec vous.
+            </p>
+        </div>
+        <div class="memberContact">
                     <div class="card">
                         <div class="content">
-                            <div class="img"><img src="../images/doughlas.jpg" alt="Photo de couverture Developpeur"></div>
+                            <div class="img"><img src="../images/princy.jpg" alt="Photo de couverture CTO"></div>
                             <div class="cardContent">
+                                <h3>Sanders RANDRIA<br><span>Directeur Technique</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1">
+                                <a href="#"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
+                            </li>
+                            <li style="--i:2">
+                                <a href="#"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt="Icone Linkedin"></a>
+                            </li>
+                            <li style="--i:3">
+                                <a href="#"><img class="iconMember squareIconMember" src="../images/insta.png" alt="Icon Instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="card">
+                        <div class="content">
+                            <div class="img"><img  src="../images/andry.jpg" alt="Photo de couverture RH"></div>
+                            <div class="cardContent">
+                                <h3>Ando RABE<br><span>Directrice Ressource Humaine</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1">
+                                <a href="#"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
+                            </li>
+                            <li style="--i:2">
+                                <a href="#"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt=""></a>
+                            </li>
+                            <li style="--i:3">
+                                <a href="#"><img class="iconMember squareIconMember" src="../images/insta.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+        
+        
+                    <div class="card">
+                        <div class="content">
+                            <div class="img"><img  src="../images/almadie.jpg" alt="Photo de couverture Admin"></div>
+                            <div class="cardContent">
+                                <h3>Almadie ABDOUl<br><span>Responsable administrative</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1">
+                                <a href="#"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
+                            </li>
+                            <li style="--i:2">
+                                <a href="#"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt=""></a>
+                            </li>
+                            <li style="--i:3">
+                                <a href="#"><img class="iconMember squareIconMember" src="../images/insta.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img"><img src="../images/doughlas.jpg" alt="Photo de couverture Developpeur"></div>
+                        <div class="cardContent">
                             <h3>Feno DOUGHLAS<br><span>Responsable Informatique</span></h3>
                         </div>
                     </div>
@@ -519,17 +122,228 @@
                         </li>
                     </ul>
                 </div>
-                
+                <div class="card">
+                        <div class="content">
+                            <div class="img"><img  src="../images/andry.jpg" alt="Photo de couverture RH"></div>
+                            <div class="cardContent">
+                                <h3>Ando RABE<br><span>Directrice Ressource Humaine</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1">
+                                <a href="#"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
+                            </li>
+                            <li style="--i:2">
+                                <a href="#"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt=""></a>
+                            </li>
+                            <li style="--i:3">
+                                <a href="#"><img class="iconMember squareIconMember" src="../images/insta.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="img"><img  src="../images/andry.jpg" alt="Photo de couverture RH"></div>
+                            <div class="cardContent">
+                                <h3>Ando RABE<br><span>Directrice Ressource Humaine</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1">
+                                <a href="#"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
+                            </li>
+                            <li style="--i:2">
+                                <a href="#"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt=""></a>
+                            </li>
+                            <li style="--i:3">
+                                <a href="#"><img class="iconMember squareIconMember" src="../images/insta.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
             </div>
-    
+    </div>  
+
+    <div class="titleEventContent">
+        <div class="containerTitleMbr">
+                <h1 class="titleMbr scrolAnim leftAnimation">
+                    Evènement
+                </h1>
+                <p class="descriMbr scrolAnim leftAnimation">
+                OrigamiTech se positionne en tant qu'organisateur d'événements exceptionnels.
+                On a déjà orchestré avec succès de nombreux événements mémorables.
+                </p>
+        </div>
+
+    </div>
+    <div class="eventContent">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="event-descri">
+                        <h1>Inona ary izany?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore repudiandae molestias sunt.</p>
+                    </div>
+                    <img src="../images/ina.jpg" alt="" class="imgSwipEv">
+                </div>
+                <div class="swiper-slide">
+                    <div class="event-descri">
+                        <h1>Dona Be </h1>
+                        <p>Lo esse delectus repudiandae adipisci suscipit doloribus excepturi assumenda doloremque.</p>
+                    </div>
+                    <img src="../images/karate.jpg" alt="" class="imgSwipEv">
+                </div>
+                <div class="swiper-slide">
+                    <div class="event-descri">
+                        <h1>Fianarantsoa Tech Expo</h1>
+                        <p>Lorem ipsum doCupiditate in nihil esse delectus repudiandae adipisci suscipit doloribus excepturi assumenda doloremque.</p>
+                    </div>
+                    <img src="../images/fte.jpg" alt="" class="imgSwipEv">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
+
+    <div class="titleEventContent">
+        <div class="containerTitleMbr">
+                <h1 class="titleMbr scrolAnim rightAnimation">
+                    Nos partenaires
+                </h1>
+                <p class="descriMbr scrolAnim rightAnimation">
+                    OrigamiTech a établi des partenariats solides qui ont offert des opportunités de collaboration exceptionnelles.
+                </p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1500,
+				arrows: false,
+				dots: false,
+				pauseOnHover: false,
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 4
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 3
+					}
+				}]
+			});
+		});
+    </script>
+    <div class="bgPartenaireContent">
+        <section class="customer-logos slider">
+            <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+    <script src=
+        "./particles.js-master/particles.js">
+    </script>
+    <script src=
+        "./particles.js-master/demo/js/app.js">
+    </script>
     <?php 
+    require_once "navBarForAll.php";
+        navBarForAll($page);
         // button back to top
         require_once "backToTop.php";
         // footer
         require_once "footer.php";
     ?>
+    <script>
+            
+
+        var aText = [
+            "Monsieur Sanders Randrianarison a fondé l'origamiTech avec ses partenaires en 2019. Au début origamiTech n'était une boite de gestion relation client (plus précisement callCenter).",
+            "Au fur à mesure le grand Sanders avait eu l'idée d'agrandir son empir en offrant plusieurs services à ses clients, comme la création de site web,  community management, gestion relation client ainsi que les conceptions graphique."
+            
+        ];
+
+        var iSpeed = 70;
+        var iIndex = 0;
+        var iArrLength = aText[0].length;
+        var iScrollAt = 20;
+        var iTextPos = 0;
+        var sContents = '';
+        var iRow;
+
+        function typewriter(destination, textArray) {
+            sContents = '';
+            iRow = Math.max(0, iIndex - iScrollAt);
+
+            while (iRow < iIndex) {
+                sContents += '<span class="typed-line">' + textArray[iRow++] + '</span><br />';
+            }
+
+            sContents += '<span class="typed-line">' + textArray[iIndex].substring(0, iTextPos) + "</span><span class='typed-cursor'>🖋️</span>";
+            destination.innerHTML = sContents;
+
+            if (iTextPos++ == iArrLength) {
+                iTextPos = 0;
+                iIndex++;
+                if (iIndex == textArray.length) {
+                    iIndex = 0; // Réinitialisation pour boucler à travers le tableau à nouveau
+                    setTimeout(function() { typewriter(destination, textArray); }, 2000); // Pause de 2000 millisecondes (2 secondes) avant de recommencer la boucle
+                    return;
+                }
+                iArrLength = textArray[iIndex].length; // Mettre à jour la longueur de l'élément actuel
+            }
+
+            setTimeout(function() { typewriter(destination, textArray); }, iSpeed);
+        }
+
+
+var destination1 = document.getElementById("typedtext");
+
+
+typewriter(destination1, aText);
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+    autoplay: {
+    delay: 9000,
+    disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    },
+
+});
+</script>
+    <script src="../js/scrolAnimation.js"></script>
+    <script src="../js/navBarForAll.js"></script>
+    <script src="../js/serviceBtn.js"></script>
     <script src="../js/serviceBtn1.js"></script>
     <script src="../js/btnNavigationForDown.js"></script>
     <script src="../js/btnNavigation.js"></script>   

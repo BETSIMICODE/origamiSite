@@ -8,57 +8,18 @@
     <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/graph.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiperLogo@10/swiperLogo-bundle.min.css" />
-
+    <link rel="stylesheet" href="../css/scrolAnimation.css">
   </head>
 <body>
     <?php 
         // Navigation
         require_once "navContent.php";
-        require_once "navBarForAll.php";
-        navBarForAll($page,true);
       ?>
-      <div class="graphContentUp">
-        <div class="emptyGraph">
-        </div>
-        <div class="presentationGraphContent">
-          <div class="leftGraph">
-            <h1 class="titleGraph">
-              Design graphique
-            </h1>
-            <p class="textGraph">
-              OrigamiTech fait tout travail en visuel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, id.
-            </p>
-            <div class="btn"><a href="#">Read More</a></div>
-          </div>
-          <div class="rightGraph">
-            <img src="../images/design2.gif" alt="" class="designImageGraph">
-          </div>
-        </div>
-        <div class="emptyGraph eg1">
-        </div>
-      </div>
-
-<div class="emptyGraph eg2">
-</div>
-<div class="textContentGrf">
-            <!-- <div class="rightGrf">
-                <img src="../images/cm.gif" alt="reseaux sociaux gif" class="imgGrf">
-
-            </div> -->
-            <div class="leftGrf">
-                <h2 class="classTitleSectionGrf">
-                  Conception affiche
-                </h2>
-                
-                <p class="paraGrf">
-                Optez pour nos affiches uniques et percutantes, conçues sur mesure pour vous démarquer de la concurrence et attirer l'attention de votre public cible !                </p>
-            </div>
-            
-</div>
     <div class="bg-service-visuel">
-        <div class="textDesign">
-          Design graphique
-        </div>
+    <?php 
+                callNavContent(true,$page); 
+               
+                ?> 
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -98,24 +59,41 @@
           </p>
         </div>
         <div class="btnContentDesign">
-          <div class="btnDesignGraph">
-            Devis
-          </div>
+        <div class="btn"><a href="#">Read More</a></div>
         </div>
 
           
     </div>
     <div class="textContentGrf tCgrf">
+    <div class="rightGrf scrolAnim leftAnimation">
+                <img src="../images/design2.gif" alt="reseaux sociaux gif" class="imgGrf">
+
+            </div>
             <div class="leftGrf">
-                <h2 class="classTitleSectionGrf cTSGrf ">
+                <h2 class="classTitleSectionGrf cTSGrf scrolAnim rightAnimation">
+                 Création d'affiche
+                </h2>
+                
+                <p class="paraGrf scrolAnim rightAnimation">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, nisi?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ex quidem dignissimos porro sit placeat totam modi quod reiciendis id.
+                </p>
+            </div>
+            
+            
+            
+    </div>
+    <div class="textContentGrf tCgrf">
+            <div class="leftGrf">
+                <h2 class="classTitleSectionGrf cTSGrf scrolAnim leftAnimation">
                   Conception logo
                 </h2>
                 
-                <p class="paraGrf">
+                <p class="paraGrf scrolAnim leftAnimation">
                 Transformez votre identité de marque avec notre service de conception de logo sur mesure, où la créativité s'unit à l'expertise pour donner vie à un logo qui incarne parfaitement votre vision d'entreprise                </p>
             </div>
-            <div class="rightGrf">
-                <!-- <img src="../images/cm.gif" alt="reseaux sociaux gif" class="imgGrf"> -->
+            <div class="rightGrf scrolAnim rightAnimation">
+                <img src="../images/design1.gif" alt="reseaux sociaux gif " class="imgGrf">
 
             </div>
             
@@ -184,7 +162,10 @@ $(document).ready(function(){
 });
   </script>
 </div>  
+
     <?php 
+          require_once "navBarForAll.php";
+          navBarForAll($page);
             // button back to top
             require_once "backToTop.php";
             // footer
@@ -192,16 +173,19 @@ $(document).ready(function(){
     ?>
     
 
-
+<script src="../js/scrolAnimation.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
 
-      <script src="../js/swiperGraph.js"></script>
-
+        <script src="../js/swiperGraph.js"></script>
+        <script src="../js/navBarForAll.js"></script>
+        <script src="../js/serviceBtn.js"></script>
         <script src="../js/serviceBtn1.js"></script>
+        <script src="../js/btnNavigation.js"></script>
         <script src="../js/btnNavigationForDown.js"></script>
         <script src="../js/backToTop.js"></script>
+        <script src="../js/dropDownMenuUp.js"></script>
         <script src="../js/dropDownMenuDown.js"></script>
     <script>
       
