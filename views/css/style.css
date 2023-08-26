@@ -129,6 +129,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .middleContent{
@@ -195,6 +198,7 @@ body{
     font-size: 20px;
 }
 .lineWhite{
+    display: none;
     display: none;
     position: absolute;
     width: 200px;
@@ -518,6 +522,12 @@ body{
     color: rgb(249, 249, 249);
     font-size: 3vw;
 }
+
+
+.titleSecNoservice{
+    color: rgb(249, 249, 249);
+    font-size: 3vw;
+}
 .btnShoes{
     color: white;
     font-family: sans-serif;
@@ -821,12 +831,18 @@ body .shoesContainer .bubbles1 .bubble2{
 
 
 .titlePartenaireContent{
+.titlePartenaireContent{
     width: 100vw;
+    height: 25vh;
     height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.titlePartenaire{
+    color: white;
+    font-size: 2vw;
+    font-family: sans-serif;
 .titlePartenaire{
     color: white;
     font-size: 2vw;
@@ -858,14 +874,46 @@ body .shoesContainer .bubbles1 .bubble2{
 .bgPartenaireContent .customer-logos{
     /* background-color: red; */
     width: 70%;
+@media screen and (max-width:1000px) {
+    .profilContentMC{
+        display: none;
+    }
+    .profilMemberC{
+        display: none;
+    }
+    .titlePartenaireContent{
+      height: 20vh;
+        
+    }
+    .titlePartenaire{
+        font-size: 3vw;
+   
+    }
+    
 }
+.bgPartenaireContent{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.bgPartenaireContent .customer-logos{
+    /* background-color: red; */
+    width: 70%;
+}
+.bgPartenaireContent .customer-logos .slide{
+    /* background-color: rgb(0, 34, 255); */
+   
 .bgPartenaireContent .customer-logos .slide{
     /* background-color: rgb(0, 34, 255); */
    
 }
 .bgPartenaireContent .customer-logos .slide img{
+.bgPartenaireContent .customer-logos .slide img{
 
 }
+
+
 
 
 

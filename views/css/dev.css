@@ -7,10 +7,20 @@
 }
 
 
+*{
+    transition: 0.3 ease-in-out;
+    -webkit-transition: 0.3 ease-in-out;
+    -moz-transition: 0.3 ease-in-out;
+    -ms-transition: 0.3 ease-in-out;
+    -o-transition: 0.3 ease-in-out;
+}
+
+
 body{
     display: flex;
     /* background-image: url("../images/bg.jpg"); */
     /* background-color:#010101; */
+    background-color:#000913;
     background-color:#000913;
     /* background-color: #ff0000; */
 
@@ -54,6 +64,7 @@ body{
         height: 100px;
         font-family: sans-serif;
         margin-top: 5%;
+        margin-top: 5%;
         
     }
     
@@ -71,7 +82,17 @@ body{
     .iconDev{
         /* background-color: rgb(183, 0, 255); */
         width: 40%;
+   
+    
+ 
+   
+    .iconDev{
+        /* background-color: rgb(183, 0, 255); */
+        width: 40%;
         height: auto;
+        animation: SlowFloat 1s infinite  alternate;
+        -webkit-animation: SlowFloat 1s infinite  alternate;
+}
         animation: SlowFloat 1s infinite  alternate;
         -webkit-animation: SlowFloat 1s infinite  alternate;
 }
@@ -81,6 +102,7 @@ body{
         justify-content: center;
         align-items: center;
         background-color: rgb(175, 226, 226);
+        margin-top: 5%;
         margin-top: 5%;
     }
     .goodDevText{
@@ -99,6 +121,10 @@ body{
 
 
 
+    @-webkit-keyframes SlowFloat {
+        0% { transform: translateY(-3px); -webkit-transform: translateY(-3px); -moz-transform: translateY(-3px); -ms-transform: translateY(-3px); -o-transform: translateY(-3px); }
+        100% { transform: translateY(3px); -webkit-transform: translateY(3px); -moz-transform: translateY(3px); -ms-transform: translateY(3px); -o-transform: translateY(3px); }
+    }
     @-webkit-keyframes SlowFloat {
         0% { transform: translateY(-3px); -webkit-transform: translateY(-3px); -moz-transform: translateY(-3px); -ms-transform: translateY(-3px); -o-transform: translateY(-3px); }
         100% { transform: translateY(3px); -webkit-transform: translateY(3px); -moz-transform: translateY(3px); -ms-transform: translateY(3px); -o-transform: translateY(3px); }
@@ -129,6 +155,7 @@ body{
             text-align: justify;
             font-size: 17px;
 
+
         }
         .titleDev{
             font-size: 25px;
@@ -136,6 +163,11 @@ body{
             
             
         }
+        .iconDev{
+            /* background-color: rgb(183, 0, 255); */
+            height: auto;
+            
+    }
         .iconDev{
             /* background-color: rgb(183, 0, 255); */
             height: auto;
@@ -153,7 +185,6 @@ body{
 
         
     }
-
 
 
 
