@@ -14,7 +14,7 @@ $result = $connexion->query($query);
 // Affichage des textes dans des paragraphes
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        echo "<p>" . htmlspecialchars($row["description"]) . "</p>";
+        echo htmlspecialchars($row["description"]);
     }
 } else {
     echo "<p>Aucun texte n'a été trouvé dans la base de données.</p>";

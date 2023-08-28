@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $imagePath = $connexion->real_escape_string($targetFile);
 
             // Requête pour insérer les données dans la base de données
-            $query = "INSERT INTO texte (description, image, title) VALUES ('$description', '$imagePath', '$title')";
+           $query = "INSERT INTO texte (description, image, title) VALUES (COALESCE('$description',''), COALESCE('$imagePath',''), COALESCE('$title',''))";
 
             if ($connexion->query($query) === TRUE) {
                 echo "Informations ajoutées avec succès.";

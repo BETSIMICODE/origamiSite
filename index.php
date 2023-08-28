@@ -37,8 +37,7 @@
                         Transformation digitale
                     </h1>
                     <p class="descriOrigami">
-                        Origami tech est une agence numérique à Fianarantsoa Isaha. Notre service sont: 
-                        création d'un site web, couverture médiatique et évènementiel...
+                        <?php include("admin_panel/admin/affiche.php")?>
                     </p>
                     <button class="btnStart">Get started</button>
     

@@ -18,12 +18,6 @@
       <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="../css/scrolAnimation.css">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="../css/scrolAnimation.css">
         <title>Développement informatique</title>
     </head>
     <body>
@@ -38,12 +32,9 @@
 
 <div class="containerDev" >
 
-<div class="containerDev" >
-
   <div class="emptyDivDev">
 
   </div>
-  <div class="swiper mySwiper" >
   <div class="swiper mySwiper" >
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -71,7 +62,6 @@
     <div class="swiper-button-prev"></div>
     
   </div>
-  
   <div class="swiper-responsive">
     <div class="swiper mySwiper swiper2">
       <div class="swiper-wrapper wrapper2">
@@ -113,16 +103,6 @@
       <img src="../images/prog.jpg" alt="Image programmation" class="imgDevC">
     </div>
   </div>
-  <div class="textContentDevC">
-    <div class="leftDevC">
-      <p class="textDevC scrolAnim leftAnimation">
-      OrigamiTech propose des services de développement informatique de qualité à des prix abordables, incluant la création de sites web, d'applications et de logiciels, ainsi que la maintenance de ces derniers.
-      </p>
-    </div>
-    <div class="rightDevC scrolAnim rightAnimation">
-      <img src="../images/prog.jpg" alt="Image programmation" class="imgDevC">
-    </div>
-  </div>
 
 </div>
 
@@ -133,7 +113,6 @@
                 <img src="../images/sit1.gif" alt="Photo creation site web" class="iconDev">
                 <div class="description">
                     <h2>Création site web</h2>
-                    <h4>Nous sommes là pour concrétiser votre site web et accroître la visibilité de votre entreprise ou organisation en ligne.</h4>
                     <div class="btnStart moreService">
                         <span></span>
                         <span></span>
@@ -149,7 +128,6 @@
                 <img src="../images/log.gif" alt="Photo couverture médiatique" class="iconDev">
                 <div class="description">
                     <h2>Création d'une application</h2>
-                    <h4>Nous sommes à votre disposition pour développer et concrétiser votre application, répondant ainsi à vos besoins spécifiques.</h4>
                     <div class="btnStart moreService">
                         <span></span>
                         <span></span>
@@ -165,7 +143,6 @@
                 <img src="../images/main.gif" alt="Photo créateur digitale" class="iconDev">
                 <div class="description">
                     <h2>Maintenance Logiciel</h2>
-                    <h4>Notre équipe assure la maintenance logicielle avec expertise, garantissant le bon fonctionnement continu de vos applications</h4>
                     <div class="btnStart moreService">
                         <span></span>
                         <span></span>
@@ -190,11 +167,6 @@
 
 
 
-
-
-
-
-
         <?php 
             // button back to top
             require_once "backToTop.php";
@@ -208,11 +180,11 @@
     .swiper {
       width: 100vw;
       height: 100%;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; 
+    
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
 
     .swiper-slide {
-      
       text-align: center;
       font-size: 18px;
       background: #000913;
@@ -226,12 +198,7 @@
     {
       border: 5px solid rgba(0, 0, 0, 0.921);
       border-radius:30px;
-      border: 5px solid rgba(0, 0, 0, 0.921);
-      border-radius:30px;
       width: 70vw;
-      height: 90%;
-      box-shadow:  rgba(249, 249, 249, 0.099) 0px 0px 36px 0px;
-
       height: 90%;
       box-shadow:  rgba(249, 249, 249, 0.099) 0px 0px 36px 0px;
 
@@ -245,7 +212,6 @@
       border: 5px solid rgba(0, 0, 0, 0.921);
       border-radius:40px;
       background-color: rgb(0, 0, 0);
-      box-shadow: rgba(255, 255, 255, 0.927) 0px 0px 20px, rgba(203, 203, 203, 0.858) 0px 0px 12px;      position: absolute;
       box-shadow: rgba(255, 255, 255, 0.927) 0px 0px 20px, rgba(203, 203, 203, 0.858) 0px 0px 12px;      position: absolute;
       left: 80%;
       top: 150px;
@@ -280,7 +246,6 @@
       z-index: 30;
     }
 
-
     /* ****responsive**** */
     @media screen and (max-width:1000px) {
       .swiper2 {
@@ -298,12 +263,10 @@
 
         
     }
-
-
+    
     
     
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
@@ -332,9 +295,6 @@
       allowTouchMove: false, });
       loop: true,
   </script>
-
-<script src="../js/scrolAnimation.js"></script>
-  <script  src="../js/animNoservice.js"></script>
 
 <script src="../js/scrolAnimation.js"></script>
   <script  src="../js/animNoservice.js"></script>

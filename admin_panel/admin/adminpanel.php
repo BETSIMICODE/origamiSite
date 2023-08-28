@@ -42,7 +42,7 @@ Your browser does not support the video tag.
    <div class="side-wrapper">
     <div class="side-title">ACCUEIL</div>
     <div class="side-menu">
-       <a href="#" id="transformationLink">
+       <a href="#">
       <svg viewBox="0 0 512 512">
        <g xmlns="http://www.w3.org/2000/svg" fill="currentColor">
         <path d="M0 0h128v128H0zm0 0M192 0h128v128H192zm0 0M384 0h128v128H384zm0 0M0 192h128v128H0zm0 0" data-original="#bfc9d1" />
@@ -111,7 +111,7 @@ Your browser does not support the video tag.
   </div>
  <!--RIGHT-SECTION-->
    <div class="content-wrapper" style="width:100%;">
-            <?php include("index.php"); ?>
+            <?php include 'index.php'; ?>
    </div>
   </div>
  </div>
@@ -119,24 +119,6 @@ Your browser does not support the video tag.
 </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-<script>
-    $(document).ready(function() {
-        $("#transformationLink").click(function(event) {
-            event.preventDefault();
-            // Afficher le contenu de contentWrapper
-            $("#contentWrapper").show();
-        });
-    });
-</script>
-
-<style>
-    #contentWrapper {
-        display: none;
-    }
-</style>
-
 
 </body>
 </html>
