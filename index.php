@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="views/css/scrolAnimation.css">
 
     <title>OrigamiTech</title>
+    <style>
+        .btnNav:hover{
+            color: rgb(101, 193, 255);
+            text-shadow: 0px 0px 10px rgb(8, 156, 255);
+
+        }
+    </style>
     
 </head>
 <body>
@@ -27,20 +34,21 @@
                 require_once "views/php/navContent.php";
                 callNavContent(true,$page); ?> 
                 <div class="profilContentMC">
-                <a href="views/php/entreprise.php#memberLink"><img class='profilMemberC' src="views/images/fte.jpg" alt=""></a>
+                <a href="views/php/entreprise.php#memberLink"><img class='profilMemberC' src="views/images/power3.png" alt="" title="Équipe"></a>
 
                 </div>
             </div>
             <div class="middleContent">
                 <div class="leftContent">
                     <h1 class="titleOrigami">
-                        Transformation digitale
+                        Marketing digitale 
                     </h1>
                     <p class="descriOrigami">
-                        Origami tech est une agence numérique à Fianarantsoa Isaha. Notre service sont: 
-                        création d'un site web, couverture médiatique et évènementiel...
+                    Votre visibilité numérique est notre toile, et nous en faisons une œuvre d'art.
+
+
                     </p>
-                    <button class="btnStart">Get started</button>
+                    <button class="btnStart" id="moreHome">Savoir plus</button>
     
                 </div>
                 <div class="rightContent">
@@ -49,7 +57,7 @@
                         <div class="serviceContent">
                             <div class="titleServiceContent">
                                 <h2 class="titleService">
-                                    Création site web
+                                    Spots Publicitaires
                                 </h2>
                             </div>
                             
@@ -62,7 +70,8 @@
                         <div class="serviceContent">
                             <div class="titleServiceContent">
                                 <h2 class="titleService">
-                                    Evenement
+                                    Couverture Médiatique 
+
                                 </h2>
                             </div>
                             <div class="imageServiceContent">
@@ -74,7 +83,7 @@
                         <div class="serviceContent">
                             <div class="titleServiceContent">
                                 <h2 class="titleService">
-                                    Couverture Mediatique
+                                Régie Evénementielle 
                                 </h2>
                             </div>
                             <div class="imageServiceContent">
@@ -93,8 +102,8 @@
                 </div>
             </div>
             <div class="contactContent">
-                <img class="contactIcone round" src="views/images/fb.png" alt="icone facebook">
-                <img class="contactIcone square" src="views/images/lkdin.png" alt="icone gmail">
+                <img class="contactIcone round fbLinkOrigami" src="views/images/fb.png" alt="icone facebook">
+                <img class="contactIcone square lkdLinkOrigami" src="views/images/lkdin.png" alt="icone gmail">
             </div>
     
         </div>
@@ -106,15 +115,12 @@
         navBarForAll($page);
     ?>
     
-    <div class="bgTextContent">
-        <h1 class="titleSecNoservice scrolAnim leftAnimation">
+    <div class="bgTextContent  scrolAnim leftAnimation" id="whoAreUs">
+        <h1 class="titleSecNoservice">
             Qui sommes nous?
         </h1>
-        <p class="paraCenter scrolAnim leftAnimation">
-            Entreprise de transformation digitale, située à Fianarantsoa Isaha.
-            Nous offrons tout service qui représente votre image, que ce soit à travers l'internet ou présentielle ainsi que des outils de représentation graphiques.
-            Tout ça avec un prix abordable et raisonnable, et une flexibilité de payement.
-
+        <p class="paraCenter">
+        Fianarantsoa est notre point de départ. En tant que partenaire numérique, nous fusionnons avec expertise la création web, le community management, la créativité graphique et la gestion client pour votre entreprise  vers le succès numérique.
         </p>
         <div class="boutonShowContent">
             <div class="btnExt btnLeft">
@@ -125,9 +131,18 @@
 
             </div>
         </div>
+        
+        <div class="emptyDivAArrow">
+
+        </div>
+        <svg id="more-arrows" class="arContent">
+        <polygon class="arrow-top" points="18.8,13.95 0.9,0.65 1.65,0 18.8,12.65 35.9,0 36.85,0.65"/>
+        <polygon class="arrow-middle" points="18.8,22.9 0.4,9.35 2.2,8.2 18.8,20.6 35.4,8.2 37.2,9.35"/>
+        <polygon class="arrow-bottom" points="18.8,32 0,18.05 2.55,16.4 18.8,28.4 35.05,16.4 37.6,18.05"/>
+        </svg>
     </div>
-    <div class="shoesContainer">
-        <div class="shoesGlass">
+    <div class="shoesContainer" id="shoesLink1">
+        <div id="shoesLink" class="shoesGlass">
             <div class="bubbles1">
                 <div class="bubble1" id="mobileNone" style="--size:5.430262176108059rem; --distance:9.038975202081883rem; --position:-0.6424369192500397%; --time:2.2769257828206264s; --delay:-3.31949269929945s;"></div>
                 <div class="bubble1" id="mobileNone" style="--size:3.4616317299124884rem; --distance:8.630846811703535rem; --position:-1.2732924326149297%; --time:2.81475467302595s; --delay:-2.7638764392000894s;"></div>
@@ -178,19 +193,17 @@
                 
                 <div class="zoneText">
                     <h4 class="revelationTitle">
-                        Non, ce n'est pas une vente de chaussure!
+                    Non , ceci est fait juste pour attirer votre attention
                     </h4>
                     <p class="textShoes">
-                        Ceci est faite juste pour attirée votre attention.
-                        Avec cette même manière, nous attirons votre client potentiel afin d'accroître votre productivité.
-                        
+                    Avec cette même manière, nous attirons votre client potentiel afin de stimuler votre productivité
                     </p>
                 </div>
                 <div class="btnShoesContent">
                     <h4 class="shoesPrice">
-                        50000 Ar
+                      
                     </h4>
-                    <div class="btnShoes">
+                    <div class="btnShoes" id="plusBtnShoes">
                         Plus
                     </div>
                 </div>
@@ -218,7 +231,7 @@
             <div class="boite1">  
                 <div class="boite1-flot">
                     <div class="textContentBoiteUp">
-                        <h1>Sortir de la boite?</h1>
+                        <h1>Sortir de la boite!</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsam voluptatem harum! Impedit, deserunt sit et numquam quam animi sapiente, perferendis dolorem exercitationem expedita nostrum suscipit vitae unde praesentium eligendi.</p>
                     </div>
                 </div>
@@ -228,6 +241,9 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo unde cupiditate repellat minus obcaecati magnam accusantium impedit recusandae tempore libero, voluptatibus molestias iste, animi voluptatem! Laudantium inventore recusandae natus!
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus tenetur odio reiciendis maxime! Minima quae explicabo saepe, porro laudantium accusantium, soluta necessitatibus placeat aperiam eligendi, accusamus quo dolore nesciunt debitis.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maxime quo laboriosam necessitatibus voluptas fuga iure atque eveniet, debitis, similique cupiditate dolor vitae nobis itaque. Vel sapiente iusto optio labore!
+                </div>
+                <div class="btnBoiteContent">
+                    <a href="./views/php/dev.php" class="btnBoiteRedirInfo"> Voir plus</a>
                 </div>
             </div>
         </div>
@@ -246,14 +262,135 @@
             </h1>
         </div>
     </div>
-    <div class="bg4">
-        <div class="titleTrustContent">
-            <h1 class="titleTrust">OrigamiTech a établi des partenariats solides qui ont offert des opportunités de collaboration exceptionnelles.</h1>
+    <div class="cmPurpleContent">
+        <div class="glassCPC">
+            <div class="glassCPCLogoContent">
+                <img src="views/images/a1.png" alt="" class="gCPCLogo">
+            </div>
+            <div class="descriCPCContent">
+                <p class="descriCPC">
+                    Laissez-nous vous representer en ligne, grâce à notre capacité d'influencer votre client potentiel
+                </p>
+                <a href="views/php/cm.php" class="btnCPC">voir plus</a>
+            </div>
         </div>
     </div>
+  <div class="princingBigContent" id="pricing">
+    <div class="titlePriceContent scrolAnim leftAnimation">
+        <p class="NosCP">
+            NOS
+        </p>
+        <p class="OffresCP">
+            OFFRES
+        </p>
+        <p class="smartCP">
+            Smart
+        </p>
+    </div>
+    <div class="cardPriceContent">
+    <div class="cardPrice box cpp scrolAnim leftAnimation">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        <div class="logoCPContent">
+            <img src="views/images/site.gif" alt="" class="logoCP">
+        </div>
+        <div class="titleCPContent">
+        <h1 class="titleCP">
+            Création Site Web
+        </h1>
+        </div>
+        <div class="descriCPContent">
+        <ul class="descriCPC">
+            <li class="descriCP">
+            Création d'identité visuelle
+            </li>
+            <li class="descriCP">
+            Site web clé en main
+            </li>
+            <li class="descriCP">
+            Site dynamique avec photo et vidéo
+            </li>
+            <li class="descriCP">
+            Gestion de Commande en ligne et de livraison
+            </li>
+        </ul>
+        </div>
+        <div class="priceCPContent">
+        <div class="priceCP pcp0">
+            1500 € / mois
+        </div>
+        </div>
+    </div>
+
+    <div class="cardPrice box cp1 scrolAnim leftAnimation">
+        <div class="logoCPContent">
+            <img src="views/images/maintenance.gif" alt="" class="logoCP">
+        </div>
+        <div class="titleCPContent">
+        <h1 class="titleCP tcTC1">
+            Maintenance Site Web
+        </h1>
+        </div>
+        <div class="descriCPContent dcp1">
+        <ul class="descriCPC">
+            <li class="descriCP">
+            Mise à jour quotidien du contenu du site
+            </li>
+            <li class="descriCP">
+            Blog éditorial
+            </li>
+            <li class="descriCP">
+            Maintenance technique
+            </li>
+            <li class="descriCP">
+            Suivi clientèle sur le site du 09h à 16h
+            </li>
+        </ul>
+        </div>
+        <div class="priceCPContent">
+        <div class="priceCP pcp1">
+            200 € / mois
+        </div>
+        </div>
+    </div>
+    <div class="cardPrice box cp2 scrolAnim leftAnimation">
+        <div class="logoCPContent">
+            <img src="views/images/rs.gif" alt="" class="logoCP">
+        </div>
+                <div class="titleCPContent">
+                <h1 class="titleCP tcTC2">
+                    Gestion Réseaux Sociaux
+                </h1>
+                </div>
+                <div class="descriCPContent dcp2">
+                     <ul class="descriCPC">
+                        <li class="descriCP">
+                        Modération de pages professionnelles
+                        </li>
+                        <li class="descriCP">
+                        Création de Calendrier éditorial
+                        </li>
+                        <li class="descriCP">
+                        Création de visuel photo et vidéo pour fidelisation client
+                        </li>
+                        <li class="descriCP">
+                            Gestion Messagerie et Sav Réseaux Sociaux
+                        </li>
+                    </ul>
+                </div>
+                <div class="priceCPContent">
+                    <div class="priceCP pcp2">
+                        350 € / mois
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="emptyAfterPrincing">
+
+    </div>
+
     <div class="titlePartenaireContent">
         <h1 class="titlePartenaire scrolAnim leftAnimation">
-            Nos partenaires
+            Ils nous ont fait confiance
         </h1>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -311,15 +448,15 @@
     <?php 
     require_once "views/php/backToTop.php";
     require_once "views/php/footer.php"; ?>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
  <script src="views/js/scrolAnimation.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
     <script src="views/js/dropDownMenuUp.js"></script>
     <script src="views/js/dropDownMenuDown.js"></script>
     <script src="views/js/sizeImgSlide.js"></script>
-    
+    <script src="views/js/linkRS.js"></script>
     <script src="views/js/serviceBtn.js"></script>
     <script src="views/js/btnNavigation.js"></script>   
-
     <script src="views/js/btnNavigationForDown.js"></script>
     <script src="views/js/slideHome.js"></script>
     <script src="views/js/navBarForAll.js"></script>
@@ -327,10 +464,55 @@
     <!-- partial -->
     <script src="views/js/positionLine.js"></script>
     <script src="views/js/positionNumberBox.js"></script>
+    <script src="views/js/animNoservice.js"></script>
+
     <!-- <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script> -->
     
-  
-    <script src="views/js/backToTop.js"></script>
+    <script>
+        document.getElementById('more-arrows').addEventListener('click', function() {
+        var shoesLink = document.getElementById('shoesLink1');
+        if (shoesLink) {
+            shoesLink.scrollIntoView({ behavior: 'smooth' });
+        }
+        });
+
+
+
+        document.getElementById('moreHome').addEventListener('click', function() {
+        var whoAreUs = document.getElementById('whoAreUs');
+        if (whoAreUs) {
+            whoAreUs.scrollIntoView({ behavior: 'smooth' });
+        }
+        });
+
+
+        document.getElementById('plusBtnShoes').addEventListener('click', function() {
+        window.location.href = './views/php/graph.php';
+        });
+    </script>
+    <script>
+        // back to top button
+          function toggleBackToTop() {
+    const backToTopButton = document.getElementById('backToTop');
+    if (window.scrollY > 700) {
+        backToTopButton.classList.add('active');
+    } else {
+        backToTopButton.classList.remove('active');
+    }
+    }
+    
+    // Ajoutez des écouteurs d'événements pour les événements de scroll et de chargement de la fenêtre
+    window.addEventListener('scroll', toggleBackToTop);
+    window.addEventListener('load', toggleBackToTop);
+    
+    // Fonction pour faire défiler vers le haut lorsque le bouton Back to Top est cliqué
+    document.getElementById('backToTop').addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+                });
+        });
+    </script>
     
     
 </body>

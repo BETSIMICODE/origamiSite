@@ -35,6 +35,12 @@
   <div class="emptyDivDev">
 
   </div>
+  <div class="ecranLCDIZ">
+    
+  </div>
+  <div class="ecranLCD">
+
+  </div>
   <div class="swiper mySwiper" >
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -58,8 +64,8 @@
         <!-- <img src="../images/CSW/5.png" class="responsive"> -->
       </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next btfNT"></div>
+    <div class="swiper-button-prev btfNT"></div>
     
   </div>
   <div class="swiper-responsive">
@@ -108,11 +114,14 @@
 
 <div class="bg2">
         <div class="wrapper">
-            <div class="box">
+            <div class="box scrolAnim leftAnimation">
             
                 <img src="../images/sit1.gif" alt="Photo creation site web" class="iconDev">
                 <div class="description">
                     <h2>Création site web</h2>
+                    <p class="desciDTXT">
+                    Nous concevons des sites web modernes prêts à être déployés, clé en main
+                    </p>
                     <div class="btnStart moreService">
                         <span></span>
                         <span></span>
@@ -124,10 +133,13 @@
                        
                 </div>
             </div>
-            <div class="box">
+            <div class="box scrolAnim leftAnimation">
                 <img src="../images/log.gif" alt="Photo couverture médiatique" class="iconDev">
                 <div class="description">
                     <h2>Création d'une application</h2>
+                    <p class="desciDTXT">
+                    Nous développons également des applications sur mesure en fonction des besoins de nos clients.
+                    </p>
                     <div class="btnStart moreService">
                         <span></span>
                         <span></span>
@@ -138,11 +150,14 @@
                       
                 </div>
             </div>
-            <div class="box">
+            <div class="box scrolAnim leftAnimation">
               
                 <img src="../images/main.gif" alt="Photo créateur digitale" class="iconDev">
                 <div class="description">
                     <h2>Maintenance Logiciel</h2>
+                    <p class="desciDTXT">
+                    Nous proposons également des services de maintenance informatique.
+                    </p>
                     <div class="btnStart moreService">
                         <span></span>
                         <span></span>
@@ -155,7 +170,7 @@
             </div>
         </div>
     </div>
-<div class="goodDevContent">
+<div class="goodDevContent scrolAnim leftAnimation">
     <p class="goodDevText">
       <span class="ori">OrigamiTeh</span>  est une entreprise de transformation digitale capable de bien mener votre projet informatique. 
     </p>
@@ -176,31 +191,32 @@
 
 
 <style>
-   
     .swiper {
       width: 100vw;
-      height: 100%;
-    
+      height: 35vw;
+      background: #000000f0;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
 
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #000913;
+      border: none;
       display: flex;
       justify-content: center;
       align-items: center;
+      box-shadow: none;
+
       
     }
 
     .normal
     {
-      border: 5px solid rgba(0, 0, 0, 0.921);
-      border-radius:30px;
+      /* border: 15px solid rgba(0, 0, 0, 0.921); */
+      /* border-radius:30px; */
       width: 70vw;
-      height: 90%;
-      box-shadow:  rgba(249, 249, 249, 0.099) 0px 0px 36px 0px;
+      height: 35vw;
+      /* box-shadow:  #ffffffeb 0px 0px 26px 0px; */
 
         /* object-fit: cover; */
     }
@@ -215,6 +231,7 @@
       box-shadow: rgba(255, 255, 255, 0.927) 0px 0px 20px, rgba(203, 203, 203, 0.858) 0px 0px 12px;      position: absolute;
       left: 80%;
       top: 150px;
+      z-index:7;
     }
     .wrapper2{
      margin-top: 10%;
@@ -238,6 +255,7 @@
       width: 100%;
       height: 100%;
       /* object-fit: cover; */
+      
     }
     .swiper-button-next{
       z-index: 30;
@@ -263,6 +281,7 @@
 
         
     }
+   
     
     
     
@@ -283,6 +302,7 @@
       },
       allowTouchMove: false,
       loop: true, 
+      speed: 1000, 
     });
   </script>
    <script>
@@ -292,9 +312,13 @@
         disableOnInteraction: false,
   
       },
-      allowTouchMove: false, });
+      allowTouchMove: false,
       loop: true,
+      speed: 1000,  
+    });
+      
   </script>
+
 
 <script src="../js/scrolAnimation.js"></script>
   <script  src="../js/animNoservice.js"></script>
@@ -304,6 +328,7 @@
     <script src="../js/btnNavigationForDown.js"></script>
     <script src="../js/backToTop.js"></script>
     <script src="../js/dropDownMenuDown.js"></script>
+    <script src="../js/linkRS.js"></script>
     
   </body>
 </html>

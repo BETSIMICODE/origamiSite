@@ -10,7 +10,7 @@
 body{
     display: flex;
     /* background-image: url("../images/bg.jpg"); */
-    /* background-color:#010101; */
+    background-color:#ffffffeb;
     background-color:#000913;
     /* background-color: #ff0000; */
 
@@ -70,8 +70,8 @@ body{
    
     .iconDev{
         /* background-color: rgb(183, 0, 255); */
-        width: 40%;
-        height: auto;
+        width: 30%;
+        height: 20%;
         animation: SlowFloat 1s infinite  alternate;
         -webkit-animation: SlowFloat 1s infinite  alternate;
 }
@@ -290,14 +290,14 @@ body{
 }
 .wrapper .box{
     position: relative;
-    width:25vw;
-    height:30vw;
+    width:300px;
+    height:400px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius:15px;
     margin:30px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     backdrop-filter: blur(5px);
     transform-style: preserve-3d;
@@ -313,7 +313,7 @@ body{
     -ms-transition: ease-in-out 0.2s;
     -o-transition: ease-in-out 0.2s;
     background-color: rgba(255, 255, 255, 0.008);
-    flex-shrink: 0;
+    flex-shrink: 0!important;
     animation: colorAnim 2s linear infinite alternate;
     -webkit-animation: colorAnim 2s linear infinite alternate;
 }
@@ -337,7 +337,7 @@ body{
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     /* background-color: aqua; */
@@ -348,11 +348,24 @@ body{
     font-size:1.5vw;
     text-align: center;
     font-family: 'Acme', sans-serif;
+    width: 98%;
+    height: 20%;
+    /* background-color: red; */
 }
 .wrapper p{
     color:#ccc;
     margin:20px 10px;
     font-family: 'Fira Code', monospace;
+}
+.desciDTXT{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 70%;
+    width: 90%;
+    height: 40%;
+    /* background-color: rgb(13, 0, 255); */
 }
 .wrapper .moreService{
     position: relative;
@@ -458,7 +471,7 @@ body{
     border-radius: 100%;
     background: linear-gradient(360deg, transparent, rgb(55, 218, 255));
     animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
+    animation-delay: .75s;
 }
 
 @keyframes btn-anim4 {
@@ -477,4 +490,53 @@ body{
     .wrapper{
         flex-direction: column;
     }
+}
+.ecranLCDIZ{
+    width:70vw;
+    position: absolute;
+    height: 35vw;
+    background-color: rgba(0, 136, 255, 0);
+    top:90px;
+    left:auto;
+    z-index: 6;
+    border: solid 20px black;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.ecranLCD{
+    width:70vw;
+    position: absolute;
+    height: 40vw;
+    background-color: rgba(0, 136, 255, 0);
+    top:90px;
+    z-index: 5;
+    box-shadow: 0px -23vw 0px 23vw #000913;
+}
+/* @media screen and (min-width:1280px) {
+    .ecranLCD{
+        box-shadow: 0px -13vw 0px 23vw #000913;
+    } 
+}
+@media screen and (max-width:690px) {
+    .ecranLCD{
+        box-shadow: 0px -33vw 0px 250px #000913;
+    } 
+}
+@media screen and (max-width:450px) {
+    .ecranLCD{
+        box-shadow: 0px -50vw 0px 250px #000913;
+    } 
+}
+@media screen and (max-width:350px) {
+    .ecranLCD{
+        box-shadow: 0px -76vw 0px 250px #000913;
+    } 
+} */
+.btfNT{
+    position:absolute;
+    z-index: 1000!important;
 }

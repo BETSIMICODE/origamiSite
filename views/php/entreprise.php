@@ -6,21 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/entreprise.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../css/client.css">
+   <link rel="stylesheet" href="../css/client.css"> 
     <link rel="stylesheet" href="../css/scrolAnimation.css">
 
 
     <title>Entreprise</title>
 </head>
+
 <body>
         <?php 
                 // Navigation
                 require_once "navContent.php";
         ?>
-<div id="particles-js" class="containTopEp">
+<ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+</ul>
+<div  class="containTopEp">
         <?php 
             callNavContent(true,$page); 
         ?>
+         
         <div class="glassContainEp">
             <div class="txtContentEp">
                 <h1 class="titleEp">
@@ -32,18 +46,19 @@
 
             </div>
         </div>
+        
     </div>
     <div class="contentMemberContact">
-        <div class="containerTitleMbr">
+        <div class="containerTitleMbr" id='memberLink'>
             <h1 class="titleMbr scrolAnim leftAnimation">
                 Notre équipe
             </h1>
-            <p class="descriMbr scrolAnim leftAnimation" id='memberLink'>
+            <p class="descriMbr scrolAnim leftAnimation">
                 Découvrez les élites qui vont travailler avec vous.
             </p>
         </div>
         <div class="memberContact">
-                    <div class="card">
+                    <div class="card scrolAnim leftAnimation" >
                         <div class="content">
                             <div class="img"><img src="../images/princy.jpg" alt="Photo de couverture CTO"></div>
                             <div class="cardContent">
@@ -63,7 +78,7 @@
                         </ul>
                     </div>
         
-                    <div class="card">
+                    <div class="card scrolAnim leftAnimation">
                         <div class="content">
                             <div class="img"><img  src="../images/andry.jpg" alt="Photo de couverture RH"></div>
                             <div class="cardContent">
@@ -84,7 +99,7 @@
                     </div>
         
         
-                    <div class="card">
+                    <div class="card scrolAnim leftAnimation">
                         <div class="content">
                             <div class="img"><img  src="../images/almadie.jpg" alt="Photo de couverture Admin"></div>
                             <div class="cardContent">
@@ -103,7 +118,7 @@
                             </li>
                         </ul>
                     </div>
-                <div class="card">
+                <div class="card scrolAnim leftAnimation">
                     <div class="content">
                         <div class="img"><img src="../images/doughlas.jpg" alt="Photo de couverture Developpeur"></div>
                         <div class="cardContent">
@@ -122,7 +137,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="card">
+                <div class="card scrolAnim leftAnimation">
                         <div class="content">
                             <div class="img"><img  src="../images/andry.jpg" alt="Photo de couverture RH"></div>
                             <div class="cardContent">
@@ -141,7 +156,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="card">
+                    <div class="card scrolAnim leftAnimation">
                         <div class="content">
                             <div class="img"><img  src="../images/andry.jpg" alt="Photo de couverture RH"></div>
                             <div class="cardContent">
@@ -177,7 +192,7 @@
 
     </div>
     <div class="eventContent">
-        <div class="swiper mySwiper">
+    <div class="swiper mySwiper scrolAnim leftAnimation">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="event-descri">
@@ -242,7 +257,7 @@
 		});
     </script>
     <div class="bgPartenaireContent">
-        <section class="customer-logos slider">
+        <section class="customer-logos slider scrolAnim leftAnimation">
             <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
             <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
             <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
@@ -250,7 +265,6 @@
             <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
             <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
             <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-            <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
         </section>
 
     </div>
@@ -259,13 +273,6 @@
 
 
 
-
-    <script src=
-        "./particles.js-master/particles.js">
-    </script>
-    <script src=
-        "./particles.js-master/demo/js/app.js">
-    </script>
     <?php 
     require_once "navBarForAll.php";
         navBarForAll($page);
@@ -341,7 +348,6 @@ var swiper = new Swiper(".mySwiper", {
 
 });
 </script>
-    <script src="../js/scrolAnimation.js"></script>
     <script src="../js/navBarForAll.js"></script>
     <script src="../js/serviceBtn.js"></script>
     <script src="../js/serviceBtn1.js"></script>
@@ -350,6 +356,8 @@ var swiper = new Swiper(".mySwiper", {
     <script src="../js/backToTop.js"></script>
     <script src="../js/dropDownMenuDown.js"></script>
     <script src="../js/dropDownMenuUp.js"></script>
-    
+    <script src="../js/scrolAnimation.js"></script>
+    <script src="../js/linkRS.js"></script>
+
 </body>
 </html>

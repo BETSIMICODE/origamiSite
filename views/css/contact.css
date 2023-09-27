@@ -1,3 +1,10 @@
+*{
+    transition: 0.7s ease-in-out;
+    -webkit-transition: 0.7s ease-in-out;
+    -moz-transition: 0.7s ease-in-out;
+    -ms-transition: 0.7s ease-in-out;
+    -o-transition: 0.7s ease-in-out;
+}
  body{
             display: flex;
         /* background-image: url("../images/bg.jpg"); */
@@ -112,8 +119,12 @@
         cursor: pointer;
         position: relative;
         overflow: hidden;
-        transition: background-color 0.3s ease-in-out;
-      }
+        transition: 0.7s ease-in-out!important;
+        -webkit-transition: 0.7s ease-in-out!important;
+        -moz-transition: 0.7s ease-in-out!important;
+        -ms-transition: 0.7s ease-in-out!important;
+        -o-transition: 0.7s ease-in-out!important;
+}
       
       button::before {
         content: "";
@@ -125,17 +136,53 @@
         background: linear-gradient(-225deg, #0B54CB, #00aacc, #00cc66, #BCF925, #ffffff);
         z-index: -1;
         opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-      }
+        transition: 0.7s ease-in-out;
+        -webkit-transition: 0.7s ease-in-out;
+        -moz-transition: 0.7s ease-in-out;
+        -ms-transition: 0.7s ease-in-out;
+        -o-transition: 0.7s ease-in-out;
+}
       
       button:hover {
         background: linear-gradient(135deg, #a6b4cb, #ffffff);
         color: #157ed3;
-      }
+        transition: 0.7s ease-in-out;
+        -webkit-transition: 0.7s ease-in-out;
+        -moz-transition: 0.7s ease-in-out;
+        -ms-transition: 0.7s ease-in-out;
+        -o-transition: 0.7s ease-in-out;
+        animation: 1.3s colorAnim infinite  alternate;
+        -webkit-animation: 1.3s colorAnim infinite  alternate;
+}
+@-webkit-keyframes colorAnim {
+    0% {
+        background: linear-gradient(-225deg, #0B54CB, #00aacc, #00cc66, #BCF925, #ffffff);
+       box-shadow: #0B54CB 0px 0px 30px 0px;
+       transition: 0.7s ease-in-out;
+       border-color: #0B54CB;
+}
+50% {
+    background: linear-gradient(-225deg, #531f5f, #ad00cc, #b400cc95, #f2b4ec, #ffffff);
+    box-shadow: #531f5f 0px 0px 30px 0px;
+    transition: 0.7s ease-in-out;
+    border-color: #531f5f;
+}
+100% {
+    background: linear-gradient(-225deg, #680101, #bb365e, #ff9cc7, #fbb2f7, #ffffff);
+    box-shadow: #680101 0px 0px 30px 0px;
+    transition: 0.7s ease-in-out;
+    border-color: #680101;
+}
+}
       
       button:hover::before {
         opacity: 1;
-      }
+        transition: 0.7s ease-in-out;
+        -webkit-transition: 0.7s ease-in-out;
+        -moz-transition: 0.7s ease-in-out;
+        -ms-transition: 0.7s ease-in-out;
+        -o-transition: 0.7s ease-in-out;
+}
       
     .imageContact {
         margin-left: 0%;
@@ -295,9 +342,9 @@
       cursor: pointer;
     }
     .contactI:hover{
-      background-color: rgba(0, 125, 228, 0.475);
+      background-color: #0781de;
       border-radius: 50%;
-      box-shadow: 3px 3px 23px 3px rgb(0, 125, 228);
+      box-shadow: 3px 3px 23px 3px #0781de;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
@@ -378,9 +425,172 @@
         
     }
 }
+.contentTarification{
+    width: 100vw;
+    height: 50vw;
+    max-height: 80vh;
+    background-color: rgba(255, 255, 255, 0.943);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.leftTarif{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    /* background-color: yellow; */
+    justify-content: center;
+    align-items: center;
 
+}
+.titleLeftTarif{
+    color: #06122bdc;
+    font-family: sans-serif;
+    font-size: 3vw;
+}
+.paraLeftTarif{
+    color: #06122ba6;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.rightTarif{
+    width: 55%;
+    display: flex;
+    height: 90%;
+    /* background-color: rgb(0, 255, 153); */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.planTarif{
+    width: 90%;
+    height: 24%;
+    background-color: blueviolet;
+    cursor: pointer;
+    transform: rotateY(-35deg) rotateX(15deg);
+    transition: 0.7s;
+    /* box-shadow: rgba(0, 2, 6, 0.415) 0px 0px 35px 0px; */
+    -webkit-transform: rotateY(-35deg) rotateX(15deg);
+    -moz-transform: rotateY(-35deg) rotateX(15deg);
+    -ms-transform: rotateY(-35deg) rotateX(15deg);
+    -o-transform: rotateY(-35deg) rotateX(15deg);
+    margin-top: -2%;
+    display: flex;
+    perspective: 1000px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    border-right: 2px solid rgba(0,0,0,.2);
+    border-radius:10px;
+}
+.planTarif:nth-child(1){
+    z-index: 4;
+    background-image: linear-gradient(135deg ,#ef6ecd, #fc00df);
+}
+.planTarif:nth-child(2){
+    z-index: 3;
+    background-image: linear-gradient(135deg, #ff8d71, #c35b0a);
+}
+.planTarif:nth-child(3){
+    z-index: 2;
+    background-image: linear-gradient(135deg, #74d5d0, #00e9e1);
+}
+.planTarif:nth-child(4){
+    background-image: linear-gradient(135deg, #0d2946, #001e3e94);
+    z-index: 1;
+}
 
+.planTarif:hover{
+    transform: translateY(10px)  rotateY(-35deg) rotateX(15deg) scale(1.2);
+    z-index:4;
+    -webkit-transform: translateY(10px)  rotateY(-35deg) rotateX(15deg) scale(1.2);
+    -moz-transform: translateY(10px)  rotateY(-35deg) rotateX(15deg) scale(1.2);
+    -ms-transform: translateY(10px)  rotateY(-35deg) rotateX(15deg) scale(1.2);
+    -o-transform: translateY(10px)  rotateY(-35deg) rotateX(15deg) scale(1.2);
+    box-shadow: rgba(255, 255, 255, 0.905) 0px 0px 35px 0px;
 
+}
+
+.planTarif:nth-child(1):hover{
+    box-shadow: rgb(255, 0, 251) 0px 0px 35px 0px;
+
+}
+
+.planTarif:nth-child(2):hover{
+    box-shadow: rgb(0, 183, 70) 0px 0px 35px 0px;
+}
+.planTarif:nth-child(3):hover{
+    box-shadow: rgb(0, 200, 255) 0px 0px 35px 0px;
+}
+.planTarif:nth-child(4):hover{
+    box-shadow: rgb(3, 52, 131) 0px 0px 35px 0px;
+}
+
+.logoPlanTarifContent{
+    width: 20%;
+    height: 80%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoPlanTarif{
+    width: 70%;
+    height: auto;
+}
+.descriPlanTarifContent{
+    width: 64%;
+    height: 95%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.descriTitlePlanTarif{
+    /* background-color: green; */
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.951);
+}
+.descriPlanTarif{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    font-size: 1vw;
+    /* background-color: gray; */
+    font-family: sans-serif;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.829);
+    text-align: left;
+}
+.pricePlanTarifContent{
+    width: 15%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: #ffffffac dotted  3px ;
+}
+.pricePlanTarif{
+    text-align: center;
+    /* background-color: blue; */
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1.2vw;
+}
 
 
 

@@ -2,7 +2,7 @@
 let btnService00 = document.querySelector('.btnService');
 let btnService11 = document.querySelector('.btnServiceForDown');
 let btnMenuDerContents00 = document.querySelectorAll('.btnMenuDerContent');
-let images = document.querySelectorAll('.arrowDownImg');
+let imagesA1 = document.querySelectorAll('.arrowDownImg');
 // Fonction pour basculer la classe .activeNav pour tous les éléments
 function toggleActiveNav() {
     // alert("cliquer");
@@ -10,7 +10,7 @@ function toggleActiveNav() {
         content.classList.toggle('activeNav');
     });
     // alert("rotation1");
-    images.forEach((image) => {
+    imagesA1.forEach((image) => {
         image.classList.toggle('rotation180');
     });
     // alert("rotation2");

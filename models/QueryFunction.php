@@ -24,7 +24,7 @@ class QueryFunction{
     }
     function verification($connection,$query,$val){    
         //this is the function who verify the information's existence
-            $queryPrepared=queryPreparation($connection,$query,$val);
+            $queryPrepared=$this->queryPreparation($connection,$query,$val);
             //query's execution
             $queryPrepared->execute();
             //if queryExecuted's values is empty return false else true
@@ -38,7 +38,7 @@ class QueryFunction{
     
     function recupVal($connection,$query,$val,$valRecup){    
         //this is the function who verify the information's existence
-        $queryPrepared=queryPreparation($connection,$query,$val);
+        $queryPrepared=$this->queryPreparation($connection,$query,$val);
         //query's execution
         $queryPrepared->execute();
         $information=$queryPrepared->fetch(PDO::FETCH_ASSOC);
@@ -51,17 +51,16 @@ class QueryFunction{
     
     function addNewInformation($connection,$query,$val){
         //this is the function who add the new infotmation
-        $queryPrepared=queryPreparation($connection,$query,$val);
+        $queryPrepared=$this->queryPreparation($connection,$query,$val);
         //query's execution
         $queryPrepared->execute();
-    
     }
     
     
     
     function showInformation($connection,$query,$val){    
         //this is the function who show all  information
-        $queryPrepared=queryPreparation($connection,$query,$val);
+        $queryPrepared=$this->queryPreparation($connection,$query,$val);
         //query's execution
         $queryPrepared->execute();
         //if queryExecuted's values is empty return false else true
@@ -73,7 +72,7 @@ class QueryFunction{
     
     
     function verificationDifferent($connection,$query,$val,$differentCol,$differentVal){
-        $col=showInformation($connection,$query,$val);
+        $col=$this->showInformation($connection,$query,$val);
         foreach ($col as $value) {
             if ($value[$differentCol]!=$differentVal){
                 return true;
@@ -83,7 +82,7 @@ class QueryFunction{
     }
     
     function recupValVerificationDifferent($connection,$query,$val,$differentCol,$differentVal){
-        $col=showInformation($connection,$query,$val);
+        $col=$this->showInformation($connection,$query,$val);
         foreach ($col as $value) {
             if ($value[$differentCol]!=$differentVal){
                 return $value[$differentCol];

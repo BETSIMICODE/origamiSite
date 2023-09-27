@@ -56,16 +56,16 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                     </div>
                     <ul class="btnMenuDerContent">
                         <li class="btnMenuDC">
-                            <a href= "'.$linkPage.'crm.php" class="btnNavDer">CRM</a>
+                            <a href= "'.$linkPage.'cm.php" class="btnNavDer">Community Management</a>
                         </li>
                         <li class="btnMenuDC">
-                            <a href= "'.$linkPage.'cm.php" class="btnNavDer">Community Manager</a>
+                            <a href= "'.$linkPage.'graph.php" class="btnNavDer">Conception Graphique</a>
                         </li>
                         <li class="btnMenuDC">
-                            <a href= "'.$linkPage.'graph.php" class="btnNavDer">Design graphique</a>
+                            <a href= "'.$linkPage.'dev.php" class="btnNavDer">Création site web</a>
                         </li>
                         <li class="btnMenuDC">
-                            <a href= "'.$linkPage.'dev.php" class="btnNavDer">Développement informatique</a>
+                            <a href= "'.$linkPage.'crm.php" class="btnNavDer">Gestion Relation Client</a>
                         </li>
                     </ul>
                     <a class="btnNav btnEntreprise"  href= "'.$linkPage.'entreprise.php">
@@ -77,17 +77,17 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                 </div>
                 <div id="mdrService001" class="menuDerService '.$classMenuDerService.'">
                     <div class="menuDerService1 '.$classMenuDerService1.'">
-                        <a class="btnNav mds" href="'.$linkPage.'crm.php">
-                            <span class="drawnMds">-</span> CRM
-                        </a>
                         <a class="btnNav mds" href="'.$linkPage.'cm.php">
-                            <span class="drawnMds">-</span> Community Manager
+                            <span class="drawnMds">.</span> Community Management
                         </a>
                         <a class="btnNav mds" href= "'.$linkPage.'graph.php"">
-                            <span class="drawnMds">-</span> Désign Graphique
+                            <span class="drawnMds">.</span> Désign Graphique
                         </a>
                         <a class="btnNav mds" href= "'.$linkPage.'dev.php">
-                            <span class="drawnMds">-</span> Développement Informatique
+                            <span class="drawnMds">.</span> Création site web
+                        </a>
+                        <a class="btnNav mds" href="'.$linkPage.'crm.php">
+                            <span class="drawnMds">.</span> Gestion Relation Client
                         </a>
                     </div>
                     
@@ -105,9 +105,10 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                 display: flex;
                 width: 100%;
                 height: 20%;
-                /* background: rgb(255, 0, 0); */
+                /*background: rgb(255, 0, 0);*/
                 align-items: center;
                 justify-content: left;
+                z-index: 12;
             }
             .logo{
                 width: 13%;
@@ -121,6 +122,7 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                 height: auto;
                 background: rgba(237, 51, 51, 0);
                 align-self: center;
+                z-index: 12;
             }
             .navForDown{
                 display: flex;
@@ -129,6 +131,7 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                 height: auto;
                 background: rgba(237, 51, 51, 0);
                 align-self: center;
+                
             }
             .btnNav{
                 color: rgba(255, 255, 255, 0.898);
@@ -138,6 +141,7 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                 margin-left: 5%;
                 /* margin-right: auto; */
                 cursor:pointer;
+                z-index: 12;
             }
             .menuDerService{
                 display: none;
@@ -174,7 +178,7 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                 position: absolute;
                 top: 59%;
                 left: 18%;
-                width: 20%;
+                width: 23%;
                 height: 300%;
                 justify-content: space-evenly;
                 transition: ease-in-out 0.5s;
@@ -259,6 +263,7 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                 display: none;
                 width: 6%;
                 height: auto;
+                z-index:6;
             }
             .btnNavMobileForDown{
                 display: none;
@@ -408,12 +413,7 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                     justify-content:flex-start;
                     margin-left:10%;
                     font-size:2.3vw;
-                    
-                    
-                    
-                    
                 }
-                
                 .btnExitNavMobile{
                     display: block;
                     width: 20%;
@@ -513,12 +513,12 @@ function callNavContent($forHomeUp,$page,$imgMenu="menu.png",$imgX="x.png",$arro
                     transition: transform 0.5s ease;
                 }
                 .btnService:hover{
-                    color: rgb(101, 193, 255);
-                    text-shadow: 2px 2px 20px rgb(8, 156, 255);
+                    color: rgb(101, 193, 255)!important;
+                    text-shadow: 2px 2px 20px rgb(8, 156, 255)!important;
                 }
                 .btnServiceForDown:hover{
                     color: rgb(101, 193, 255);
-                    text-shadow: 2px 2px 20px rgb(8, 156, 255);
+                    text-shadow: 2px 2px 20px rgb(8, 156, 255)!important;
                 }
                 .btnNav::after{
                     display: none!important;

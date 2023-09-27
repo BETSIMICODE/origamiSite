@@ -6,8 +6,6 @@
 
 
 ?>
-
-
 <footer class="footer-distributed">
         <div class="footerUp">
             <div class="footer-left">
@@ -34,8 +32,8 @@
                     Origami Tech est une entreprise multiservice qui représente votre image.  
                 </p>
                 <div class="footer-icons">
-                    <img class="contactIcone round contactIconeFoot" src="<?php echo $srcImg; ?>fb.png" alt="icone facebook">
-                    <img class="contactIcone square contactIconeFoot" src="<?php echo $srcImg; ?>lkdin.png" alt="icone gmail">
+                    <img class="contactIcone round contactIconeFoot fbLinkOrigami" src="<?php echo $srcImg; ?>fb.png" alt="icone facebook">
+                    <img class="contactIcone square contactIconeFoot lkdLinkOrigami" src="<?php echo $srcImg; ?>lkdin.png" alt="icone gmail">
                 </div>
             </div>
         </div>
@@ -93,7 +91,7 @@
         
         .footer-distributed{
             background: rgb(19, 19, 32);
-            background-image: linear-gradient(#032345, #021021, #000810);
+            background-image: linear-gradient(#000f1f, #000913, #000913);
             box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
             box-sizing: border-box;
             width: 100vw;

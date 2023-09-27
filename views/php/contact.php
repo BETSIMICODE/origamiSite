@@ -32,25 +32,114 @@
         </div>
         
     </div>
-    
+    <div class="contentTarification">
+      
+    <div class="leftTarif">
+      <h1 class="titleLeftTarif">
+        Explorez nos offres !
+      </h1>
+      <p class="paraLeftTarif">
+      Rejoignez-nous dans un voyage où la créativité rencontre la technologie. Explorez nos services et découvrez comment nous pouvons vous aider à réaliser des projets qui vous démarqueront. Obtenez un devis dès aujourd'hui, nos solutions commencent à partir de 0Ar      </p>
+
+    </div>
+    <div class="rightTarif">
+      <div class="planTarif">
+        <div class="logoPlanTarifContent">
+          <img src="../images/cm.gif" alt="" class="logoPlanTarif">
+        </div>
+        <div class="descriPlanTarifContent">
+            <h1 class="descriTitlePlanTarif">
+              Community Management
+            
+            </h1>
+          <p class="descriPlanTarif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ad.
+          </p>
+        </div>
+        <div class="pricePlanTarifContent">
+          <p class="pricePlanTarif">
+             0 AR
+          </p>
+        </div>
+      </div>
+      <div class="planTarif">
+        <div class="logoPlanTarifContent">
+          <img src="../images/design2.gif" alt="" class="logoPlanTarif">
+        </div>
+        <div class="descriPlanTarifContent">
+            <h1 class="descriTitlePlanTarif">
+              Conception Graphique
+            </h1>
+          <p class="descriPlanTarif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ad.
+          </p>
+        </div>
+        <div class="pricePlanTarifContent">
+          <p class="pricePlanTarif">
+             0 AR
+          </p>
+        </div>
+      </div>
+      <div class="planTarif">
+        <div class="logoPlanTarifContent">
+          <img src="../images/sit1.gif" alt="" class="logoPlanTarif">
+        </div>
+        <div class="descriPlanTarifContent">
+        <h1 class="descriTitlePlanTarif">
+              Développement Informatique
+            </h1>
+          <p class="descriPlanTarif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ad.
+          </p>
+        </div>
+        <div class="pricePlanTarifContent">
+          <p class="pricePlanTarif">
+             0 AR
+          </p>
+        </div>
+      </div>
+      <div class="planTarif">
+        <div class="logoPlanTarifContent">
+          <img src="../images/anime.gif" alt="" class="logoPlanTarif">
+        </div>
+        <div class="descriPlanTarifContent">
+          <h1 class="descriTitlePlanTarif">
+              Gestion Relation Client
+          </h1>
+          <p class="descriPlanTarif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ad.
+          </p>
+        </div>
+        <div class="pricePlanTarifContent">
+          <p class="pricePlanTarif">
+             0 AR
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+
+
+
+
     <div class="bg8">
         <div class="content">
             <div class="table table3">
                 <div class="form">
-                    <h1>Contact Us</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae magna nec tortor elementum aliquet. Curabitur dictum justo vel tellus aliquam, vel suscipit odio vehicula. Donec a metus vel neque ullamcorper commodo non ut libero.</p>
+                    <h1>Contactez-nous</h1>
+                    <p>Nous sommes là pour répondre à toutes vos questions et transformer vos idées en réalité. N'hésitez pas à nous contacter pour discuter de vos projets passionnants.</p>
                     <input type="text" placeholder="NAME">
                     <input type="text" placeholder="EMAIL">
                     <input type="text" placeholder="MESSAGE">
-                    <button type="button" class="button">SEND</button>
+                    <button type="button" class="button">Envoyer</button>
                 </div>
                 
                 
             </div>
             <div class="basContent">
-                <img class="contactI round" src="../images/fb2.png" width="40vh" height="40vh" alt="icone facebook">
-                <img class="contactI square" src="../images/insta2.png"  width="400px" height="400px" alt="icon instagram">
-                <img class="contactI square" src="../images/linkedin2.png" width="400px" height="400px" alt="icone gmail">
+                <img class="contactI round" src="../images/fb2.png" width="40vh" height="40vh" alt="icone facebook">                
+                <img class="contactI round" src="../images/linkedin2.png" width="400px" height="400px" alt="icone gmail">
                 
             </div>
             <div class="table table4">
@@ -62,7 +151,6 @@
         </div>
         
     </div>
-
     
     <?php 
         // button back to top
@@ -74,5 +162,6 @@
     <script src="../js/btnNavigationForDown.js"></script>
     <script src="../js/backToTop.js"></script>
     <script src="../js/dropDownMenuDown.js"></script>
+    <script src="../js/linkRS.js"></script>
 
 </html>

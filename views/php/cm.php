@@ -36,8 +36,8 @@
                         <h1>Image Professionnel</h1>
                             <p>Envoutante symphonie verbale.</p>
                         <div class="sci">
-                                <a href="#"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
-                                <a href="#"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt=""></a>
+                                <a href="https://www.facebook.com/people/Origami-Tech/100071048936332/"  target="_blank"><img class="iconMember roundIconMember" src="../images/fb.png" alt="Icone Facebook"></a>
+                                <a href="https://www.linkedin.com/company/origami-tech-groupe/about/" target="_blank"><img class="iconMember squareIconMember" src="../images/lkdin.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -224,6 +224,7 @@
     <script src="../js/btnNavigation.js"></script>   
     <script src="../js/backToTop.js"></script>
     <script src="../js/dropDownMenuDown.js"></script>
+    <script src="../js/linkRS.js"></script>
     <script>
         // Sélectionnez l'élément .btnService et .menuDerService
         let btnService = document.querySelector('.btnService');
@@ -260,7 +261,16 @@
             menuDerService.style.display = 'none';
         });
     </script>
-    
+    <script>
+        // Sélectionnez l'élément avec la classe .logoCmOrigami
+        const logoElement = document.querySelector('.logoCmOrigami');
+
+        // Ajoutez un gestionnaire d'événement au clic sur l'élément
+        logoElement.addEventListener('click', () => {
+            // Actualisez la page
+            location.reload();
+        });
+    </script>
     
     </body>
 </html>

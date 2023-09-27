@@ -59,7 +59,7 @@
           </p>
         </div>
         <div class="btnContentDesign">
-        <div class="btn"><a href="#">Read More</a></div>
+        <div class="btn"><a href="#">Devis</a></div>
         </div>
 
           
@@ -105,7 +105,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
 <div class="container">
-  <section class="customer-logos slider">
+  <section class="customer-logos slider scrolAnim leftAnimation">
     <div class="slide">
       <img src="../images/logo/logo1.jpg" class="imgLogoGrf" alt=""></div>
     <div class="slide">
@@ -187,6 +187,7 @@ $(document).ready(function(){
         <script src="../js/backToTop.js"></script>
         <script src="../js/dropDownMenuUp.js"></script>
         <script src="../js/dropDownMenuDown.js"></script>
+        <script src="../js/linkRS.js"></script>
     <script>
       
     </script>

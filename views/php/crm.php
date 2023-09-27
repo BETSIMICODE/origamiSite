@@ -90,7 +90,7 @@
               </div>
               
       </div>
-      <img src="../images/nuage.png" class="flotRCmore">
+      <img src="../images/a2.png" class="flotRCmore">
       
       </img>
     </div>
@@ -174,7 +174,7 @@
     <script src="../js/btnNavigationForDown.js"></script>
     <script src="../js/btnNavigation.js"></script>   
     <script src="../js/backToTop.js"></script>
-    <script src="../js/dropDownMenuDown.js"></script>
+    <script src="../js/linkRS.js"></script>
     <script>
         // Sélectionnez l'élément .btnService et .menuDerService
         let btnService = document.querySelector('.btnService');
@@ -211,8 +211,7 @@
             menuDerService.style.display = 'none';
         });
     </script>
-    <!-- partial -->
-
+    <script src="../js/dropDownMenuDown.js"></script>
 </body>
 
 </html>

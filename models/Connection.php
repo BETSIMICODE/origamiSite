@@ -19,12 +19,12 @@ class Connection{
 
         try {
             $this->connection= new PDO($argDSN,$user,$passwd,$option);
-            echo "connection established";
+            // echo "connection established";
             // header('Location: index.php');
             
         }catch (PDOException $error){
             $this->connection= "";
-            echo "<br>Connection failure ".$error->getMessage();
+            // echo "<br>Connection failure ".$error->getMessage();
         
         }
     }
