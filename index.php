@@ -275,7 +275,7 @@
             </div>
         </div>
     </div>
-  <div class="princingBigContent" id="pricing">
+    <div class="princingBigContent" id="pricing">
     <div class="titlePriceContent scrolAnim leftAnimation">
         <p class="NosCP">
             NOS
@@ -300,22 +300,22 @@
         <div class="descriCPContent">
         <ul class="descriCPC">
             <li class="descriCP">
-            Création d'identité visuelle
+            Site Vitrine clé en main, moderne et responsive
             </li>
             <li class="descriCP">
-            Site web clé en main
+            Fiche Google My Business
             </li>
             <li class="descriCP">
-            Site dynamique avec photo et vidéo
+            Site optimisé pour le référencement naturel
             </li>
             <li class="descriCP">
-            Gestion de Commande en ligne et de livraison
+                Maintenance 1 mois gratuit
             </li>
         </ul>
         </div>
         <div class="priceCPContent">
         <div class="priceCP pcp0">
-            1500 € / mois
+        A partir de 700 000Ar
         </div>
         </div>
     </div>
@@ -326,28 +326,28 @@
         </div>
         <div class="titleCPContent">
         <h1 class="titleCP tcTC1">
-            Maintenance Site Web
+            Création Visuelle et Graphique
         </h1>
         </div>
         <div class="descriCPContent dcp1">
         <ul class="descriCPC">
             <li class="descriCP">
-            Mise à jour quotidien du contenu du site
+                Logo
             </li>
             <li class="descriCP">
-            Blog éditorial
+                Flyer, Affiche A4, A3
             </li>
             <li class="descriCP">
-            Maintenance technique
+                Roll-up
             </li>
             <li class="descriCP">
-            Suivi clientèle sur le site du 09h à 16h
+                Spot Vidéo publicitaire
             </li>
         </ul>
         </div>
         <div class="priceCPContent">
         <div class="priceCP pcp1">
-            200 € / mois
+        A partir de 200 000Ar
         </div>
         </div>
     </div>
@@ -357,37 +357,91 @@
         </div>
                 <div class="titleCPContent">
                 <h1 class="titleCP tcTC2">
-                    Gestion Réseaux Sociaux
+                    Community Management
                 </h1>
                 </div>
                 <div class="descriCPContent dcp2">
                      <ul class="descriCPC">
                         <li class="descriCP">
-                        Modération de pages professionnelles
+                            Création de stratégie de communication globale
                         </li>
                         <li class="descriCP">
-                        Création de Calendrier éditorial
+                            Planning éditorial selon votre thème
                         </li>
                         <li class="descriCP">
-                        Création de visuel photo et vidéo pour fidelisation client
+                            Publication et analyse stratégique
                         </li>
                         <li class="descriCP">
-                            Gestion Messagerie et Sav Réseaux Sociaux
+                            Animation et modération de votre communauté en ligne
                         </li>
                     </ul>
                 </div>
                 <div class="priceCPContent">
                     <div class="priceCP pcp2">
-                        350 € / mois
+                        A partir de 200 000Ar
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="emptyAfterPrincing EAP0">
+
+    </div>
+    <div class="MAVTextBigContent scrolAnim leftAnimation">
+        <p class="MAVText">
+            Découvrons maintenant l'avis de nos camarades
+        </p>
+        <img src="views/images/dialogueMess.gif" alt="Gif boite de dialogue" class="MAVGif">
+    </div>
     <div class="emptyAfterPrincing">
 
     </div>
+        <div class="messageAvisContent">
 
+            <div class="messageAvisBox mab1">
+                <div class="bulleContent">
+                <img src="views/images/boxMess1.png" alt="" class="bulleMess">
+
+                </div>
+                <div class="rsMAB">
+                    <img src="views/images/fb.png" alt="" class="lgMab">
+                    <img src="views/images/insta.png" alt="" class="lgMab">                
+                </div>
+                <div class="imgMABContent">
+                <img src="views/images/mab3.png" alt="" class="imgMAB">
+                </div>
+            </div>
+            <div class="messageAvisBox mab2">
+                <div class="bulleContent">
+                    <img src="views/images/boxMess2.png" alt="" class="bulleMess">
+                </div>
+                <div class="rsMAB">
+                    <img src="views/images/fb.png" alt="" class="lgMab">
+                    <img src="views/images/insta.png" alt="" class="lgMab">
+                </div>
+                <div class="imgMABContent">
+                <img src="views/images/mab3.png" alt="" class="imgMAB">
+                </div>
+            </div>
+            <div class="messageAvisBox mab3">
+                <div class="bulleContent">
+                    <img src="views/images/boxMess3.png" alt="" class="bulleMess">
+
+                </div>
+                <div class="rsMAB">
+                    <img src="views/images/fb.png" alt="" class="lgMab">
+                    <img src="views/images/insta.png" alt="" class="lgMab">
+                </div>
+                <div class="imgMABContent">
+                    <img src="views/images/mab3.png" alt="" class="imgMAB">
+                </div>
+            </div>
+
+
+        </div>
+    <div class="emptyAfterPrincing EAP1">
+
+    </div>
     <div class="titlePartenaireContent">
         <h1 class="titlePartenaire scrolAnim leftAnimation">
             Ils nous ont fait confiance
