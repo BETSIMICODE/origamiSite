@@ -39,7 +39,6 @@
         </div>
         <div class="footerDown">
             <p class="footer-company-name"> ©OrigamiTech 2023</p>
-
         </div>
     </footer>
     <style>
@@ -112,7 +111,7 @@
             height: 90%;
             /* background-color: red; */
             display: flex;
-            align-items: center;
+            align-items: flex-start;
 
         }
         .footerDown{
@@ -136,10 +135,13 @@
         }
         .footer-distributed .footer-right{
             width: 32%;
+            margin-top: 1%;
 
         }
         .footer-distributed .footer-center{
             width: 32%;
+            /* background-color:red; */
+            margin-top:1%;
         }
         /* The company logo */
         .logo1{
@@ -174,6 +176,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            /* background-color: red; */
 
         }
         .ftcPara{
@@ -233,7 +236,7 @@
         .footer-distributed .footer-company-about span{
             display: block;
             color:  #ffffff;
-            font-size: 14px;
+            font-size: 150%;
             font-weight: bold;
             margin-bottom: 20px;
         }

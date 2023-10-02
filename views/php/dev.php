@@ -18,6 +18,8 @@
       <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="../css/scrolAnimation.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
         <title>Développement informatique</title>
     </head>
     <body>
@@ -175,7 +177,62 @@
       <span class="ori">OrigamiTeh</span>  est une entreprise de transformation digitale capable de bien mener votre projet informatique. 
     </p>
 </div>
+<div class="stepBigContent" id="stepBigContent">
 
+
+  <div class="stepContent" id="stepContent">
+  <div class="stepHead">
+        <img src="../images/x.png" alt="fermer la boite de devis" class="stepCross" id="stepCross">
+      </div>
+      <div class="sectionStepContent" id="sectionStepContent">
+        <div class="step step1">
+          
+          <div class="stepContenu">
+    
+            <h1 class="stepTitle">
+              Présentez -vous?
+            </h1>
+            <p class="stepDescri">
+      
+            </p>
+            <input class=" champPhone" id="phone" type="tel" name="phone" />
+            <input class="champDevis champMail" type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+            <input class="champDevis" type="text" id="nom" placeholder="Entrez votre nom">
+            <input class="champDevis champPrenom" type="text" id="prenom" placeholder="Entrez votre prénom">
+          </div>
+      <div class="stepFoot">
+        <div class="btnStep">
+          suivant
+        </div>
+      </div>
+    
+        </div>
+        <div class="step step2">
+            <h1 class="stepTitle">
+              HeLLO
+            </h1>
+            <p class="stepDescri">
+      
+            </p>
+            <div class="btnStep">
+              suivant
+            </div>
+        </div>
+        <div class="step step3">
+            <h1 class="stepTitle">
+              HeLLO
+            </h1>
+            <p class="stepDescri">
+      
+            </p>
+            <div class="btnStep">
+              suivant
+            </div>
+        </div>
+      </div>
+  
+  </div>
+</div>
 
 
 
@@ -278,13 +335,9 @@
             
             
         }
-
-        
+ 
     }
-   
-    
-    
-    
+
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -329,6 +382,68 @@
     <script src="../js/backToTop.js"></script>
     <script src="../js/dropDownMenuDown.js"></script>
     <script src="../js/linkRS.js"></script>
-    
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+      phoneInput.setCountry("MG");
+
+    </script>
+    <script>
+    const btnSteps = document.querySelector(".btnStep");
+    const stepContent = document.querySelector("#sectionStepContent");
+ // Récupérer la largeur de l'écran
+ var largeurEcran = window.innerWidth;
+
+// Récupérer la hauteur de l'écran
+var hauteurEcran = window.innerHeight;
+
+// Afficher les dimensions de l'écran dans la console
+
+// Itérer sur les éléments avec une boucle for
+for (let i = 0; i < btnSteps.length; i++) {
+  // Ajouter un écouteur d'événement au clic sur le bouton
+  btnSteps[i].addEventListener("click", function () {
+    // Défilement horizontal de 59vw (vous pouvez ajuster la valeur selon vos besoins)
+    stepContent.scrollLeft += (largeurEcran * 71) / 100;
+  });
+}document.addEventListener("click", function (event) {
+  // Vérifier si l'élément cliqué a la classe .btnStep
+  if (event.target.classList.contains("btnStep")) {
+    const stepContent = document.querySelector("#sectionStepContent");
+    // Récupérer la largeur de l'écran
+    var largeurEcran = window.innerWidth;
+    // Défilement horizontal de 59vw (vous pouvez ajuster la valeur selon vos besoins)
+    stepContent.scrollLeft += (largeurEcran * 71) / 100;
+  }
+});
+</script>
+<script>
+  // Sélectionnez le bouton stepCross
+const stepCross = document.getElementById("stepCross");
+
+// Ajoutez un gestionnaire d'événements de clic au bouton stepCross
+stepCross.addEventListener("click", function () {
+  // Masquez l'élément stepBigContent en définissant sa propriété display sur "none"
+  stepBigContent.style.display = "none";
+});
+</script>
+<script>
+  // Sélectionnez tous les éléments avec la classe moreService
+const moreServiceButtons = document.querySelectorAll(".moreService");
+
+// Sélectionnez l'élément avec la classe stepBigContent
+const stepBigContent = document.querySelector(".stepBigContent");
+
+// Ajoutez un gestionnaire d'événements de clic à chaque élément avec la classe moreService
+moreServiceButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    // Affichez l'élément stepBigContent en définissant sa propriété display sur "flex"
+    stepBigContent.style.display = "flex";
+  });
+});
+</script>
   </body>
 </html>

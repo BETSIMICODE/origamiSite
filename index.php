@@ -264,9 +264,6 @@
     </div>
     <div class="cmPurpleContent">
         <div class="glassCPC">
-            <div class="glassCPCLogoContent">
-                <img src="views/images/a1.png" alt="" class="gCPCLogo">
-            </div>
             <div class="descriCPCContent">
                 <p class="descriCPC">
                     Laissez-nous vous representer en ligne, grâce à notre capacité d'influencer votre client potentiel
@@ -389,7 +386,7 @@
     </div>
     <div class="MAVTextBigContent scrolAnim leftAnimation">
         <p class="MAVText">
-            Découvrons maintenant l'avis de nos camarades
+            Découvrons maintenant l'avis de nos clients
         </p>
         <img src="views/images/dialogueMess.gif" alt="Gif boite de dialogue" class="MAVGif">
     </div>
