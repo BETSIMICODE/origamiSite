@@ -285,8 +285,8 @@
             
 
         var aText = [
-            "Monsieur Sanders Randrianarison a fondé l'origamiTech avec ses partenaires en 2019. Au début origamiTech n'était une boite de gestion relation client (plus précisement callCenter).",
-            "Au fur à mesure le grand Sanders avait eu l'idée d'agrandir son empir en offrant plusieurs services à ses clients, comme la création de site web,  community management, gestion relation client ainsi que les conceptions graphique."
+            "Ceci est juste une phrase de test. Nous sommes une equipe!...",
+            "AzertyuiopmlkjhgfdsqwcvbnKjhajeyh jhsdf ahjkriaz izdldfj KJlazjkl "
             
         ];
 
