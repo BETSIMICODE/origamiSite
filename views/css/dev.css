@@ -541,12 +541,10 @@ body{
     z-index: 1000!important;
 }
 
-
-
 /* steps */
 .stepBigContent{
     position: fixed;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -585,7 +583,7 @@ body{
     height: 80%;
     overflow-x: scroll;
     flex-wrap: nowrap;
-    background-color: orange;
+    /* background-color: orange; */
 }
 .stepHead{
     display: flex;

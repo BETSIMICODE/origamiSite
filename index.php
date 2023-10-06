@@ -34,7 +34,7 @@
                 require_once "views/php/navContent.php";
                 callNavContent(true,$page); ?> 
                 <div class="profilContentMC">
-                <a href="views/php/entreprise.php#memberLink"><img class='profilMemberC' src="views/images/power3.png" alt="" title="Équipe"></a>
+                <a href="views/php/entreprise.php#memberLink"><img class='profilMemberC' src="views/images/power4.png" alt="" title="Équipe"></a>
 
                 </div>
             </div>
@@ -232,15 +232,19 @@
                 <div class="boite1-flot">
                     <div class="textContentBoiteUp">
                         <h1>Sortir de la boite!</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsam voluptatem harum! Impedit, deserunt sit et numquam quam animi sapiente, perferendis dolorem exercitationem expedita nostrum suscipit vitae unde praesentium eligendi.</p>
+                        <p> Le monde est en ligne. Soyez-y aussi ! </p>
                     </div>
                 </div>
             </div>
             <div class="boite2">
                 <div class="textContentBoite">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo unde cupiditate repellat minus obcaecati magnam accusantium impedit recusandae tempore libero, voluptatibus molestias iste, animi voluptatem! Laudantium inventore recusandae natus!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus tenetur odio reiciendis maxime! Minima quae explicabo saepe, porro laudantium accusantium, soluta necessitatibus placeat aperiam eligendi, accusamus quo dolore nesciunt debitis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maxime quo laboriosam necessitatibus voluptas fuga iure atque eveniet, debitis, similique cupiditate dolor vitae nobis itaque. Vel sapiente iusto optio labore!
+                Vous cherchez à développer votre business mais vous avez du mal à atteindre votre public cible? 
+                <br>
+                Avez-vous des difficultés à promouvoir votre création? 
+                <br>
+                Ce dont vous avez besoin, c'est d'adopter une stratégie marketing en ligne efficace.
+                Libérez le potentiel de votre entreprise avec notre expertise en Communication Digitale.
+
                 </div>
                 <div class="btnBoiteContent">
                     <a href="./views/php/dev.php" class="btnBoiteRedirInfo"> Voir plus</a>
@@ -264,11 +268,11 @@
     </div>
     <div class="cmPurpleContent">
         <div class="glassCPC">
-            <div class="descriCPCContent">
-                <p class="descriCPC">
+            <div class="descriCPCContent001">
+                <p class="descriCPC001">
                     Laissez-nous vous representer en ligne, grâce à notre capacité d'influencer votre client potentiel
                 </p>
-                <a href="views/php/cm.php" class="btnCPC">voir plus</a>
+                <a href="views/php/cm.php" class="btnCPC001">voir plus</a>
             </div>
         </div>
     </div>

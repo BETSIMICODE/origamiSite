@@ -23,7 +23,7 @@
                 </div>
                 <div class="ftc ftcMidl">
                     <img class="logoFoot lastLF" src="<?php echo $srcImg; ?>mail3.png" alt="">
-                    <p class="ftcPara"><a href="mailto:support@company.com">origamiTech@origami.mg</a></p>
+                    <p class="ftcPara"><a href="mailto:origamitechgrp@gmail.com">origamitechgrp@gmail.com</a></p>
                 </div>
             </div>
             <div class="footer-right">
